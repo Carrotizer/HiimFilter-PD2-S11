@@ -978,7 +978,7 @@ ItemDisplay[(aqv OR cqv) RARE !ID AMAZON FILTLVL<7]: %YELLOW%*   %NAME%   *
 // Arrows and Bolts - Non zon
 ItemDisplay[(aqv OR cqv) NMAG]:
 ItemDisplay[(aqv OR cqv) MAG !ID]:
-ItemDisplay[(aqv OR cqv) RARE !ID FILTLVL>6]:%NAME%
+ItemDisplay[cqv RARE !ID FILTLVL>6]:%NAME%
 ItemDisplay[cqv FILTLVL>4 !ID]:
 ItemDisplay[aqv FILTLVL>4 !ID]:
 //-----------------------------------------------------------------------------------
