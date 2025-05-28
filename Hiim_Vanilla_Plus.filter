@@ -1753,7 +1753,7 @@ ItemDisplay[UNI !ID FILTLVL<8 (7tw OR uml OR xar OR ulg OR urg OR xlt OR 8mx OR 
 // Heart Carver - Rondel
 // Bloodfist - Heavy Gloves
 // Duskdeep - Full Helm
-
+ItemDisplay[UNI !ID FILTLVL>5 fhl]:
 ItemDisplay[UNI !ID FILTLVL<8 (xpl OR zvb OR xlg OR xmg OR xhg OR xth OR baf OR utp OR uvb OR amb OR amd OR 9di OR vgl OR fhl)]: %DOT-68%%SOUNDID-2666%%GOLD%*  %NAME%  %GOLD%*
 
 
