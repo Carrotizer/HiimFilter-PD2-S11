@@ -806,7 +806,7 @@ ItemDisplay[hp2]: %RED%+ %WHITE%HP2 %RED%+
 ItemDisplay[hp3]: %RED%+ %WHITE%HP3 %RED%+
 ItemDisplay[hp4]: %RED%+ %WHITE%HP4 %RED%+
 ItemDisplay[hp5 FILTLVL<3]: %RED%+ %WHITE%HP5 %RED%+
-ItemDisplay[hp5]: %RED%+ HP
+ItemDisplay[hp5]: %WHITE%H%RED%P5
 
 // Show MP Pots
 ItemDisplay[mp1]: %BLUE%+ %WHITE%MP1 %BLUE%+
@@ -814,7 +814,7 @@ ItemDisplay[mp2]: %BLUE%+ %WHITE%MP2 %BLUE%+
 ItemDisplay[mp3]: %BLUE%+ %WHITE%MP3 %BLUE%+
 ItemDisplay[mp4]: %BLUE%+ %WHITE%MP4 %BLUE%+
 ItemDisplay[mp5 FILTLVL<3]: %BLUE%+ %WHITE%MP5 %BLUE%+
-ItemDisplay[mp5 FILTLVL=5]: %BLUE%+ MP
+ItemDisplay[mp5 FILTLVL=5]: %WHITE%M%BLUE%P5
 ItemDisplay[mp5]:
 
 // Other Potion Tooltips
