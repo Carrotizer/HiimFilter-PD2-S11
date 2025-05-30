@@ -1,9 +1,9 @@
-# Export table to google sheets, download as CSV
-
 import csv
 from typing import Dict
 
-from equipment.equipment import BODY_ARMOR_CONFIG, HELM_CONFIG, SHIELD_CONFIG, DruidEquipment, Equipment
+from equipment.equipment import BODY_ARMOR_CONFIG, HELM_CONFIG, SHIELD_CONFIG, Equipment
+
+from src.equipment.equipment import NecromancerEquipment
 
 
 def get_desecrate_base_damage_mapping() -> Dict[int, float]:
@@ -12,51 +12,67 @@ def get_desecrate_base_damage_mapping() -> Dict[int, float]:
     :return:
     """
     level_to_avg_dmg = {}
-    with open("data/s11_desecrate.csv", buffering=1) as csvfile:
+    with open("../../data/s11_desecrate.csv", buffering=1) as csvfile:
         reader = csv.reader(csvfile)
         header = next(reader)
         for line in reader:
             skill_level = int(line[0])
-            avg_damage = (int(line[1]) + int(line[2])) * (1 + 0.2 * 20 + 0.2 * 20)    # Base + synergy
+            avg_damage = (int(line[1]) + int(line[2])) * (1 + 0.2 * 20 + 0.2 * 20) / 2   # Base + synergy
             level_to_avg_dmg[skill_level] = avg_damage
     return level_to_avg_dmg
 
 
-PLAGUEBEARER = {
-    "name": "Plaguebearer",
-    "plus_shapeshifting_skills": 5,
-    "sockets": 4
+D_WEB = {
+    "name": "Death's Web +1sk 2os",   # lol
+    "plus_skills": 3,
+    "plus_poison_and_bone_skills": 3,
+    "pierce": 20,
+    "sockets": 2,
+}
+
+TRANG_GLOVES = {
+    "name": "Trang-Oul's Claws",
+    "mastery": 15,
 }
 
 BASE_DAMAGE_MAPPING = get_desecrate_base_damage_mapping()
-POISON_CREEPER_RES_MAPPING = get_poison_creeper_res_mapping()
 
 def run(enemy_resist: int):
+
+    """
+    Take Trang set bonus into account.  Set bonus from pieces are already account for in equipment
+    Ignore potential Lower Resist curse because of their low effectiveness vs bosses.
+    """
+    dweb = NecromancerEquipment(**D_WEB)
+    trang_gloves = NecromancerEquipment(**TRANG_GLOVES)
     # Plaguebearer
-    plaguebearer = DruidEquipment(**PLAGUEBEARER)
-    helms = [DruidEquipment(**helm_config) for helm_config in HELM_CONFIG]
-    shields = [DruidEquipment(**shield_config) for shield_config in SHIELD_CONFIG]
-    body_armors = [DruidEquipment(**body_armor_config) for body_armor_config in BODY_ARMOR_CONFIG]
+
+    helms = [NecromancerEquipment(**helm_config) for helm_config in HELM_CONFIG]
+    shields = [NecromancerEquipment(**shield_config) for shield_config in SHIELD_CONFIG]
+    body_armors = [NecromancerEquipment(**body_armor_config) for body_armor_config in BODY_ARMOR_CONFIG]
 
     config = {}
     max_damage = -1
+    charm_config = [(gc , 8 - gc) for gc in range(9)]   # Assume
     for curr_helm in helms:
         for curr_shield in shields:
             for curr_body_armor in body_armors:
-                curr_equip = [plaguebearer, curr_helm, curr_shield, curr_body_armor]
-                curr_damage, config = calculate_damage(enemy_resist, curr_equip)
-                if curr_damage > max_damage:
-                    max_damage = curr_damage
-                    print(f"New max: {max_damage} | {curr_helm.name} | {curr_body_armor.name} | {curr_shield.name}")
-                    print(f"Rabies Level: {config['rabies_level']}, Poison Creeper Level: {config['poison_creeper_level']}, tooltip: {config['tooltip_damage']}")
-                    print(f"Total mastery: {config['mastery']} | Total Pierce: {config['pierce']}")
+                for gc, lc in charm_config:
+                    curr_equip = [dweb, trang_gloves, curr_helm, curr_shield, curr_body_armor]
+                    curr_damage, config = calculate_damage(enemy_resist, curr_equip, gc, lc)
+                    if curr_damage > max_damage:
+                        max_damage = curr_damage
+                        print("----------------------------")
+                        print(f"New max: {max_damage} | {curr_helm.name} | {curr_body_armor.name} | {curr_shield.name} | # GC skillers: {gc} | # LC Columns: {lc}")
+                        print(f"Desecrate Level: {config['desecrate_level']}, tooltip: {config['tooltip_damage']}")
+                        print(f"Total mastery: {config['mastery']} | Total Pierce: {config['pierce']}")
     return max_damage, config
 
 # Should just take in a list of equipments
-def calculate_damage(enemy_resist:int,
-                     equipments: list[Equipment]):
+def calculate_damage(enemy_resist: int,
+                     equipments: list[Equipment],
+                     gc: int, lc: int):
 
-    # Annihilus column
     anni_column_plus_skills = 2
     torch_column_plus_skills = 2
     battle_command_plus_skills = 1
@@ -64,40 +80,62 @@ def calculate_damage(enemy_resist:int,
     rings_plus_skills = 1
 
     base_plus_all = anni_column_plus_skills + torch_column_plus_skills + battle_command_plus_skills + amulet_plus_skills + rings_plus_skills
-    shapeshift_from_skillers = 8
-
-    glove_mastery = 15
-    torch_column_mastery = 3
-    base_mastery = glove_mastery + torch_column_mastery
+    pnb_from_skillers = 1 + gc
+    mastery_from_charms = 3 * (1 + 2 * lc)    # Just from LC in Torch column
 
     # base level is everything from non-variable equip
-    rabies_base_level = 20 + base_plus_all + shapeshift_from_skillers
-    poison_creeper_base_level = 20 + base_plus_all
+    desecrate_base_level = 20 + base_plus_all + pnb_from_skillers
 
-    equipment_plus_shapeshift = sum([dru_equip.get_total_plus_shapeshifting_skills() for dru_equip in equipments])
-    equipment_plus_summon = sum([dru_equip.get_total_plus_summoning_skills() for dru_equip in equipments])
-    equip_mastery = sum([equip.get_total_mastery() for equip in equipments])
-    equip_pierce = sum([equip.get_total_pierce() for equip in equipments])
+    equipment_plus_shapeshift = sum([equip.get_total_plus_poison_and_bone_skills() for equip in equipments])
+    final_desecrate_level = desecrate_base_level + equipment_plus_shapeshift
 
-    final_rabies_level = rabies_base_level + equipment_plus_shapeshift
-    final_poison_creeper_level = poison_creeper_base_level + equipment_plus_summon
-    final_mastery = base_mastery + equip_mastery
-    final_pierce = equip_pierce + POISON_CREEPER_RES_MAPPING[final_poison_creeper_level]
+    vampire_form_mastery = 20
+    total_mastery = vampire_form_mastery + get_total_equipment_mastery(equipments) + mastery_from_charms
+    tooltip_damage = BASE_DAMAGE_MAPPING[final_desecrate_level] * (1 + total_mastery/100.0)
 
-    tooltip_damage = BASE_DAMAGE_MAPPING[final_rabies_level] * (1 + final_mastery/100.0)
-
-    final_enemy_res = enemy_resist - final_pierce
+    total_pierce = get_total_equipment_pierce(equipments)
+    final_enemy_res = enemy_resist - total_pierce
     if final_enemy_res < 0:
-        final_enemy_res = final_enemy_res / 2
+        final_enemy_res = final_enemy_res / 2   # 50% effectiveness when < 0
 
-    config = {"rabies_level": final_rabies_level,
-              "poison_creeper_level": final_poison_creeper_level,
-              "mastery": final_mastery,
-              "pierce": final_pierce,
+    config = {"desecrate_level": final_desecrate_level,
+              "mastery": total_mastery,
+              "pierce": total_pierce,
               "tooltip_damage": tooltip_damage}
     return tooltip_damage * (100 - final_enemy_res)/100.0, config
 
 
+def get_total_equipment_mastery(equipments: list[Equipment]):
+    """
+    :param equipments:
+    :return:
+    """
+    return sum([equip.get_total_mastery() for equip in equipments])
+
+
+def get_total_equipment_pierce(equipments: list[Equipment]):
+    """
+    Equipment pierces
+    :param equipments:
+    :return:
+    """
+    return sum([equip.get_total_pierce() for equip in equipments])
+
+
 if __name__ == "__main__":
-    # print(get_rabies_base_damage_mapping())
-    run(75)
+    """
+    D Clone: 75% Poison Length Reduction.
+    Arreat summit poison resist is 95%?
+    """
+
+    """
+    run(30) # D Clone?  for 6% max life corruption on each one
+    New max: 62083.307250000005 | Trang-Oul's Guise 2OS +6% max life | Trang-Oul's Scales 2OS +6% max life | Trang-Oul's Wing 2OS +6% max life | # GC skillers: 8 | # LC Columns: 0
+    Desecrate Level: 45, tooltip: 48692.79
+    Total mastery: 78 | Total Pierce: 85
+    """
+
+    # import os
+    # current_directory = os.getcwd()
+    # print(current_directory)
+    run(30) # D Clone?

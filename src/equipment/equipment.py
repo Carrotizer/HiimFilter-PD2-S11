@@ -45,86 +45,85 @@ class DruidEquipment(Equipment):
         return self.plus_skills + self.plus_summoning_skills
 
 
+class NecromancerEquipment(Equipment):
+    def __init__(self, name, plus_skills = 0, mastery = 0, pierce = 0, sockets = 0,
+                 plus_curse_skills = 0,
+                 plus_poison_and_bone_skills = 0,
+                 plus_summoning_skills = 0):
+        super().__init__(name, plus_skills, mastery, pierce, sockets)
+        self.plus_curse_skills = plus_curse_skills
+        self.plus_poison_and_bone_skills = plus_poison_and_bone_skills
+        self.plus_summoning_skills = plus_summoning_skills
+
+    def get_total_plus_curse_skills(self):
+        return self.plus_skills + self.plus_curse_skills
+
+    def get_total_plus_poison_and_bone_skills(self):
+        return self.plus_skills + self.plus_poison_and_bone_skills
+
+    def get_total_plus_summoning_skills(self):
+        return self.plus_skills + self.plus_summoning_skills
+
+
 
 HELM_CONFIG = [
     {
-        "name": "Jalal's Mane 3OS",
-        "plus_skills": 2,
-        "plus_shapeshifting_skills": 2,
+        "name": "Trang-Oul's Guise 3OS",
+        "plus_skills": 0,
+        "plus_poison_and_bone_skills": 0,
         "sockets": 3
     },
     {
-        "name": "Jalal's Mane +1sk 2OS",
-        "plus_skills": 3,
-        "plus_shapeshifting_skills": 2,
+        "name": "Trang-Oul's Guise +1sk 2OS",
+        "plus_skills": 1,
+        "plus_poison_and_bone_skills": 0,
+        "sockets": 2
+    },
+    {
+        "name": "Trang-Oul's Guise 2OS +6% max life",
+        "plus_skills": 0,
+        "plus_poison_and_bone_skills": 0,
         "sockets": 2
     },
 ]
-
-WEAPON_CONFIG = [
-    {
-        "name": "Plaguebearer 4OS",
-        "plus_skills": 5,
-        "sockets": 4,
-    },
-    {
-        "name": "Plaguebearer +1sk 2OS",
-        "plus_skills": 6,
-        "sockets": 2,
-    } 
-]
-
 
 SHIELD_CONFIG = [
     {
-        "name": "Spirit Ward 3OS",
-        "plus_skills": 2,
-        "sockets": 3
-    },
-    {
-        "name": "Spirit Ward +1sk 2OS",
+        "name": "Trang-Oul's Wing +1sk 2OS",
         "plus_skills": 3,
-        "sockets": 2
+        "sockets": 2,
+        "pierce": 25,
     },
     {
-        "name": "Stormshield 3OS",
-        "plus_skills": 0,
-        "sockets": 3
+        "name": "Trang-Oul's Wing 3OS",
+        "plus_skills": 2,
+        "sockets": 3,
+        "pierce": 25,   # set bonus
     },
     {
-        "name": "Stormshield +1sk 2OS",
-        "plus_skills": 1,
-        "sockets": 2
+        "name": "Trang-Oul's Wing 2OS +6% max life",
+        "plus_skills": 2,
+        "sockets": 2,
+        "pierce": 25,
     },
 ]
 
 BODY_ARMOR_CONFIG = [
     {
-        "name": "Bramble",
-        "mastery": 50,
+        "name": "Trang-Oul's Scales +1sk 2OS",
+        "plus_skills": 0,
+        "sockets": 2,
     },
     {
-        "name": "Venom Ward 3OS",
+        "name": "Trang-Oul's Scales 3OS",
         "plus_skills": 0,
-        "pierce": 12,
         "sockets": 3,
     },
     {
-        "name": "Venom Ward +1sk 2OS",
-        "plus_skills": 1,
-        "pierce": 12,
+        "name": "Trang-Oul's Scales 2OS +6% max life",
+        "plus_skills": 0,
         "sockets": 2,
     },
-    # {
-    #     "name": "Cage of the Unsullied 6OS",
-    #     "plus_skills": 0,
-    #     "sockets": 6,
-    # },
-    # {
-    #     "name": "Cage of the Unsullied 6OS +1sk (lol)",
-    #     "plus_skills": 1,
-    #     "sockets": 6,
-    # },
 ]
 
 # Each one is 1 column.
