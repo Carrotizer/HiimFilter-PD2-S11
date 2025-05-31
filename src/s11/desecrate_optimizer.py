@@ -8,7 +8,6 @@ from src.equipment.equipment import NecromancerEquipment
 
 def get_desecrate_base_damage_mapping() -> Dict[int, float]:
     """
-
     :return:
     """
     level_to_avg_dmg = {}
@@ -20,6 +19,22 @@ def get_desecrate_base_damage_mapping() -> Dict[int, float]:
             avg_damage = (int(line[1]) + int(line[2])) * (1 + 0.2 * 20 + 0.2 * 20) / 2   # Base + synergy
             level_to_avg_dmg[skill_level] = avg_damage
     return level_to_avg_dmg
+
+
+def get_poison_nova_base_damage_mapping() -> Dict[int, float]:
+    """
+    :return:
+    """
+    level_to_avg_dmg = {}
+    with open("../../data/s11_poison_nova.csv", buffering=1) as csvfile:
+        reader = csv.reader(csvfile)
+        header = next(reader)
+        for line in reader:
+            skill_level = int(line[0])
+            avg_damage = (int(line[1]) + int(line[2])) * (1 + 0.1 * 20 + 0.1 * 20) / 2   # Base + synergy
+            level_to_avg_dmg[skill_level] = avg_damage
+    return level_to_avg_dmg
+
 
 
 D_WEB = {
@@ -36,6 +51,7 @@ TRANG_GLOVES = {
 }
 
 BASE_DAMAGE_MAPPING = get_desecrate_base_damage_mapping()
+PNOVA_DAMAGE_MAPPING = get_poison_nova_base_damage_mapping()
 
 def run(enemy_resist: int):
 
@@ -45,7 +61,6 @@ def run(enemy_resist: int):
     """
     dweb = NecromancerEquipment(**D_WEB)
     trang_gloves = NecromancerEquipment(**TRANG_GLOVES)
-    # Plaguebearer
 
     helms = [NecromancerEquipment(**helm_config) for helm_config in HELM_CONFIG]
     shields = [NecromancerEquipment(**shield_config) for shield_config in SHIELD_CONFIG]
@@ -91,7 +106,8 @@ def calculate_damage(enemy_resist: int,
 
     vampire_form_mastery = 20
     total_mastery = vampire_form_mastery + get_total_equipment_mastery(equipments) + mastery_from_charms
-    tooltip_damage = BASE_DAMAGE_MAPPING[final_desecrate_level] * (1 + total_mastery/100.0)
+    # tooltip_damage = BASE_DAMAGE_MAPPING[final_desecrate_level] * (1 + total_mastery/100.0)
+    tooltip_damage = PNOVA_DAMAGE_MAPPING[final_desecrate_level] * (1 + total_mastery/100.0)
 
     total_pierce = get_total_equipment_pierce(equipments)
     final_enemy_res = enemy_resist - total_pierce

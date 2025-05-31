@@ -67,18 +67,18 @@ class NecromancerEquipment(Equipment):
 
 
 HELM_CONFIG = [
-    {
-        "name": "Trang-Oul's Guise 3OS",
-        "plus_skills": 0,
-        "plus_poison_and_bone_skills": 0,
-        "sockets": 3
-    },
-    {
-        "name": "Trang-Oul's Guise +1sk 2OS",
-        "plus_skills": 1,
-        "plus_poison_and_bone_skills": 0,
-        "sockets": 2
-    },
+    # {
+    #     "name": "Trang-Oul's Guise 3OS",
+    #     "plus_skills": 0,
+    #     "plus_poison_and_bone_skills": 0,
+    #     "sockets": 3
+    # },
+    # {
+    #     "name": "Trang-Oul's Guise +1sk 2OS",
+    #     "plus_skills": 1,
+    #     "plus_poison_and_bone_skills": 0,
+    #     "sockets": 2
+    # },
     {
         "name": "Trang-Oul's Guise 2OS +6% max life",
         "plus_skills": 0,
@@ -88,18 +88,18 @@ HELM_CONFIG = [
 ]
 
 SHIELD_CONFIG = [
-    {
-        "name": "Trang-Oul's Wing +1sk 2OS",
-        "plus_skills": 3,
-        "sockets": 2,
-        "pierce": 25,
-    },
-    {
-        "name": "Trang-Oul's Wing 3OS",
-        "plus_skills": 2,
-        "sockets": 3,
-        "pierce": 25,   # set bonus
-    },
+    # {
+    #     "name": "Trang-Oul's Wing +1sk 2OS",
+    #     "plus_skills": 3,
+    #     "sockets": 2,
+    #     "pierce": 25,
+    # },
+    # {
+    #     "name": "Trang-Oul's Wing 3OS",
+    #     "plus_skills": 2,
+    #     "sockets": 3,
+    #     "pierce": 25,   # set bonus
+    # },
     {
         "name": "Trang-Oul's Wing 2OS +6% max life",
         "plus_skills": 2,
@@ -109,16 +109,16 @@ SHIELD_CONFIG = [
 ]
 
 BODY_ARMOR_CONFIG = [
-    {
-        "name": "Trang-Oul's Scales +1sk 2OS",
-        "plus_skills": 0,
-        "sockets": 2,
-    },
-    {
-        "name": "Trang-Oul's Scales 3OS",
-        "plus_skills": 0,
-        "sockets": 3,
-    },
+    # {
+    #     "name": "Trang-Oul's Scales +1sk 2OS",
+    #     "plus_skills": 0,
+    #     "sockets": 2,
+    # },
+    # {
+    #     "name": "Trang-Oul's Scales 3OS",
+    #     "plus_skills": 0,
+    #     "sockets": 3,
+    # },
     {
         "name": "Trang-Oul's Scales 2OS +6% max life",
         "plus_skills": 0,

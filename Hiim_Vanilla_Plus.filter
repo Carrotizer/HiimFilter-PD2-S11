@@ -81,6 +81,29 @@ ItemDisplay[GOLD<100 CLVL<18]:
 ItemDisplay[GOLD<1000 (CLVL>17 AND CLVL<80)]:
 ItemDisplay[GOLD<9999 CLVL>79]:
 //-----------------------------------------------------------------------------------
+
+//-----------------------------------------------------------------------------------
+// Carrotizer custom hide
+//-----------------------------------------------------------------------------------
+// Hide low value set piece, even if they are ethereal.
+Alias[ANGELIC]: (SET (sbr OR rng))
+Alias[ARCANNA]: (SET (skp OR ltp OR wst))
+Alias[ARCTIC]: (SET (qui OR vbl OR tgl OR swb))
+Alias[BERSERKER]: (SET (hml OR spl OR 2ax))
+Alias[CATHAN]: (SET (bst OR msk OR chn))
+Alias[CLEGLAW]: (SET (mgl OR lsd OR sml))
+Alias[DEATH]: (SET (wsd))
+Alias[HSARUS]: (SET (buc OR mbt OR mbl))
+Alias[INFERNAL]: (SET (cap OR tbl OR bwn))
+Alias[ISENHART]: (SET (bsd OR brs OR fhl OR gts))
+Alias[NAJ]: (SET ci0)
+Alias[TANCRED]: (SET (bhm OR mpi OR ful))
+Alias[VIDALA]: (SET (lea OR tbt OR lbb))
+ItemDisplay[ANGELIC OR ARCANNA OR ARCTIC OR BERSERKER OR CATHAN OR CLEGLAW OR HSARUS OR INFERNAL OR ISENHART OR NAJ OR TANCRED OR VIDALA]:
+
+// Hide things higher so they don't show icons.
+ItemDisplay[UNI !ID FILTLVL>5 fhl]:
+
 //-----------------------------------------------------------------------------------
 // PD2 ITEMS
 //-----------------------------------------------------------------------------------
@@ -4502,6 +4525,7 @@ ItemDisplay[crs NMAG !INF !SUP SOCK=0 ILVL>40 FILTLVL<3]: %NAME%{%NAME%}
 ItemDisplay[(bsd OR lsd) NMAG !INF !SUP SOCK=0 ILVL>25 CLVL<80 FILTLVL<3]: %NAME% %DARK_GREEN%[Larzuk 4os]{%NAME%}
 ItemDisplay[(crs OR bsd OR lsd) NMAG !INF !RW SOCK=4 FILTLVL<3]: %NAME% %DARK_GREEN%[Spirit]{%NAME%}
 ItemDisplay[crs ILVL>25 NMAG !INF !RW !ETH SOCK>4 FILTLVL<5]: %NAME%{%NAME%}
+ItemDisplay[crs ILVL>25 NMAG !INF !RW SOCK=5 FILTLVL<8]: %NAME%{%NAME%}     // Crystal Sword CtA
 ItemDisplay[(72h OR 7fb OR 7gd OR 7gs OR 7ls) ETH NMAG !RW !INF (SOCK=0 OR SOCK>2) FILTLVL<7]: %DOT-D6%%NAME%{%NAME%}
 ItemDisplay[7fb ETH NMAG !RW (SOCK=0 OR SOCK>1) FILTLVL<7]: %NAME%{%NAME%}
 ItemDisplay[7gd ETH NMAG !RW (SOCK=0 OR SOCK>1) FILTLVL<7]: %NAME%{%NAME%}
@@ -4514,7 +4538,7 @@ ItemDisplay[7cr !INF SUP !RW EDAM=15 !(SOCK=1)]: %NAME%{%NAME%}
 
 // Maces
 ItemDisplay[fla NMAG !RW !INF (SOCK=0 OR SOCK>2) FILTLVL<3]: %NAME%{%NAME%}
-ItemDisplay[fla NMAG !RW !INF !ETH SOCK>3 FILTLVL<8]: %NAME%{%NAME%}
+ItemDisplay[fla NMAG !RW !INF !ETH SOCK=5 FILTLVL<8]: %NAME%{%NAME%}
 
 // Wands Dominion SK94	Fire Golem SK85	Blood Golem SK367 Blood Warp SK91 Lower Resist SK68 Bone Armor SK95 revive
 ItemDisplay[WAND !(wnd OR ywn OR 9wn) SK94>2 SK68>0 (SK91>0 OR SK95>0) !SOCK=1 NMAG !RW]: %DOT-D6%%PURPLE%O O %NAME% %PURPLE%O O{%NAME%%NL%%PURPLE%GG Dominion Base}
