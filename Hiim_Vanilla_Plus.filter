@@ -4538,7 +4538,8 @@ ItemDisplay[7cr !INF SUP !RW EDAM=15 !(SOCK=1)]: %NAME%{%NAME%}
 
 // Maces
 ItemDisplay[fla NMAG !RW !INF (SOCK=0 OR SOCK>2) FILTLVL<3]: %NAME%{%NAME%}
-ItemDisplay[fla NMAG !RW !INF !ETH SOCK=5 FILTLVL<8]: %NAME%{%NAME%}
+// ItemDisplay[fla NMAG !RW !INF !ETH SOCK=4 FILTLVL<8]: %NAME%{%NAME%}        // HotO base
+ItemDisplay[fla NMAG !RW !INF !ETH SOCK=5 FILTLVL<8]: %NAME%{%NAME%}        // CtA base
 
 // Wands Dominion SK94	Fire Golem SK85	Blood Golem SK367 Blood Warp SK91 Lower Resist SK68 Bone Armor SK95 revive
 ItemDisplay[WAND !(wnd OR ywn OR 9wn) SK94>2 SK68>0 (SK91>0 OR SK95>0) !SOCK=1 NMAG !RW]: %DOT-D6%%PURPLE%O O %NAME% %PURPLE%O O{%NAME%%NL%%PURPLE%GG Dominion Base}
