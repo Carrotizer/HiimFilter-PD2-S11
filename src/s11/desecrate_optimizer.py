@@ -38,8 +38,8 @@ def get_poison_nova_base_damage_mapping() -> Dict[int, float]:
 
 
 D_WEB = {
-    "name": "Death's Web +1sk 2os",   # lol
-    "plus_skills": 3,
+    "name": "Death's Web 2os",
+    "plus_skills": 2,
     "plus_poison_and_bone_skills": 3,
     "pierce": 20,
     "sockets": 2,
@@ -47,7 +47,7 @@ D_WEB = {
 
 TRANG_GLOVES = {
     "name": "Trang-Oul's Claws",
-    "mastery": 15,
+    "mastery": 14,
 }
 
 BASE_DAMAGE_MAPPING = get_desecrate_base_damage_mapping()
@@ -74,7 +74,7 @@ def run(enemy_resist: int):
             for curr_body_armor in body_armors:
                 for gc, lc in charm_config:
                     curr_equip = [dweb, trang_gloves, curr_helm, curr_shield, curr_body_armor]
-                    curr_damage, config = calculate_damage(enemy_resist, curr_equip, gc, lc)
+                    curr_damage, config = calculate_damage(enemy_resist, curr_equip, gc, lc, False)
                     if curr_damage > max_damage:
                         max_damage = curr_damage
                         print("----------------------------")
@@ -86,16 +86,16 @@ def run(enemy_resist: int):
 # Should just take in a list of equipments
 def calculate_damage(enemy_resist: int,
                      equipments: list[Equipment],
-                     gc: int, lc: int):
+                     gc: int, lc: int, is_vampire_form=False):
 
-    anni_column_plus_skills = 2
+    anni_column_plus_skills = 2     # Anni + skiller
     torch_column_plus_skills = 2
     battle_command_plus_skills = 1
     amulet_plus_skills = 2  # Let's set this to 2 for now.  Could consider Third Eye Amulet
-    rings_plus_skills = 1
+    rings_plus_skills = 2
 
     base_plus_all = anni_column_plus_skills + torch_column_plus_skills + battle_command_plus_skills + amulet_plus_skills + rings_plus_skills
-    pnb_from_skillers = 1 + gc
+    pnb_from_skillers = gc  # 1 in Anni column accounted above
     mastery_from_charms = 3 * (1 + 2 * lc)    # Just from LC in Torch column
 
     # base level is everything from non-variable equip
@@ -104,7 +104,7 @@ def calculate_damage(enemy_resist: int,
     equipment_plus_shapeshift = sum([equip.get_total_plus_poison_and_bone_skills() for equip in equipments])
     final_desecrate_level = desecrate_base_level + equipment_plus_shapeshift
 
-    vampire_form_mastery = 20
+    vampire_form_mastery = 20 if is_vampire_form else 0
     total_mastery = vampire_form_mastery + get_total_equipment_mastery(equipments) + mastery_from_charms
     # tooltip_damage = BASE_DAMAGE_MAPPING[final_desecrate_level] * (1 + total_mastery/100.0)
     tooltip_damage = PNOVA_DAMAGE_MAPPING[final_desecrate_level] * (1 + total_mastery/100.0)
@@ -151,7 +151,23 @@ if __name__ == "__main__":
     Total mastery: 78 | Total Pierce: 85
     """
 
+    """
+    P Nova  Bramble vs Venom Ward with 2/20FCR 3os Circlet
+    New max: 17216.962499999998 | +2sk/20FCR 3os Circlet | Bramble | Trang-Oul's Wing 3OS | # GC skillers: 5 | # LC Columns: 3
+    Desecrate Level: 44, tooltip: 13503.499999999998
+    Total mastery: 126 | Total Pierce: 85
+    
+    Desecrate Bramble vs Venom Ward
+    New max: 77917.08600000001 | +2sk/20FCR 3os Circlet | Bramble | Trang-Oul's Wing 3OS | # GC skillers: 8 | # LC Columns: 0
+    Desecrate Level: 47, tooltip: 61111.44
+    Total mastery: 108 | Total Pierce: 85
+    
+    Looks like Venom Ward is better UNTIL 95 enemy resist...
+    """
+
+
+
     # import os
     # current_directory = os.getcwd()
     # print(current_directory)
-    run(30) # D Clone?
+    run(75) # D Clone?

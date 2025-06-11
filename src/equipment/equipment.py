@@ -85,6 +85,12 @@ HELM_CONFIG = [
         "plus_poison_and_bone_skills": 0,
         "sockets": 2
     },
+    # {
+    #     "name": "+2sk/20FCR 3os Circlet",
+    #     "plus_skills": 2,
+    #     "plus_poison_and_bone_skills": 0,
+    #     "sockets": 3,
+    # },
 ]
 
 SHIELD_CONFIG = [
@@ -94,18 +100,30 @@ SHIELD_CONFIG = [
     #     "sockets": 2,
     #     "pierce": 25,
     # },
-    # {
-    #     "name": "Trang-Oul's Wing 3OS",
-    #     "plus_skills": 2,
-    #     "sockets": 3,
-    #     "pierce": 25,   # set bonus
-    # },
     {
-        "name": "Trang-Oul's Wing 2OS +6% max life",
+        "name": "Trang-Oul's Wing 3OS",
         "plus_skills": 2,
-        "sockets": 2,
-        "pierce": 25,
+        "sockets": 3,
+        "pierce": 25,   # set bonus
     },
+    # {
+    #     "name": "Trang-Oul's Wing 2OS +6% max life",
+    #     "plus_skills": 2,
+    #     "sockets": 2,
+    #     "pierce": 25,
+    # },
+    # {
+    #     "name": "Some insane rare +2sk +3nova/desecrate 3OS",
+    #     "plus_skills": 6,   # +2sk, +3sk, 1 from arach free up
+    #     "sockets": 3,
+    #     "pierce": 0,   # set bonus
+    # },
+    # {
+    #     "name": "Boneflame 3OS",
+    #     "plus_skills": 3 + 1,   # 1 from Arach free up
+    #     "sockets": 3,
+    #     "pierce": 0,   # set bonus
+    # },
 ]
 
 BODY_ARMOR_CONFIG = [
@@ -124,6 +142,19 @@ BODY_ARMOR_CONFIG = [
         "plus_skills": 0,
         "sockets": 2,
     },
+    # {
+    #     "name": "Bramble",
+    #     "mastery": 50,
+    #     "plus_skills": 0,
+    #     "sockets": 0,
+    # },
+    # {
+    #     "name": "Venom Ward 3OS",
+    #     "mastery": 0,
+    #     "pierce": 12,
+    #     "plus_skills": 0,
+    #     "sockets": 3,
+    # },
 ]
 
 # Each one is 1 column.
