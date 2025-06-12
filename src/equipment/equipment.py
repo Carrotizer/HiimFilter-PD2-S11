@@ -85,12 +85,12 @@ HELM_CONFIG = [
         "plus_poison_and_bone_skills": 0,
         "sockets": 2
     },
-    # {
-    #     "name": "+2sk/20FCR 3os Circlet",
-    #     "plus_skills": 2,
-    #     "plus_poison_and_bone_skills": 0,
-    #     "sockets": 3,
-    # },
+    {
+        "name": "+2sk/20FCR 3os Circlet",
+        "plus_skills": 2,
+        "plus_poison_and_bone_skills": 0,
+        "sockets": 3,
+    },
 ]
 
 SHIELD_CONFIG = [
@@ -142,19 +142,26 @@ BODY_ARMOR_CONFIG = [
         "plus_skills": 0,
         "sockets": 2,
     },
-    # {
-    #     "name": "Bramble",
-    #     "mastery": 50,
-    #     "plus_skills": 0,
-    #     "sockets": 0,
-    # },
-    # {
-    #     "name": "Venom Ward 3OS",
-    #     "mastery": 0,
-    #     "pierce": 12,
-    #     "plus_skills": 0,
-    #     "sockets": 3,
-    # },
+    {
+        "name": "Bramble",
+        "mastery": 50,
+        "plus_skills": 0,
+        "sockets": 0,
+    },
+    {
+        "name": "Venom Ward 3OS",
+        "mastery": 0,
+        "pierce": 12,
+        "plus_skills": 0,
+        "sockets": 3,
+    },
+    {
+        "name": "Arkaine's Valor 3OS",
+        "mastery": 0,
+        "pierce": 0,
+        "plus_skills": 2,
+        "sockets": 3,
+    },
 ]
 
 # Each one is 1 column.

@@ -53,7 +53,9 @@ TRANG_GLOVES = {
 BASE_DAMAGE_MAPPING = get_desecrate_base_damage_mapping()
 PNOVA_DAMAGE_MAPPING = get_poison_nova_base_damage_mapping()
 
-def run(enemy_resist: int):
+def run(enemy_resist: int,
+        is_vampire_form: bool = False,
+        is_bosser: bool = False):
 
     """
     Take Trang set bonus into account.  Set bonus from pieces are already account for in equipment
@@ -68,13 +70,13 @@ def run(enemy_resist: int):
 
     config = {}
     max_damage = -1
-    charm_config = [(gc , 8 - gc) for gc in range(9)]   # Assume
+    charm_config = [(gc , 8 - gc) for gc in range(8)]
     for curr_helm in helms:
         for curr_shield in shields:
             for curr_body_armor in body_armors:
                 for gc, lc in charm_config:
                     curr_equip = [dweb, trang_gloves, curr_helm, curr_shield, curr_body_armor]
-                    curr_damage, config = calculate_damage(enemy_resist, curr_equip, gc, lc, False)
+                    curr_damage, config = calculate_damage(enemy_resist, curr_equip, gc, lc, is_vampire_form, is_bosser)
                     if curr_damage > max_damage:
                         max_damage = curr_damage
                         print("----------------------------")
@@ -86,9 +88,11 @@ def run(enemy_resist: int):
 # Should just take in a list of equipments
 def calculate_damage(enemy_resist: int,
                      equipments: list[Equipment],
-                     gc: int, lc: int, is_vampire_form=False):
+                     gc: int, lc: int,
+                     is_vampire_form=False,
+                     is_bosser=False):
 
-    anni_column_plus_skills = 2     # Anni + skiller
+    anni_column_plus_skills = 1     # Anni + Gheed's for mapping
     torch_column_plus_skills = 2
     battle_command_plus_skills = 1
     amulet_plus_skills = 2  # Let's set this to 2 for now.  Could consider Third Eye Amulet
@@ -103,11 +107,15 @@ def calculate_damage(enemy_resist: int,
 
     equipment_plus_shapeshift = sum([equip.get_total_plus_poison_and_bone_skills() for equip in equipments])
     final_desecrate_level = desecrate_base_level + equipment_plus_shapeshift
+    total_mastery = get_total_equipment_mastery(equipments) + mastery_from_charms
 
-    vampire_form_mastery = 20 if is_vampire_form else 0
-    total_mastery = vampire_form_mastery + get_total_equipment_mastery(equipments) + mastery_from_charms
-    # tooltip_damage = BASE_DAMAGE_MAPPING[final_desecrate_level] * (1 + total_mastery/100.0)
-    tooltip_damage = PNOVA_DAMAGE_MAPPING[final_desecrate_level] * (1 + total_mastery/100.0)
+    if is_vampire_form:
+        final_desecrate_level += 3  # set bonus
+        total_mastery += 20     # Vampire form bonus
+    if is_bosser:
+        tooltip_damage = BASE_DAMAGE_MAPPING[final_desecrate_level] * (1 + total_mastery/100.0)
+    else:
+        tooltip_damage = PNOVA_DAMAGE_MAPPING[final_desecrate_level] * (1 + total_mastery/100.0)
 
     total_pierce = get_total_equipment_pierce(equipments)
     final_enemy_res = enemy_resist - total_pierce
@@ -165,9 +173,24 @@ if __name__ == "__main__":
     Looks like Venom Ward is better UNTIL 95 enemy resist...
     """
 
+    """
+    What's the actual diff between full skiller vs optimal LC/Skiller combo?
+    Vampire Form
+    -----------Optimal--------------
+    New max: 12545.895 | Trang-Oul's Guise 2OS +6% max life | Trang-Oul's Scales 2OS +6% max life | Trang-Oul's Wing 3OS | # GC skillers: 2 | # LC Columns: 5
+    Desecrate Level: 41, tooltip: 11670.6
+    Total mastery: 112 | Total Pierce: 90
+    ----------------------------
+    New max: 12301.493749999998 | Trang-Oul's Guise 2OS +6% max life | Trang-Oul's Scales 2OS +6% max life | Trang-Oul's Wing 3OS | # GC skillers: 7 | # LC Columns: 0
+    Desecrate Level: 46, tooltip: 11443.249999999998
+    Total mastery: 82 | Total Pierce: 90
+    """
+
 
 
     # import os
     # current_directory = os.getcwd()
     # print(current_directory)
-    run(75) # D Clone?
+    is_vampire_form = False
+    is_bosser = True
+    run(75, is_vampire_form, is_bosser) # D Clone?
