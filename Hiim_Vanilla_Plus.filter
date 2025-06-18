@@ -629,20 +629,20 @@ ItemDisplay[gpy OR gpys]: %YELLOW%*  %TAN%P.%WHITE% Topaz  %YELLOW%*%CONTINUE%
 ItemDisplay[skl OR skls]: %GRAY%* %TAN%F.%WHITE% Skull %GRAY%*%CONTINUE%
 ItemDisplay[skz OR skzs]: %GRAY%* *  %TAN%P.%WHITE% Skull  %GRAY%* *%CONTINUE%
 
-ItemDisplay[gzv OR gzvs FILTLVL>6]: %PURPLE%F.Amethyst%CONTINUE%
-ItemDisplay[gpv OR gpvs FILTLVL>6]: %PURPLE%P.Amethyst%CONTINUE%
-ItemDisplay[glw OR glws FILTLVL>6]: %WHITE%F.Diamond%CONTINUE%
-ItemDisplay[gpw OR gpws FILTLVL>6]: %WHITE%P.Diamond%CONTINUE%
-ItemDisplay[glg OR glgs FILTLVL>6]: %GREEN%F.Emerald%GREEN%%CONTINUE%
-ItemDisplay[gpg OR gpgs FILTLVL>6]: %GREEN%P.Emerald%GREEN%%CONTINUE%
-ItemDisplay[glr OR glrs FILTLVL>6]: %RED%F.Ruby%CONTINUE%
-ItemDisplay[gpr OR gprs FILTLVL>6]: %RED%P.Ruby%CONTINUE%
-ItemDisplay[glb OR glbs FILTLVL>6]: %BLUE%F.Sapphire%CONTINUE%
-ItemDisplay[gpb OR gpbs FILTLVL>6]: %BLUE%P.Sapphire%CONTINUE%
-ItemDisplay[gly OR glys FILTLVL>6]: %YELLOW%F.Topaz%CONTINUE%
-ItemDisplay[gpy OR gpys FILTLVL>6]: %YELLOW%P.Topaz%CONTINUE%
-ItemDisplay[skl OR skls FILTLVL>6]: %WHITE%F.Skull%CONTINUE%
-ItemDisplay[skz OR skzs FILTLVL>6]: %GRAY%*  %WHITE%P.Skull  %GRAY%*%CONTINUE%
+ItemDisplay[gzv OR gzvs FILTLVL>6]: %PURPLE%Flawless Amethyst%CONTINUE%
+ItemDisplay[gpv OR gpvs FILTLVL>6]: %PURPLE%*  *  Perf. Amethyst  *  *%CONTINUE%
+ItemDisplay[glw OR glws FILTLVL>6]: %WHITE%Flawless Diamond%CONTINUE%
+ItemDisplay[gpw OR gpws FILTLVL>6]: %WHITE%*  *  Perf. Diamond  *  *%CONTINUE%
+ItemDisplay[glg OR glgs FILTLVL>6]: %GREEN%Flawless Emerald%GREEN%%CONTINUE%
+ItemDisplay[gpg OR gpgs FILTLVL>6]: %GREEN%*  *  Perf. Emerald  *  *%GREEN%%CONTINUE%
+ItemDisplay[glr OR glrs FILTLVL>6]: %RED%Flawless Ruby%CONTINUE%
+ItemDisplay[gpr OR gprs FILTLVL>6]: %RED%*  *  Perf. Ruby  *  *%CONTINUE%
+ItemDisplay[glb OR glbs FILTLVL>6]: %BLUE%Flawless Sapphire%CONTINUE%
+ItemDisplay[gpb OR gpbs FILTLVL>6]: %BLUE%*  *  Perf. Sapphire  *  *%CONTINUE%
+ItemDisplay[gly OR glys FILTLVL>6]: %YELLOW%Flawless Topaz%CONTINUE%
+ItemDisplay[gpy OR gpys FILTLVL>6]: %YELLOW%*  *  Perf. Topaz  *  *%CONTINUE%
+ItemDisplay[skl OR skls FILTLVL>6]: %WHITE%Flawless Skull%CONTINUE%
+ItemDisplay[skz OR skzs FILTLVL>6]: %GRAY%*  *  %WHITE%Perf. Skull  %GRAY%*  *%CONTINUE%
 
 // Formatting for stacked vs unstacked with warning
 ItemDisplay[GEM>0 QTY>1 QTY<51]: %NAME% %TAN%QTY %QTY%%CONTINUE%
@@ -715,7 +715,7 @@ ItemDisplay[RUNE>0 QTY>1 QTY<51]: %NAME% %TAN%QTY %QTY%%CONTINUE%
 // Valuable Crafting rune callout TIR 3, ORT 6, RAL 8, AMN 11, SOL 12, ETH 5
 ItemDisplay[RUNE<21 FILTLVL<5 (RUNE=3 OR RUNE=9 OR RUNE=8 OR RUNE=11 OR RUNE=12 OR RUNE=5)]: %ORANGE%****    %NAME%%ORANGE%    ****%CONTINUE%
 ItemDisplay[RUNE<21 FILTLVL<5 !(RUNE=3 OR RUNE=9 OR RUNE=8 OR RUNE=11 OR RUNE=12 OR RUNE=5)]: %ORANGE%**    %NAME%    %ORANGE%**%CONTINUE%
-ItemDisplay[RUNE<21 FILTLVL>4 FILTLVL<7]: %ORANGE%*  %NAME%  %ORANGE%*%CONTINUE%
+ItemDisplay[RUNE<21 FILTLVL>4 FILTLVL<8]: %ORANGE%*    %NAME%    %ORANGE%*%CONTINUE%
 
 
 // Mid rune
@@ -802,13 +802,13 @@ ItemDisplay[tbk]: %BLUE%+%WHITE%TP Tome
 // Juvs
 ItemDisplay[rvl FILTLVL<3]: %PURPLE%*  %WHITE%Rejuv %PURPLE%65%  %PURPLE%*
 ItemDisplay[rvl FILTLVL<7]: %PURPLE%*    %WHITE%Rejuv %PURPLE%65%%PURPLE%    *
-ItemDisplay[rvl FILTLVL<8]: %WHITE%Rejuv %PURPLE%65%
+ItemDisplay[rvl FILTLVL<8]: %WHITE%Full Rejuv %PURPLE%65%
 ItemDisplay[rvl FILTLVL<9]: %WHITE%juv %PURPLE%65%
 ItemDisplay[rvl FILTLVL=9]: %PURPLE%GATORADE
 ItemDisplay[rvl]:
 ItemDisplay[rvs FILTLVL<3]: %PURPLE%* %WHITE%Rejuv %PURPLE%35% %PURPLE%*
 ItemDisplay[rvs FILTLVL<7]: %WHITE%juv%PURPLE%35%
-ItemDisplay[rvs FILTLVL<8]: %WHITE%j35%
+ItemDisplay[rvs FILTLVL<8]: %WHITE%Rej%PURPLE%35%
 ItemDisplay[rvs FILTLVL=9]: %PURPLE%powerade
 ItemDisplay[rvs]:
 
@@ -830,7 +830,8 @@ ItemDisplay[hp2]: %RED%+ %WHITE%HP2 %RED%+
 ItemDisplay[hp3]: %RED%+ %WHITE%HP3 %RED%+
 ItemDisplay[hp4]: %RED%+ %WHITE%HP4 %RED%+
 ItemDisplay[hp5 FILTLVL<3]: %RED%+ %WHITE%HP5 %RED%+
-ItemDisplay[hp5]: %WHITE%H%RED%P5
+ItemDisplay[hp5 FILTLVL<7]: %WHITE%H%RED%P5
+ItemDisplay[hp5]:
 
 // Show MP Pots
 ItemDisplay[mp1]: %BLUE%+ %WHITE%MP1 %BLUE%+
@@ -2586,7 +2587,7 @@ ItemDisplay[!ID (am1 OR am6 OR amb) MAG FILTLVL<5 ILVL>84]: %NAME% %GREEN%[Craft
 ItemDisplay[!ID (pab OR pa6 OR pa1) MAG FILTLVL<5 ILVL>84]: %NAME% %GREEN%[Craft] //pala shield
 ItemDisplay[!ID MAG (wsp OR 9ws OR 7ws) FILTLVL<5 ILVL>84]: %NAME% %GREEN%[Craft] //4os able scepters
 ItemDisplay[!ID MAG !ETH DRU FILTLVL<5 ILVL>84]: %NAME% %GREEN%[Craft] //dudu helms
-ItemDisplay[!ID MAG NEC FILTLVL<8 ILVL>84]: %NAME% %GREEN%[Craft] //nec heads
+ItemDisplay[!ID MAG NEC FILTLVL<7 ILVL>84]: %NAME% %GREEN%[Craft] //nec heads
 ItemDisplay[!ID ETH SIN MAG FILTLVL<5 ILVL>84]: %NAME% %GREEN%[Craft] //eth sin claws
 ItemDisplay[!ID ETH BAR MAG FILTLVL<5 ILVL>84]: %NAME% %GREEN%[Craft] //barb helm
 ItemDisplay[!ID ETH CHEST MAG FILTLVL<5 ILVL>84]: %NAME% %GREEN%[Craft] //eth chest
@@ -4329,6 +4330,7 @@ ItemDisplay[NMAG !RW !SHOP THROWING SOCK=3]: %NAME%{%GOLD%Plague %GRAY%Cham + Fa
 
 // S11?
 ItemDisplay[7cr NMAG !RW SOCK=0 FILTLVL<7]: %DOT-E1%%TIER-6%%NAME%{%TAN%Imbue at Charsi for Hidden item chance%CL%%NAME%}
+ItemDisplay[7cr NMAG !RW SOCK=0 FILTLVL<8]: %NAME%{%TAN%Imbue at Charsi for Hidden item chance%CL%%NAME%}
 
 // Eth Axe 1H
 ItemDisplay[7wa ETH !INF NMAG !RW (SOCK=0 OR SOCK=3 OR SOCK=5 OR SOCK=6) EDAM>0 (EDAM=15 OR FILTLVL<7)]: %DOT-E1%%NAME%{%NAME%}%CONTINUE%
