@@ -1,4 +1,5 @@
 import csv
+from math import floor
 from typing import Dict
 
 from equipment.equipment import BODY_ARMOR_CONFIG, HELM_CONFIG, SHIELD_CONFIG, Equipment
@@ -55,12 +56,17 @@ PNOVA_DAMAGE_MAPPING = get_poison_nova_base_damage_mapping()
 
 def run(enemy_resist: int,
         is_vampire_form: bool = False,
-        is_bosser: bool = False):
+        is_bosser: bool = False,
+        is_lower_res_merc: bool = False,):
 
     """
     Take Trang set bonus into account.  Set bonus from pieces are already account for in equipment
     Ignore potential Lower Resist curse because of their low effectiveness vs bosses.
     """
+
+
+
+
     dweb = NecromancerEquipment(**D_WEB)
     trang_gloves = NecromancerEquipment(**TRANG_GLOVES)
 
@@ -76,7 +82,7 @@ def run(enemy_resist: int,
             for curr_body_armor in body_armors:
                 for gc, lc in charm_config:
                     curr_equip = [dweb, trang_gloves, curr_helm, curr_shield, curr_body_armor]
-                    curr_damage, config = calculate_damage(enemy_resist, curr_equip, gc, lc, is_vampire_form, is_bosser)
+                    curr_damage, config = calculate_damage(enemy_resist, curr_equip, gc, lc, is_vampire_form, is_bosser, is_lower_res_merc)
                     if curr_damage > max_damage:
                         max_damage = curr_damage
                         print("----------------------------")
@@ -90,7 +96,11 @@ def calculate_damage(enemy_resist: int,
                      equipments: list[Equipment],
                      gc: int, lc: int,
                      is_vampire_form=False,
-                     is_bosser=False):
+                     is_bosser=False,
+                     is_lower_res_merc: bool =False,
+                     ):
+
+    is_lower_res_merc &= not is_bosser  # Merc not applicable for bossing.    Lv 35 Lower Resist = -45
 
     anni_column_plus_skills = 1     # Anni + Gheed's for mapping
     torch_column_plus_skills = 2
@@ -119,8 +129,10 @@ def calculate_damage(enemy_resist: int,
 
     total_pierce = get_total_equipment_pierce(equipments)
     final_enemy_res = enemy_resist - total_pierce
+    if is_lower_res_merc:
+        final_enemy_res -= 45
     if final_enemy_res < 0:
-        final_enemy_res = final_enemy_res / 2   # 50% effectiveness when < 0
+        final_enemy_res = floor(final_enemy_res / 2)   # 50% effectiveness when < 0
 
     config = {"desecrate_level": final_desecrate_level,
               "mastery": total_mastery,
@@ -192,5 +204,6 @@ if __name__ == "__main__":
     # current_directory = os.getcwd()
     # print(current_directory)
     is_vampire_form = False
-    is_bosser = True
-    run(75, is_vampire_form, is_bosser) # D Clone?
+    is_bosser = False
+    is_lower_res_merc = True
+    run(75, is_vampire_form, is_bosser, is_lower_res_merc) # D Clone?

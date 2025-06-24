@@ -85,11 +85,17 @@ HELM_CONFIG = [
         "plus_poison_and_bone_skills": 0,
         "sockets": 2
     },
+    # {
+    #     "name": "+2sk/20FCR 3os Circlet",
+    #     "plus_skills": 2,
+    #     "plus_poison_and_bone_skills": 0,
+    #     "sockets": 3,
+    # },
     {
-        "name": "+2sk/20FCR 3os Circlet",
+        "name": "2os Shako",
         "plus_skills": 2,
         "plus_poison_and_bone_skills": 0,
-        "sockets": 3,
+        "sockets": 2,
     },
 ]
 
@@ -118,12 +124,12 @@ SHIELD_CONFIG = [
     #     "sockets": 3,
     #     "pierce": 0,   # set bonus
     # },
-    # {
-    #     "name": "Boneflame 3OS",
-    #     "plus_skills": 3 + 1,   # 1 from Arach free up
-    #     "sockets": 3,
-    #     "pierce": 0,   # set bonus
-    # },
+    {
+        "name": "Boneflame 3OS",
+        "plus_skills": 3 + 1,   # 1 from Arach free up
+        "sockets": 3,
+        "pierce": 0,   # set bonus
+    },
 ]
 
 BODY_ARMOR_CONFIG = [

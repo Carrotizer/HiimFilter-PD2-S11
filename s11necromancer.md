@@ -60,7 +60,8 @@ Need 31 from charms.
 75% 10
 125% 9
 
-
+#
+JuxtaPoser DClone build: https://www.projectdiablo2.com/armory/builds/6858783ffe755a2c4e0586bc
 
 # Necromancer Shrunken Head
 ## Prefixes

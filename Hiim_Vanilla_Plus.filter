@@ -715,15 +715,15 @@ ItemDisplay[RUNE>0 QTY>1 QTY<51]: %NAME% %TAN%QTY %QTY%%CONTINUE%
 // Valuable Crafting rune callout TIR 3, ORT 6, RAL 8, AMN 11, SOL 12, ETH 5
 ItemDisplay[RUNE<21 FILTLVL<5 (RUNE=3 OR RUNE=9 OR RUNE=8 OR RUNE=11 OR RUNE=12 OR RUNE=5)]: %ORANGE%****    %NAME%%ORANGE%    ****%CONTINUE%
 ItemDisplay[RUNE<21 FILTLVL<5 !(RUNE=3 OR RUNE=9 OR RUNE=8 OR RUNE=11 OR RUNE=12 OR RUNE=5)]: %ORANGE%**    %NAME%    %ORANGE%**%CONTINUE%
-ItemDisplay[RUNE<21 FILTLVL>4 FILTLVL<8]: %ORANGE%*    %NAME%    %ORANGE%*%CONTINUE%
+ItemDisplay[RUNE<21 FILTLVL>4 FILTLVL<8]: %ORANGE%*            %NAME%            %ORANGE%*%CONTINUE%
 
 
 // Mid rune
-ItemDisplay[RUNE>20 AND RUNE<24]: %PURPLE%<> <>    %NAME%%PURPLE%    <> <>%CONTINUE%
-ItemDisplay[RUNE>23 AND RUNE<26]: %PURPLE%<> <> <>    %NAME%%PURPLE%    <> <> <>%CONTINUE%
+ItemDisplay[RUNE>20 AND RUNE<24]: %PURPLE%<>  <>     %NAME%%PURPLE%     <>  <>%CONTINUE%
+ItemDisplay[RUNE>23 AND RUNE<26]: %PURPLE%<>  <>  <>     %NAME%%PURPLE%     <>  <>  <>%CONTINUE%
 // High rune
-ItemDisplay[RUNE>25 RUNE<30]: %PURPLE%<%ORANGE%!%PURPLE%> <%ORANGE%!%PURPLE%> <%ORANGE%!%PURPLE%> <%ORANGE%!%PURPLE%>     %NAME%%PURPLE%    <%ORANGE%!%PURPLE%> <%ORANGE%!%PURPLE%> <%ORANGE%!%PURPLE%> <%ORANGE%!%PURPLE%>%CONTINUE%
-ItemDisplay[RUNE>29]: %PURPLE%<%GREEN%!%PURPLE%> <%GREEN%!%PURPLE%> <%GREEN%!%PURPLE%> <%GREEN%!%PURPLE%>     %NAME%%PURPLE%    <%GREEN%!%PURPLE%> <%GREEN%!%PURPLE%> <%GREEN%!%PURPLE%> <%GREEN%!%PURPLE%>%CONTINUE%
+ItemDisplay[RUNE>25 RUNE<30]: %PURPLE%<%ORANGE%!%PURPLE%>  <%ORANGE%!%PURPLE%>  <%ORANGE%!%PURPLE%>  <%ORANGE%!%PURPLE%>     %NAME%%PURPLE%    <%ORANGE%!%PURPLE%>  <%ORANGE%!%PURPLE%>  <%ORANGE%!%PURPLE%>  <%ORANGE%!%PURPLE%>%CONTINUE%
+ItemDisplay[RUNE>29]: %PURPLE%<%GREEN%!%PURPLE%>  <%GREEN%!%PURPLE%>  <%GREEN%!%PURPLE%>  <%GREEN%!%PURPLE%>     %NAME%%PURPLE%    <%GREEN%!%PURPLE%>  <%GREEN%!%PURPLE%>  <%GREEN%!%PURPLE%>  <%GREEN%!%PURPLE%>%CONTINUE%
 
 //-----------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------
@@ -1025,7 +1025,7 @@ ItemDisplay[MAG amu !ID (MAPID=181 OR MAPID=182)]: %NAME%%DOT-91%%TIER-2%
 // Ideal level to exclude unwanted modifiers?
 // Level requirement: This is different from D2R.
 // * Crafted items no longer have higher level requirements than their rare equivalents (was +10 with an additional +3 per affix, up to +22)
-ItemDisplay[MAG amu ILVL>84 ILVL<90 !ID]:%NOTIFY-DEAD%%NAME% %GREEN%[Craft]     // Below 90 to max chance of +3 sk and pick up not too many?
+// ItemDisplay[MAG amu ILVL>84 ILVL<90 !ID]:%NOTIFY-DEAD%%NAME% %GREEN%[Craft]     // Below 90 to max chance of +3 sk and pick up not too many?
 ItemDisplay[MAG (rin OR amu) !ID]:%NOTIFY-DEAD%
 //90+ amu 2skill
 // ItemDisplay[RARE amu !ID (FILTLVL<5 OR ALVL>89) FILTLVL<7]: %ORANGE%X X    %NAME%    %ORANGE%X X%CONTINUE%
@@ -1037,7 +1037,7 @@ ItemDisplay[RARE amu !ID]: %DOT-9B%%NAME%
 
 // Jewel
 ItemDisplay[MAG (jew) !ID FILTLVL<7]: %DOT-91%%YELLOW%XX%BLUE%     %NAME%     %YELLOW%XX
-ItemDisplay[MAG (jew) !ID FILTLVL=7]: %NAME%
+ItemDisplay[MAG (jew) !ID FILTLVL=7]: %YELLOW%XX%BLUE%       %NAME%       %YELLOW%XX
 ItemDisplay[RARE jew !ID ILVL>84]: %DOT-A8%%PURPLE%X X X%YELLOW%     %NAME%     %PURPLE%X X X
 ItemDisplay[RARE jew !ID]: %DOT-9B%%ORANGE%X X%YELLOW%     %NAME%     %ORANGE%X X
 
@@ -1057,13 +1057,13 @@ ItemDisplay[ci3 NMAG !ETH SOCK=0 FILTLVL<3]: %NAME% %GRAY%[imbue]{%TAN%Note%WHIT
 // grand
 ItemDisplay[MAG cm3 ILVL>90 !ID]: %YELLOW%HIGH LEVEL %NAME%%CONTINUE%
 ItemDisplay[MAG cm3 ILVL<61 ILVL>49 !ID]: %BLUE%Mid Level %NAME%%CONTINUE%
-ItemDisplay[MAG cm3 !ID ILVL>89 FILTLVL<9]: %DOT-9B%%YELLOW%XX     %NAME%     %YELLOW%XX
-ItemDisplay[MAG cm3 !ID ILVL>49 FILTLVL<8]: %DOT-9B%%TIER-6%%YELLOW%X   %NAME%   %YELLOW%X
+ItemDisplay[MAG cm3 !ID ILVL>89 FILTLVL<9]: %DOT-9B%%YELLOW%XX        %NAME%        %YELLOW%XX
+ItemDisplay[MAG cm3 !ID ILVL>49 FILTLVL<8]: %DOT-9B%%TIER-6%%YELLOW%X      %NAME%      %YELLOW%X
 ItemDisplay[MAG cm3 CLVL<80 !ID]: %DOT-9B%%YELLOW%X      %NAME%      %YELLOW%X
 ItemDisplay[MAG cm3 !ID FILTLVL<7]: %NAME%
 // small
 ItemDisplay[MAG cm1 !ID FILTLVL>6]: %BLUE%Small Charm ?%CONTINUE%
-ItemDisplay[MAG cm1 !ID ILVL>89 FILTLVL>6 FILTLVL<9]: %DOT-9B%%TIER-6%%YELLOW%XX %NAME% %YELLOW%XX
+ItemDisplay[MAG cm1 !ID ILVL>89 FILTLVL>6 FILTLVL<9]: %DOT-9B%%TIER-6%%YELLOW%XX     %NAME%     %YELLOW%XX
 ItemDisplay[MAG cm1 !ID ILVL>89 FILTLVL<9]: %DOT-9B%%TIER-6%%YELLOW%XX     %NAME%     %YELLOW%XX
 ItemDisplay[MAG cm1 !ID FILTLVL<8]: %DOT-9B%%TIER-6%%YELLOW%X   %NAME%    %YELLOW%X
 ItemDisplay[MAG cm1 !ID FILTLVL<9]: %NAME%
@@ -4552,8 +4552,8 @@ ItemDisplay[7cr !INF SUP !RW EDAM=15 !(SOCK=1)]: %NAME%{%NAME%}
 
 // Maces
 ItemDisplay[fla NMAG !RW !INF (SOCK=0 OR SOCK>2) FILTLVL<3]: %NAME%{%NAME%}
-// ItemDisplay[fla NMAG !RW !INF !ETH SOCK=4 FILTLVL<8]: %NAME%{%NAME%}        // HotO base
-ItemDisplay[fla NMAG !RW !INF !ETH SOCK=5 FILTLVL<8]: %NAME%{%NAME%}        // CtA base
+ItemDisplay[fla NMAG !RW !INF !ETH SOCK=4 FILTLVL<8]: %NAME%{%NAME%}        // HotO base
+// ItemDisplay[fla NMAG !RW !INF !ETH SOCK=5 FILTLVL<8]: %NAME%{%NAME%}        // CtA base
 
 // Wands Dominion SK94	Fire Golem SK85	Blood Golem SK367 Blood Warp SK91 Lower Resist SK68 Bone Armor SK95 revive
 ItemDisplay[WAND !(wnd OR ywn OR 9wn) SK94>2 SK68>0 (SK91>0 OR SK95>0) !SOCK=1 NMAG !RW]: %DOT-D6%%PURPLE%O O %NAME% %PURPLE%O O{%NAME%%NL%%PURPLE%GG Dominion Base}
