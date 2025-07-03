@@ -60,8 +60,30 @@ Need 31 from charms.
 75% 10
 125% 9
 
-#
+# Skill Points
+## Bone Prison / Bone Wall?
+Pretty fun utilities.  At least 1 point each.  Potentially more for Bone Armor synergy. 
+At lv 16, 23 life per hit, so 105 life per hit.  
+
+TODO: After respec, try mapping with no investment in Blood Golem/Golem Mastery.  
+Then try with 5 points in Golem Mastery
+
+# Bossing
+## Lucion
+### Lightning Resist 
+Need 15 max from gear.
+2 From 
+
+## DClone
 JuxtaPoser DClone build: https://www.projectdiablo2.com/armory/builds/6858783ffe755a2c4e0586bc
+
+## Rathma
+
+
+
+
+
+
 
 # Necromancer Shrunken Head
 ## Prefixes

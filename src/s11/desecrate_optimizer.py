@@ -63,10 +63,6 @@ def run(enemy_resist: int,
     Take Trang set bonus into account.  Set bonus from pieces are already account for in equipment
     Ignore potential Lower Resist curse because of their low effectiveness vs bosses.
     """
-
-
-
-
     dweb = NecromancerEquipment(**D_WEB)
     trang_gloves = NecromancerEquipment(**TRANG_GLOVES)
 
@@ -77,6 +73,7 @@ def run(enemy_resist: int,
     config = {}
     max_damage = -1
     charm_config = [(gc , 8 - gc) for gc in range(8)]
+    # charm_config = [(7, 1)]
     for curr_helm in helms:
         for curr_shield in shields:
             for curr_body_armor in body_armors:
@@ -204,6 +201,6 @@ if __name__ == "__main__":
     # current_directory = os.getcwd()
     # print(current_directory)
     is_vampire_form = False
-    is_bosser = False
-    is_lower_res_merc = True
+    is_bosser = True
+    is_lower_res_merc = False
     run(75, is_vampire_form, is_bosser, is_lower_res_merc) # D Clone?

@@ -808,7 +808,7 @@ ItemDisplay[rvl FILTLVL=9]: %PURPLE%GATORADE
 ItemDisplay[rvl]:
 ItemDisplay[rvs FILTLVL<3]: %PURPLE%* %WHITE%Rejuv %PURPLE%35% %PURPLE%*
 ItemDisplay[rvs FILTLVL<7]: %WHITE%juv%PURPLE%35%
-ItemDisplay[rvs FILTLVL<8]: %WHITE%Rej%PURPLE%35%
+ItemDisplay[rvs FILTLVL<8]: %WHITE%Rejuv%PURPLE%35%
 ItemDisplay[rvs FILTLVL=9]: %PURPLE%powerade
 ItemDisplay[rvs]:
 
@@ -1788,8 +1788,8 @@ ItemDisplay[UNI !ID FILTLVL<8 (7tw OR uml OR xar OR ulg OR urg OR xlt OR 8mx OR 
 // Heart Carver - Rondel
 // Bloodfist - Heavy Gloves
 // Duskdeep - Full Helm
-ItemDisplay[UNI !ID FILTLVL>5 fhl]:
-ItemDisplay[UNI !ID FILTLVL<8 (xpl OR zvb OR xlg OR xmg OR xhg OR xth OR baf OR utp OR uvb OR amb OR amd OR 9di OR vgl)]: %DOT-68%%SOUNDID-2666%%GOLD%*  %NAME%  %GOLD%*
+ItemDisplay[UNI !ID FILTLVL>5 (9di OR fhl)]:
+ItemDisplay[UNI !ID FILTLVL<8 (xpl OR zvb OR xlg OR xmg OR xhg OR xth OR baf OR utp OR uvb OR amb OR amd OR vgl)]: %DOT-68%%SOUNDID-2666%%GOLD%*  %NAME%  %GOLD%*
 
 
 // Tier 0 Unique Callouts
@@ -4553,7 +4553,7 @@ ItemDisplay[7cr !INF SUP !RW EDAM=15 !(SOCK=1)]: %NAME%{%NAME%}
 // Maces
 ItemDisplay[fla NMAG !RW !INF (SOCK=0 OR SOCK>2) FILTLVL<3]: %NAME%{%NAME%}
 ItemDisplay[fla NMAG !RW !INF !ETH SOCK=4 FILTLVL<8]: %NAME%{%NAME%}        // HotO base
-// ItemDisplay[fla NMAG !RW !INF !ETH SOCK=5 FILTLVL<8]: %NAME%{%NAME%}        // CtA base
+ItemDisplay[fla NMAG !RW !INF !ETH SOCK=5 FILTLVL<8]: %NAME%{%NAME%}        // CtA base
 
 // Wands Dominion SK94	Fire Golem SK85	Blood Golem SK367 Blood Warp SK91 Lower Resist SK68 Bone Armor SK95 revive
 ItemDisplay[WAND !(wnd OR ywn OR 9wn) SK94>2 SK68>0 (SK91>0 OR SK95>0) !SOCK=1 NMAG !RW]: %DOT-D6%%PURPLE%O O %NAME% %PURPLE%O O{%NAME%%NL%%PURPLE%GG Dominion Base}

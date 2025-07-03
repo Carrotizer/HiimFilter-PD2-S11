@@ -92,8 +92,8 @@ HELM_CONFIG = [
     #     "sockets": 3,
     # },
     {
-        "name": "2os Shako",
-        "plus_skills": 2,
+        "name": "2os Shako +1sk",
+        "plus_skills": 3,
         "plus_poison_and_bone_skills": 0,
         "sockets": 2,
     },
@@ -112,6 +112,12 @@ SHIELD_CONFIG = [
         "sockets": 3,
         "pierce": 25,   # set bonus
     },
+    {
+        "name": "Lucion - Trang-Oul's Wing [Lo Lo Facet]",
+        "plus_skills": 2,
+        "sockets": 1,
+        "pierce": 25,   # set bonus
+    },
     # {
     #     "name": "Trang-Oul's Wing 2OS +6% max life",
     #     "plus_skills": 2,
@@ -124,10 +130,16 @@ SHIELD_CONFIG = [
     #     "sockets": 3,
     #     "pierce": 0,   # set bonus
     # },
+    # {
+    #     "name": "Boneflame 3OS",
+    #     "plus_skills": 3 + 1,   # 1 from Arach free up
+    #     "sockets": 3,
+    #     "pierce": 0,   # set bonus
+    # },
     {
-        "name": "Boneflame 3OS",
+        "name": "Lucion - Boneflame [Lo Lo Facet]",
         "plus_skills": 3 + 1,   # 1 from Arach free up
-        "sockets": 3,
+        "sockets": 1,
         "pierce": 0,   # set bonus
     },
 ]
@@ -154,20 +166,20 @@ BODY_ARMOR_CONFIG = [
         "plus_skills": 0,
         "sockets": 0,
     },
-    {
-        "name": "Venom Ward 3OS",
-        "mastery": 0,
-        "pierce": 12,
-        "plus_skills": 0,
-        "sockets": 3,
-    },
-    {
-        "name": "Arkaine's Valor 3OS",
-        "mastery": 0,
-        "pierce": 0,
-        "plus_skills": 2,
-        "sockets": 3,
-    },
+    # {
+    #     "name": "Venom Ward 3OS",
+    #     "mastery": 0,
+    #     "pierce": 12,
+    #     "plus_skills": 0,
+    #     "sockets": 3,
+    # },
+    # {
+    #     "name": "Arkaine's Valor 3OS",
+    #     "mastery": 0,
+    #     "pierce": 0,
+    #     "plus_skills": 2,
+    #     "sockets": 3,
+    # },
 ]
 
 # Each one is 1 column.
