@@ -68,6 +68,16 @@ At lv 16, 23 life per hit, so 105 life per hit.
 TODO: After respec, try mapping with no investment in Blood Golem/Golem Mastery.  
 Then try with 5 points in Golem Mastery
 
+## Golem Mastery?
+Not worth investment.  20 Revive is clearly best/most fun.
+Blood Golems are too weak with remaining points.
+
+## 1 point in Lower Resist?
+Try this on next stat reset.
+...maybe.  1 second duration so there's very little up-time....
+
+
+
 # Bossing
 ## Lucion
 ### Lightning Resist 
