@@ -106,12 +106,12 @@ SHIELD_CONFIG = [
     #     "sockets": 2,
     #     "pierce": 25,
     # },
-    {
-        "name": "Trang-Oul's Wing 3OS",
-        "plus_skills": 2,
-        "sockets": 3,
-        "pierce": 25,   # set bonus
-    },
+    # {
+    #     "name": "Trang-Oul's Wing 3OS",
+    #     "plus_skills": 2,
+    #     "sockets": 3,
+    #     "pierce": 25,   # set bonus
+    # },
     {
         "name": "Lucion - Trang-Oul's Wing [Lo Lo Facet]",
         "plus_skills": 2,
@@ -140,6 +140,12 @@ SHIELD_CONFIG = [
         "name": "Lucion - Boneflame [Lo Lo Facet]",
         "plus_skills": 3 + 1,   # 1 from Arach free up
         "sockets": 1,
+        "pierce": 0,   # set bonus
+    },
+    {
+        "name": "+6 Desecrate 2OS Shrunken Head",
+        "plus_skills": 6,   # GG Desecrate
+        "sockets": 2,
         "pierce": 0,   # set bonus
     },
 ]

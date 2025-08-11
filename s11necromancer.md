@@ -82,10 +82,16 @@ Try this on next stat reset.
 ## Lucion
 ### Lightning Resist 
 Need 15 max from gear.
-2 From 
+10% from Thundergod
+2% from Amulet
+3% from Boots to maximize 
 
 ## DClone
 JuxtaPoser DClone build: https://www.projectdiablo2.com/armory/builds/6858783ffe755a2c4e0586bc
+10% from Amulet
+5% from Boots 
+2x Dwarf Star
+
 
 ## Rathma
 

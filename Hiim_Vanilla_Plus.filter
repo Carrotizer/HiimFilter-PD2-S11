@@ -108,9 +108,9 @@ ItemDisplay[UNI !ID FILTLVL>5 fhl]:
 // PD2 ITEMS
 //-----------------------------------------------------------------------------------
 // PD2 ITEMS - General
-ItemDisplay[wss]: %PURPLE%WORLDSTAR!!! %CONTINUE%
-ItemDisplay[wss QTY>1]: %NAME%%TAN%QTY %QTY% %CONTINUE%
-ItemDisplay[wss]: %MAP-62%%ORANGE%O O O %NAME%%ORANGE%O O O%WHITE%{%TAN%Unsock Item: 50% Mod, 25% Brick, 25% Sockets%CL%Sock Item: 75% Mod, 25% Brick%CL%Maps: 70% Mod, 30% CNC%CL%%ORANGE%Cube w/ item to corrupt%CL%50 Wss Stack ~.75}
+ItemDisplay[wss]: %PURPLE%Worldstone Shard%CONTINUE%
+ItemDisplay[wss QTY>1]: %NAME% %TAN%QTY %QTY% %CONTINUE%
+ItemDisplay[wss]: %MAP-62%%ORANGE%O O O O O %NAME% %ORANGE%O O O O O%WHITE%{%TAN%Unsock Item: 50% Mod, 25% Brick, 25% Sockets%CL%Sock Item: 75% Mod, 25% Brick%CL%Maps: 70% Mod, 30% CNC%CL%%ORANGE%Cube w/ item to corrupt%CL%50 Wss Stack ~.75}
 
 ItemDisplay[cwss QTY=1]: %MAP-0A%%DARK_GREEN%<> <> <> %ORANGE%Tainted %PURPLE%WORLDSTAR!!! %DARK_GREEN%<> <> <>{%RED%Corrupts %TAN%your Annihilus}
 ItemDisplay[cwss QTY>1]: %MAP-0A%%DARK_GREEN%<> <> <> %ORANGE%Tainted %PURPLE%WORLDSTAR!!! %ORANGE%QTY %QTY% %DARK_GREEN%<> <> <>{%RED%Corrupts %TAN%your Annihilus}
@@ -1112,6 +1112,8 @@ ItemDisplay[RARE !WEAPON (ILVL>84) !ID FILTLVL<3]: %DOT-ED%%YELLOW%* %NAME% %YEL
 ItemDisplay[RARE ARMOR ETH !ID FILTLVL<7]: %NAME%
 ItemDisplay[RARE (GLOVES OR BELT) ETH !ID FILTLVL<8]: %NAME%
 ItemDisplay[RARE BOOTS (ILVL>84) !ID FILTLVL<8]: %NAME%
+ItemDisplay[RARE BELT (ILVL>84) !ID FILTLVL<8]: %NAME%      // looking for PDR + Life + res for bossing
+ItemDisplay[RARE CHEST (ILVL>84) !ID FILTLVL<8]: %NAME%
 ItemDisplay[(GLOVES OR BELT OR CHEST) RARE (ILVL>84) !ID FILTLVL<7]: %NAME%
 
 // Rare extra cases
@@ -4336,7 +4338,7 @@ ItemDisplay[NMAG !RW !SHOP THROWING SOCK=3]: %NAME%{%GOLD%Plague %GRAY%Cham + Fa
 
 // S11?
 ItemDisplay[7cr NMAG !RW SOCK=0 FILTLVL<7]: %DOT-E1%%TIER-6%%NAME%{%TAN%Imbue at Charsi for Hidden item chance%CL%%NAME%}
-ItemDisplay[7cr NMAG !SUP !RW SOCK=0 FILTLVL<8]: %NAME%{%TAN%Imbue at Charsi for Hidden item chance%CL%%NAME%}
+// ItemDisplay[7cr NMAG !SUP !RW SOCK=0 FILTLVL<8]: %NAME%{%TAN%Imbue at Charsi for Hidden item chance%CL%%NAME%}
 
 // Eth Axe 1H
 ItemDisplay[7wa ETH !INF NMAG !RW (SOCK=0 OR SOCK=3 OR SOCK=5 OR SOCK=6) EDAM>0 (EDAM=15 OR FILTLVL<7)]: %DOT-E1%%NAME%{%NAME%}%CONTINUE%
@@ -4390,6 +4392,7 @@ ItemDisplay[(wsp OR 9ws OR 7ws) SK119>2 NMAG !INF (SOCK=0 OR SOCK=5) !RW FILTLVL
 
 // Infi/Insi/Pride and Obedience/Doom
 ItemDisplay[(SPEAR OR POLEARM) ELT ETH !INF SOCK=0 NMAG !RW (EDAM=15 OR FILTLVL<7)]: %DOT-D6%%NAME%{%NAME%}
+ItemDisplay[ELT ETH !INF SOCK=4 NMAG !RW (7tr) (EDAM=15 OR FILTLVL<8)]: %NAME% // eth 4os Stygian Pike - Infinity base
 
 // Insight for A3 SK99 prayer SK109 cleansing
 // RIP ItemDisplay[NMAG !INF !RW SOCK=4 (SK99>2 OR SK109>2) (wsp OR 9ws OR 7ws) FILTLVL<5]: %DOT-D6%%NAME% %DARK_GREEN%[Insight]{%NAME%}%CONTINUE% // All Scepter, 4os
@@ -4446,6 +4449,7 @@ ItemDisplay[(ob5 OR oba OR obf) (SK40>2 OR SK52>2) !INF (SOCK=0 OR SOCK=3) NMAG 
 
 // Daggers
 ItemDisplay[(7kr OR 9kr OR kri) (SOCK=0 OR SOCK=3) !ETH NMAG (SK73>2) FILTLVL<7]: %NAME%{%NAME%}
+ItemDisplay[!ID RARE DAGGER ASSASSIN !THROWING FILTLVL<9 ILVL>84]: %NAME%
 
 // Purity Base for leveling
 ItemDisplay[FILTLVL<5 ELT (STAFF OR BOW OR XBOW) !INF NMAG !RW SOCK=3]: %DOT-D6%%NAME% %DARK_GREEN%[Purity]{%NAME%%CL%%GREEN%Purity RW Base}

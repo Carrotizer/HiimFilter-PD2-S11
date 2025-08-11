@@ -72,8 +72,7 @@ def run(enemy_resist: int,
 
     config = {}
     max_damage = -1
-    charm_config = [(gc , 8 - gc) for gc in range(8)]
-    # charm_config = [(7, 1)]
+    charm_config = [(gc , 8 - gc) for gc in range(9)]
     for curr_helm in helms:
         for curr_shield in shields:
             for curr_body_armor in body_armors:
@@ -99,7 +98,7 @@ def calculate_damage(enemy_resist: int,
 
     is_lower_res_merc &= not is_bosser  # Merc not applicable for bossing.    Lv 35 Lower Resist = -45
 
-    anni_column_plus_skills = 1     # Anni + Gheed's for mapping
+    anni_column_plus_skills = 2     # Anni + Gheed's for mapping
     torch_column_plus_skills = 2
     battle_command_plus_skills = 1
     amulet_plus_skills = 2  # Let's set this to 2 for now.  Could consider Third Eye Amulet
@@ -194,7 +193,10 @@ if __name__ == "__main__":
     Desecrate Level: 46, tooltip: 11443.249999999998
     Total mastery: 82 | Total Pierce: 90
     """
-
+    # https://exiledagain.github.io/bug-free-eureka/areaexplorer.html
+    # T2 Lucion: 40 (30 + 2 x 5%)
+    # T2 DClone: 40 (30 + 2 x 5%)
+    # T2 Rathma/Mendeln: 10 (0 + 2 x 5%)
 
 
     # import os
@@ -203,4 +205,4 @@ if __name__ == "__main__":
     is_vampire_form = False
     is_bosser = True
     is_lower_res_merc = False
-    run(75, is_vampire_form, is_bosser, is_lower_res_merc) # D Clone?
+    run(40, is_vampire_form, is_bosser, is_lower_res_merc) # D Clone?
