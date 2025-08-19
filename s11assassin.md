@@ -22,4 +22,25 @@ Note +1 skill from Tyrael's Might wouldn't increase movement speed for Vigor by 
 Gorgon Crossbow Frames (without Faith):
 0, 9, 19, 32, 54, 86, 152 (8 frame max)
 
-Grand Matron Bow Frames:
+# Jewel Affixes
+## Jewel Prefixes (all possible on rares unless noted otherwise)
+* Cardinal	+[10-14] to Minimum Damage
+* Vermillion	+[11-15] to Maximum Damage
+* Ruby	+[31-40]% Enhanced Damage
+* Shimmering	All Resistances +[5-10]
+* Diamond	+[25-50] to Attack Rating against Demons, +[25-40]% Damage to Demons
+* Pearl +[25-50] to Attack Rating against Undead, +[25-50]% Damage to Undead
+
+## Jewel Suffixes (all possible on rares unless noted otherwise)
+* Carnage	+[11-15] to Maximum Damage
+* Bliss	+[5-10] to Minimum Damage
+* Daring	+[7-9] to Dexterity
+* Truth	+7% Faster Hit Recovery
+* Hope	+[9-20] to Life
+* Freedom	Requirements -15%
+* Virility	+[7-9] to Strength
+
+### Ideal Jewels
+#### Veil of Steel
+Prefixes: 40ED
+Suffixes: -15% Req & (max damage | FHR | life)
