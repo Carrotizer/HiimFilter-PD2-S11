@@ -44,3 +44,12 @@ Gorgon Crossbow Frames (without Faith):
 #### Veil of Steel
 Prefixes: 40ED
 Suffixes: -15% Req & (max damage | FHR | life)
+
+# Bossing
+## Lucion
+## DClone
+https://projectdiablo2.com/armory/builds/68a5ff7800a682833aadbd08
+
+
+# Craft bases
+## ED Craft: 

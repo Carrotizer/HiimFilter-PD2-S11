@@ -1005,7 +1005,7 @@ ItemDisplay[(aqv OR cqv) RARE !ID AMAZON FILTLVL<7]: %YELLOW%*   %NAME%   *
 // Arrows and Bolts - Non zon
 ItemDisplay[(aqv OR cqv) NMAG]:
 ItemDisplay[(aqv OR cqv) MAG !ID]:
-ItemDisplay[cqv RARE !ID FILTLVL>6]:%NAME%
+ItemDisplay[cqv RARE !ID FILTLVL>6]:
 ItemDisplay[cqv FILTLVL>4 !ID]:
 ItemDisplay[aqv FILTLVL>4 !ID]:
 //-----------------------------------------------------------------------------------
@@ -2620,7 +2620,17 @@ ItemDisplay[!ID THROWING MAG ETH FILTLVL<3]: %NAME% %GREEN%[Craft]//Catch all th
 ItemDisplay[!ID WEAPON MAG ETH FILTLVL<3]: %NAME% %GREEN%[Craft]//Catch all eth weapons when lower filter level
 
 // Assassin-specific for rest of S11
-ItemDisplay[!ID ETH SIN (MAG OR RARE) FILTLVL<9 ILVL>84]: %DOT-ED%%TIER-6%%NAME% %GREEN%[Craft] //eth sin claws
+Alias[SUWAYYAHLINE]: (ktr OR 9ar OR 7ar)    // High ED bases
+Alias[WARFISTLINE]: (axf OR 9xf OR 7xf)
+Alias[SCISSORSSUWAYYAHLINE]: (skr OR 9qr OR 7qr)
+Alias[WRISTSWORDLINE]: (wrb OR 9wb OR 7wb)  // Low ED bases - only craft
+Alias[BATTLECESTUSLINE]: (ces OR 9cs OR 7cs)
+Alias[FERALCLAWLINE]: (clw OR 9lw OR 7lw)
+Alias[RUNICTALONLINE]: (btl OR 9tw OR 7tw)
+
+// ItemDisplay[!ID ETH (ktr OR 9ar OR 7ar OR axf OR 9xf OR 7xf OR skr OR 9qr OR 7qr) (MAG OR RARE) FILTLVL<9 ILVL>84]: %DOT-ED%%GREEN%* * %BLUE%%NAME% %GREEN%[ED Craft] * *
+ItemDisplay[!ID ETH (SUWAYYAHLINE OR WARFISTLINE OR SCISSORSSUWAYYAHLINE) (MAG OR RARE) FILTLVL<9 ILVL>84]: %DOT-ED%%GREEN%* * %BLUE%%NAME% %GREEN%[ED Craft] * *
+ItemDisplay[(WRISTSWORDLINE OR BATTLECESTUSLINE OR FERALCLAWLINE OR RUNICTALONLINE) (MAG OR RARE) FILTLVL<9 ILVL>84]: %NAME% %GREEN%[+Sk Craft]
 // Daggers - Mithil Point line is best damage. Legend Spike line can get 3 socket.
 ItemDisplay[!ID (MAG OR RARE) DAGGER ETH !THROWING (dir OR 9di OR 7di OR bld OR 9bl OR 7bl) FILTLVL<9 ILVL>84]: %DOT-ED%%GREEN%* * %BLUE%%NAME% %GREEN%[Craft] * *
 
@@ -4345,7 +4355,7 @@ ItemDisplay[NMAG !RW !SHOP THROWING SOCK=3]: %NAME%{%GOLD%Plague %GRAY%Cham + Fa
 
 // S11?
 ItemDisplay[7cr NMAG !RW SOCK=0 FILTLVL<7]: %DOT-E1%%TIER-6%%NAME%{%TAN%Imbue at Charsi for Hidden item chance%CL%%NAME%}
-// ItemDisplay[7cr NMAG !SUP !RW SOCK=0 FILTLVL<8]: %NAME%{%TAN%Imbue at Charsi for Hidden item chance%CL%%NAME%}
+ItemDisplay[7cr NMAG !SUP !RW SOCK=0 FILTLVL<8]: %NAME%{%TAN%Imbue at Charsi for Hidden item chance%CL%%NAME%}
 
 // Eth Axe 1H
 ItemDisplay[7wa ETH !INF NMAG !RW (SOCK=0 OR SOCK=3 OR SOCK=5 OR SOCK=6) EDAM>0 (EDAM=15 OR FILTLVL<7)]: %DOT-E1%%NAME%{%NAME%}%CONTINUE%
@@ -4565,7 +4575,7 @@ ItemDisplay[7cr !INF SUP !RW EDAM=15 !(SOCK=1)]: %NAME%{%NAME%}
 // Maces
 ItemDisplay[fla NMAG !RW !INF (SOCK=0 OR SOCK>2) FILTLVL<3]: %NAME%{%NAME%}
 ItemDisplay[fla NMAG !RW !INF !ETH SOCK=4 FILTLVL<8]: %NAME%{%NAME%}        // HotO base
-ItemDisplay[fla NMAG !RW !INF !ETH SOCK=5 FILTLVL<8]: %NAME%{%NAME%}        // CtA base
+// ItemDisplay[fla NMAG !RW !INF !ETH SOCK=5 FILTLVL<8]: %NAME%{%NAME%}        // CtA base
 
 // Wands Dominion SK94	Fire Golem SK85	Blood Golem SK367 Blood Warp SK91 Lower Resist SK68 Bone Armor SK95 revive
 ItemDisplay[WAND !(wnd OR ywn OR 9wn) SK94>2 SK68>0 (SK91>0 OR SK95>0) !SOCK=1 NMAG !RW]: %DOT-D6%%PURPLE%O O %NAME% %PURPLE%O O{%NAME%%NL%%PURPLE%GG Dominion Base}
