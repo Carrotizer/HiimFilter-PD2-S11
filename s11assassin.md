@@ -46,10 +46,30 @@ Prefixes: 40ED
 Suffixes: -15% Req & (max damage | FHR | life)
 
 # Bossing
+https://exiledagain.github.io/bug-free-eureka/areaexplorer.html
 ## Lucion
 ## DClone
 https://projectdiablo2.com/armory/builds/68a5ff7800a682833aadbd08
+https://www.projectdiablo2.com/armory/builds/68abf0c7de6e0647b5182024
 
 
-# Craft bases
+Need 90% max fire
+Want 140% Fire
+
+240 total fire res
++30 from Mara quests
+30 to 50 from Laying of Hand
+20 from Torch
+15 from Anni
+10 from Waterwalk
+
+## Rathma
+https://live.projectdiablo2.com/armory/builds/68c25aeb5fc6565bc0c74768 (mapping)
+https://live.projectdiablo2.com/armory/builds/68c25a3f5fc6565bc0c74765
+
+# Crafting:
+## Claws
+### Offhand:
+Local mods: https://discord.com/channels/701658302085595158/776859543141089330/1234348584363757628
+
 ## ED Craft: 

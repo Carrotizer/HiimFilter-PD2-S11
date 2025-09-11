@@ -2628,11 +2628,16 @@ Alias[BATTLECESTUSLINE]: (ces OR 9cs OR 7cs)
 Alias[FERALCLAWLINE]: (clw OR 9lw OR 7lw)
 Alias[RUNICTALONLINE]: (btl OR 9tw OR 7tw)
 
+Alias[MITHRILPOINTLINE]: (dir OR 9di OR 7di)  // Best damage daggers
+Alias[LEGENDSPIKELINE]: (bld OR 9bl OR 7bl)   // 3 socket daggers
+
 // ItemDisplay[!ID ETH (ktr OR 9ar OR 7ar OR axf OR 9xf OR 7xf OR skr OR 9qr OR 7qr) (MAG OR RARE) FILTLVL<9 ILVL>84]: %DOT-ED%%GREEN%* * %BLUE%%NAME% %GREEN%[ED Craft] * *
 ItemDisplay[!ID ETH (SUWAYYAHLINE OR WARFISTLINE OR SCISSORSSUWAYYAHLINE) (MAG OR RARE) FILTLVL<9 ILVL>84]: %DOT-ED%%GREEN%* * %BLUE%%NAME% %GREEN%[ED Craft] * *
-ItemDisplay[(WRISTSWORDLINE OR BATTLECESTUSLINE OR FERALCLAWLINE OR RUNICTALONLINE) (MAG OR RARE) FILTLVL<9 ILVL>84]: %NAME% %GREEN%[+Sk Craft]
+ItemDisplay[!ID (SUWAYYAHLINE OR WARFISTLINE OR SCISSORSSUWAYYAHLINE OR MITHRILPOINTLINE OR LEGENDSPIKELINE) (MAG OR RARE) FILTLVL<9 ILVL>84]: %NAME% %GREEN%[ED Craft] * *
+ItemDisplay[ETH (WRISTSWORDLINE OR BATTLECESTUSLINE OR FERALCLAWLINE OR RUNICTALONLINE) (MAG OR RARE) FILTLVL<9 ILVL>84]: %NAME% %GREEN%[+Sk Craft]
+// ItemDisplay[!ID ASSASSIN (SUWAYYAHLINE OR WARFISTLINE OR SCISSORSSUWAYYAHLINE) MAG FILTLVL<8 ILVL>84]: %NAME% %GREEN%[%LIGHT_GRAY%Offhand%GREEN%] //all sin claws
 // Daggers - Mithil Point line is best damage. Legend Spike line can get 3 socket.
-ItemDisplay[!ID (MAG OR RARE) DAGGER ETH !THROWING (dir OR 9di OR 7di OR bld OR 9bl OR 7bl) FILTLVL<9 ILVL>84]: %DOT-ED%%GREEN%* * %BLUE%%NAME% %GREEN%[Craft] * *
+ItemDisplay[!ID (MAG OR RARE) DAGGER ETH !THROWING (MITHRILPOINTLINE OR LEGENDSPIKELINE) FILTLVL<9 ILVL>84]: %DOT-ED%%GREEN%* * %BLUE%%NAME% %GREEN%[Craft] * *
 
 
 //-----------------------------------------------------------------------------------
@@ -4575,7 +4580,7 @@ ItemDisplay[7cr !INF SUP !RW EDAM=15 !(SOCK=1)]: %NAME%{%NAME%}
 // Maces
 ItemDisplay[fla NMAG !RW !INF (SOCK=0 OR SOCK>2) FILTLVL<3]: %NAME%{%NAME%}
 ItemDisplay[fla NMAG !RW !INF !ETH SOCK=4 FILTLVL<8]: %NAME%{%NAME%}        // HotO base
-// ItemDisplay[fla NMAG !RW !INF !ETH SOCK=5 FILTLVL<8]: %NAME%{%NAME%}        // CtA base
+ItemDisplay[fla NMAG !RW !INF !ETH SOCK=5 FILTLVL<8]: %NAME%{%NAME%}        // CtA base
 
 // Wands Dominion SK94	Fire Golem SK85	Blood Golem SK367 Blood Warp SK91 Lower Resist SK68 Bone Armor SK95 revive
 ItemDisplay[WAND !(wnd OR ywn OR 9wn) SK94>2 SK68>0 (SK91>0 OR SK95>0) !SOCK=1 NMAG !RW]: %DOT-D6%%PURPLE%O O %NAME% %PURPLE%O O{%NAME%%NL%%PURPLE%GG Dominion Base}
