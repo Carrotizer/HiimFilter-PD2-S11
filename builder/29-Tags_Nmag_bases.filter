@@ -93,6 +93,7 @@ ItemDisplay[!RW (SCEPTER !(scp OR 9sc OR 7sc)) (SK101>2 OR SK112>2 OR SK121>2) !
 ItemDisplay[!RW (SCEPTER !(scp OR 9sc OR 7sc OR wsp OR 9ws OR 7ws)) (SK101>2 OR SK112>2 OR SK121>2) (SOCK=0 OR SOCK=3) !INF NMAG FILTLVL<5]: %NAME% %DARK_GREEN%[Plague]{%NAME%%CL%%GREEN% Plague Base}
 ItemDisplay[!RW NMAG (9cl OR 9sp OR 7cl OR 7sp) (SK229>2 OR SK234>2 OR SK244>2) (SOCK=0 OR SOCK=3) !INF (FILTLVL<5 OR SK226>0)]: %NAME% %DARK_GREEN%[Plague]{%NAME%%CL%%GREEN% Plague Base}
 ItemDisplay[!RW SK222>2 NMAG FILTLVL<7 (9cl OR 9sp OR 7cl OR 7sp) (SK226>0 OR SK224>0) (9cl OR 9sp OR 7cl OR 7sp) (SOCK=0 OR SOCK=3)]: %NAME% %DARK_GREEN%[Plague]{%NAME%%CL%%GREEN% Plague Base}
+ItemDisplay[!RW NMAG SIN SK257>2 (SOCK=0 OR SOCK=3) FILTLVL<8]: %NAME% %DARK_GREEN%[Plague]{%NAME%%CL%%GREEN% Plague Base}
 
 //Creeper Druid items
 // Dead in S10

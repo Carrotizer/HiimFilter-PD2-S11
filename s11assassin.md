@@ -45,6 +45,34 @@ Gorgon Crossbow Frames (without Faith):
 Prefixes: 40ED
 Suffixes: -15% Req & (max damage | FHR | life)
 
+
+# Stats
+## Strength Requirements
+* Scissors Suwayyah: 118 (108 if eth)
+
+### Strength Bonuses 
+* Tyrael's Might: +27
+* Gravepalm: +10
+
+### Mapping: 108
+* Eth Reaper's Toll: 104
+* Veil of Steel w/ -30% Req: 135 (108 after +27 from Tyrael's Might).
+
+### Lucion:
+* Vampire Gaze Bone Visage: 106
+* Archon Plate Fortitude: 103
+* Eth Reaper's Toll: 104
+* Gore Rider: 94
+
+* Verdungo's Mithril Coil: 106
+
+### Dclone
+* Twilight's Reflection: 127 (100 after +27 from Tyrael's Might)
+
+## Dexterity Requirments
+* Eth Reaper's Toll: 79
+* Scissors Suwayyah: 118 (108 if eth)
+
 # Bossing
 https://exiledagain.github.io/bug-free-eureka/areaexplorer.html
 ## Lucion
@@ -52,23 +80,64 @@ https://exiledagain.github.io/bug-free-eureka/areaexplorer.html
 https://projectdiablo2.com/armory/builds/68a5ff7800a682833aadbd08
 https://www.projectdiablo2.com/armory/builds/68abf0c7de6e0647b5182024
 
-
-Need 90% max fire
-Want 140% Fire
-
-240 total fire res
-+30 from Mara quests
-30 to 50 from Laying of Hand
-20 from Torch
-15 from Anni
-10 from Waterwalk
+My build:
+https://projectdiablo2.com/armory/builds/68d88f6bde01a6ce6280b223
+Twitch VOD: https://www.twitch.tv/videos/2577613262
 
 ## Rathma
 https://live.projectdiablo2.com/armory/builds/68c25aeb5fc6565bc0c74768 (mapping)
 https://live.projectdiablo2.com/armory/builds/68c25a3f5fc6565bc0c74765
 
+MythicalBlade: https://projectdiablo2.com/armory/builds/68d90b8cde01a6ce6280b522
+Snowclash
+
+85 Fire according to loot filter? -> +10+ max res
+90 Psn res -> +15 max res
+87+ Cold res -> +12+ max res
+
+Head: Andariel's Visage
++8% max Poison Resist
++5% 
+
+Belt: 
+* +2% all max res
+* 25% PLR
+
+### Ideal belt:
+Prefixes:
+* 3x single resists (21~30% for T1)
+
+Suffixes:
+* PLR 25%
+* Whale 	+[81-100] to Life
+* Stability  +24% Faster Hit Recovery
+* Defending   Physical Damage Taken Reduced by [5-10]%
+* Atlas   +[21-30] to Strength
+
 # Crafting:
+
+https://www.theamazonbasin.com/wiki/index.php/Target_Defense
+* Half effectiveness vs bosses
+
 ## Claws
+### Ideal main hand
+Prefixes:
+* Cruel  +[201-300]% Enhanced Damage	
+* Master's  [151-250] to Attack Rating, +[101-150]% Enhanced Damage
+* Fool's  +[0-49] to Maximum Damage (+0.5 per Level), +[16-1633] to Attack Rating (+16.5 per Level)	
+* Gritty  +[0-74] to Maximum Damage (+0.75 per Level)	
+* Witch-hunter's	 +2 to Assassin Skills
+* Hallowed   +[251-325] to Attack Rating against Undead,
++[201-275]% Damage to Undead
+
+* Elysian   +[201-300] to Attack Rating against Demons, +[151-200]% Damage to Demons
+
+Suffixes:
+* Quickness	  +40% Increased Attack Speed	
+* Damage Amplification    12% Chance to Cast Level 31 Amplify Damage on Striking
+* Desolation    [25-30]% Deadly Strike	
+* Pulverizing	[25-30]% Chance of Crushing Blow	
+
 ### Offhand:
 Local mods: https://discord.com/channels/701658302085595158/776859543141089330/1234348584363757628
 
