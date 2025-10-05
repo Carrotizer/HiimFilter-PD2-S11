@@ -27,18 +27,24 @@ Gorgon Crossbow Frames (without Faith):
 * Cardinal	+[10-14] to Minimum Damage
 * Vermillion	+[11-15] to Maximum Damage
 * Ruby	+[31-40]% Enhanced Damage
-* Shimmering	All Resistances +[5-10]
 * Diamond	+[25-50] to Attack Rating against Demons, +[25-40]% Damage to Demons
 * Pearl +[25-50] to Attack Rating against Undead, +[25-50]% Damage to Undead
+* Shimmering	All Resistances +[5-10]
+
+Magic ONLY:
+* Scintillating    All Resistances +[11-15]
 
 ## Jewel Suffixes (all possible on rares unless noted otherwise)
 * Carnage	+[11-15] to Maximum Damage
 * Bliss	+[5-10] to Minimum Damage
 * Daring	+[7-9] to Dexterity
 * Truth	+7% Faster Hit Recovery
-* Hope	+[9-20] to Life
 * Freedom	Requirements -15%
 * Virility	+[7-9] to Strength
+* Spirit  +[3-8] to Life
+
+Magic ONLY:
+* Hope	+[9-20] to Life
 
 ### Ideal Jewels
 #### Veil of Steel

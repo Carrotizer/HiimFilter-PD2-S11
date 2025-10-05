@@ -83,7 +83,7 @@ ItemDisplay[GOLD<9999 CLVL>79]:
 //-----------------------------------------------------------------------------------
 
 //-----------------------------------------------------------------------------------
-// Carrotizer custom hide
+// Carrotizer custom aliases
 //-----------------------------------------------------------------------------------
 // Hide low value set piece, even if they are ethereal.
 Alias[ANGELIC]: (SET (sbr OR rng))
@@ -103,6 +103,18 @@ ItemDisplay[ANGELIC OR ARCANNA OR ARCTIC OR BERSERKER OR CATHAN OR CLEGLAW OR HS
 
 // Hide things higher so they don't show icons.
 ItemDisplay[UNI !ID FILTLVL>5 fhl]:
+
+// Assassin-specific for rest of S11
+Alias[SUWAYYAHLINE]: (ktr OR 9ar OR 7ar)    // High ED bases
+Alias[WARFISTLINE]: (axf OR 9xf OR 7xf)
+Alias[SCISSORSSUWAYYAHLINE]: (skr OR 9qr OR 7qr)
+Alias[WRISTSWORDLINE]: (wrb OR 9wb OR 7wb)  // Low ED bases - only craft
+Alias[BATTLECESTUSLINE]: (ces OR 9cs OR 7cs)
+Alias[FERALCLAWLINE]: (clw OR 9lw OR 7lw)
+Alias[RUNICTALONLINE]: (btl OR 9tw OR 7tw)
+
+Alias[MITHRILPOINTLINE]: (dir OR 9di OR 7di)  // Best damage daggers
+Alias[LEGENDSPIKELINE]: (bld OR 9bl OR 7bl)   // 3 socket daggers
 
 //-----------------------------------------------------------------------------------
 // PD2 ITEMS
@@ -1098,13 +1110,14 @@ ItemDisplay[RARE FILTLVL<7 (ILVL>84) !ID (7cr OR 9cr OR crs OR 7gl OR 9gl OR glv
 ItemDisplay[!ID (axf OR 9xf OR 7xf) RARE FILTLVL<8 ILVL>84]: %NAME% //sin war fist
 ItemDisplay[!ID (ktr OR 9ar OR 7ar) RARE FILTLVL<8 ILVL>84]: %NAME% //sin Suwayyah
 ItemDisplay[!ID (skr OR 9qr OR 7qr) RARE FILTLVL<8 ILVL>84]: %NAME% //sin Scissors Suwayyah
+ItemDisplay[!ID (WRISTSWORDLINE OR BATTLECESTUSLINE OR FERALCLAWLINE OR RUNICTALONLINE) RARE FILTLVL<8 ILVL>84]: %NAME% %GREEN%[+Sk Craft] // Rest of the bases
 ItemDisplay[!ID (am5 OR ama OR amf) RARE FILTLVL<8 ILVL>84]: %NAME% //zon javs
 ItemDisplay[!ID (am2 OR am7 OR amc) RARE FILTLVL<8 ILVL>84]: %NAME% //Zon bow
-ItemDisplay[!ID (am1 OR am6 OR amb) RARE FILTLVL<8 ILVL>84]: %NAME% //Zon bow
+ItemDisplay[!ID (am1 OR am6 OR amb) RARE FILTLVL<7 ILVL>84]: %NAME% //Zon bow
 ItemDisplay[!ID (pab OR pa6 OR pa1) RARE FILTLVL<7 ILVL>84]: %NAME% //pala shield
 ItemDisplay[!ID (wsp OR 9ws OR 7ws) RARE FILTLVL<7 ILVL>84]: %NAME% //4os able scepters
 ItemDisplay[!ID RARE DRU FILTLVL<7 ILVL>84]: %NAME% //dudu helms
-ItemDisplay[!ID RARE NEC FILTLVL<8 ILVL>84]: %NAME% //nec heads
+ItemDisplay[!ID RARE NEC FILTLVL<7 ILVL>84]: %NAME% //nec heads
 
 // High Ilvl Non-weap Rares
 ItemDisplay[RARE CHEST !ID FILTLVL<7 ALVL>84]: %DOT-ED%%TIER-6%* %NAME% *
@@ -2618,18 +2631,6 @@ ItemDisplay[!ID ASSASSIN SIN MAG FILTLVL<5 ILVL>84]: %NAME% %GREEN%[Craft] //all
 // Generic
 ItemDisplay[!ID THROWING MAG ETH FILTLVL<3]: %NAME% %GREEN%[Craft]//Catch all throwing eth weapons
 ItemDisplay[!ID WEAPON MAG ETH FILTLVL<3]: %NAME% %GREEN%[Craft]//Catch all eth weapons when lower filter level
-
-// Assassin-specific for rest of S11
-Alias[SUWAYYAHLINE]: (ktr OR 9ar OR 7ar)    // High ED bases
-Alias[WARFISTLINE]: (axf OR 9xf OR 7xf)
-Alias[SCISSORSSUWAYYAHLINE]: (skr OR 9qr OR 7qr)
-Alias[WRISTSWORDLINE]: (wrb OR 9wb OR 7wb)  // Low ED bases - only craft
-Alias[BATTLECESTUSLINE]: (ces OR 9cs OR 7cs)
-Alias[FERALCLAWLINE]: (clw OR 9lw OR 7lw)
-Alias[RUNICTALONLINE]: (btl OR 9tw OR 7tw)
-
-Alias[MITHRILPOINTLINE]: (dir OR 9di OR 7di)  // Best damage daggers
-Alias[LEGENDSPIKELINE]: (bld OR 9bl OR 7bl)   // 3 socket daggers
 
 // ItemDisplay[!ID ETH (ktr OR 9ar OR 7ar OR axf OR 9xf OR 7xf OR skr OR 9qr OR 7qr) (MAG OR RARE) FILTLVL<9 ILVL>84]: %DOT-ED%%GREEN%* * %BLUE%%NAME% %GREEN%[ED Craft] * *
 ItemDisplay[!ID ETH (SUWAYYAHLINE OR WARFISTLINE OR SCISSORSSUWAYYAHLINE) (MAG OR RARE) FILTLVL<9 ILVL>84]: %DOT-ED%%GREEN%* * %BLUE%%NAME% %GREEN%[ED Craft] * *
@@ -4680,7 +4681,7 @@ ItemDisplay[(9tw OR btl OR 7tw) SK257>2 (SK263>0 AND SK275>0) !INF NMAG !RW (SOC
 ItemDisplay[(9tw OR btl OR 7tw) (SK259>2 OR SK262>2 OR SK271>2 OR SK274>2 OR SK269>2 OR SK366>2 OR SK280>2) !INF NMAG !RW (SOCK=0 OR SOCK=3) FILTLVL<5]: %DOT-D6%%NAME%{%NAME%}
 ItemDisplay[SIN !(ktr OR wrb OR axf OR ces) (SK262>2 OR SK271>2 OR SK276>2 OR SK366>2) !INF (SOCK=0 OR SOCK=3) !RW NMAG FILTLVL<7]: %NAME%{%NAME%}
 ItemDisplay[9tw (SK259>2 OR SK262>2 OR SK271>2 OR SK274>2 OR SK269>2 OR SK366>2 OR SK280>2) !INF NMAG !RW (SOCK=0 OR SOCK=3) FILTLVL<7]: %NAME%{%NAME%}
-ItemDisplay[!RW NMAG SIN SK257>2 (SOCK=0 OR SOCK=3) FILTLVL<8]: %NAME% %DARK_GREEN%[Plague]{%NAME%%CL%%GREEN% Plague Base}
+ItemDisplay[!RW NMAG SIN SK257>2 (SK252>0 OR SK258>0 OR SK263>0 OR SK266>0 OR SK268>0 OR SK275>0 OR SK277>0 OR SK278>0) (SOCK=0 OR SOCK=3) FILTLVL<8]: %NAME% %DARK_GREEN%[Plague]{%NAME%%CL%%GREEN% Plague Base}
 
 // Low/mid level nec heads
 // pnova descreate teeth bone spear ce
