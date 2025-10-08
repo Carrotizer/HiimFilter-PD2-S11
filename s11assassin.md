@@ -91,8 +91,9 @@ https://projectdiablo2.com/armory/builds/68d88f6bde01a6ce6280b223
 Twitch VOD: https://www.twitch.tv/videos/2577613262
 
 ## Rathma
-https://live.projectdiablo2.com/armory/builds/68c25aeb5fc6565bc0c74768 (mapping)
-https://live.projectdiablo2.com/armory/builds/68c25a3f5fc6565bc0c74765
+Ago:
+* https://live.projectdiablo2.com/armory/builds/68c25a3f5fc6565bc0c74765
+* Mapping: https://live.projectdiablo2.com/armory/builds/68c25aeb5fc6565bc0c74768
 
 MythicalBlade: https://projectdiablo2.com/armory/builds/68d90b8cde01a6ce6280b522
 Snowclash
