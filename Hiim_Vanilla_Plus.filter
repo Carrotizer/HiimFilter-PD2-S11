@@ -355,6 +355,13 @@ ItemDisplay[ubtm]: %MAP-A9%%RED%> >> %ORANGE%%NAME%  %RED%<< <{%NAME%%CL%%BLUE%R
 //-----------------------------------------------------------------------------------
 // MAPS
 //-----------------------------------------------------------------------------------
+// End of S11 filtering - hide less popular magic T1s that won't stack
+// t22: Torajan Jungle
+// t23: Arreat Battlefield
+// t26: Shadows of Westmarch
+// t36: Fall of Caldeum     (t22 OR t23 OR t26 OR t36)
+ItemDisplay[(MAG OR RARE) MAPTIER=1]:
+
 // Map Rolling Items
 ItemDisplay[fort]: %MAP-4A%%NAME%{%WHITE%Cube with: %WHITE%Any Map to make a %GOLD%Fortified %WHITE%Map}
 ItemDisplay[imma]://Angelic useless Normal -> Blue map
