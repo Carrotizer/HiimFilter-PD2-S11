@@ -356,11 +356,16 @@ ItemDisplay[ubtm]: %MAP-A9%%RED%> >> %ORANGE%%NAME%  %RED%<< <{%NAME%%CL%%BLUE%R
 // MAPS
 //-----------------------------------------------------------------------------------
 // End of S11 filtering - hide less popular magic T1s that won't stack
+// Trying [CUBE ME UP]
 // t22: Torajan Jungle
 // t23: Arreat Battlefield
 // t26: Shadows of Westmarch
 // t36: Fall of Caldeum     (t22 OR t23 OR t26 OR t36)
 ItemDisplay[(MAG OR RARE) MAPTIER=1]:
+
+// t31	River of Blood Map
+// t34	Ancestral Trial Map
+// ItemDisplay[(MAG OR RARE) MAPTIER=2 !(t31 OR t34)]: %NAME% %WHITE%[%BLUE%CUBE ME UP%WHITE%]
 
 // Map Rolling Items
 ItemDisplay[fort]: %MAP-4A%%NAME%{%WHITE%Cube with: %WHITE%Any Map to make a %GOLD%Fortified %WHITE%Map}
@@ -511,7 +516,7 @@ ItemDisplay[t62]: %NAME%PvP Map 2 (Moor)%CONTINUE%{%NAME%}
 ItemDisplay[(MAPTIER>0 OR t51 OR t52 OR t53 OR t54 OR t55 OR t61 OR t62) QTY>1]: %NAME%%TAN% QTY %QTY% %CONTINUE%{%NAME%}
 
 // Map End Wrapper by Tier
-ItemDisplay[MAPTIER=1]: %MAP-62%%NAME% %GREEN%*{%NAME%}%CONTINUE%
+// ItemDisplay[MAPTIER=1]: %MAP-62%%NAME% %GREEN%*{%NAME%}%CONTINUE%
 ItemDisplay[MAPTIER=2]: %MAP-62%%NAME% %YELLOW%*{%NAME%}%CONTINUE%
 ItemDisplay[MAPTIER=3]: %MAP-62%%NAME% %ORANGE%*{%NAME%}%CONTINUE%
 ItemDisplay[MAPTIER=4]: %MAP-62%%NAME% %RED%*{%NAME%}%CONTINUE%
@@ -1106,7 +1111,7 @@ ItemDisplay[WEAPON RARE ETH (ILVL>84 OR FILTLVL<3) !ID FILTLVL<7]: %DOT-ED%%PURP
 ItemDisplay[WEAPON RARE !ID FILTLVL<3]: %YELLOW%* * %NAME% %YELLOW%* *
 ItemDisplay[WEAPON RARE ETH !ID FILTLVL<7]: %DOT-ED%%TIER-2%%YELLOW%* %YELLOW%%NAME% %YELLOW%*
 ItemDisplay[(6mx OR 8mx OR mxb OR 6hx OR 8hx OR hxb) RARE (ILVL>84) !ID FILTLVL<7]: %DOT-ED%%YELLOW%* %NAME% %YELLOW%*
-ItemDisplay[(6mx OR 8mx OR mxb OR 6hx OR 8hx OR hxb) RARE (ILVL>84) !ID FILTLVL<8]: %NAME%
+ItemDisplay[(6mx OR 8mx OR mxb OR 6hx OR 8hx OR hxb) RARE (ILVL>84) !ID FILTLVL<7]: %NAME%
 ItemDisplay[(BOW OR XBOW) RARE (ILVL>84) !ID FILTLVL<5]: %DOT-ED%%TIER-2%%YELLOW%* %NAME% %YELLOW%*
 ItemDisplay[!ID ETH SIN RARE FILTLVL<7 ILVL>84]: %DOT-ED%%YELLOW%* %NAME% %YELLOW%* //eth sin claws
 ItemDisplay[!ID ETH SIN RARE FILTLVL<8 ILVL>84]: %DOT-ED%%NAME% //eth sin claws
