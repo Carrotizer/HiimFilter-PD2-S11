@@ -81,6 +81,11 @@ Suffixes: -15% Req & (max damage | FHR | life)
 
 # Bossing
 https://exiledagain.github.io/bug-free-eureka/areaexplorer.html
+
+Full Rejuvenation Potion 
+* 2k Max, 65% heal -> 3077 to get full 2K benefit
+* 3.5k HP -> 2275: max heal effect from 1225 but that's quite low
+
 ## Lucion
 ## DClone
 https://projectdiablo2.com/armory/builds/68a5ff7800a682833aadbd08
@@ -90,13 +95,25 @@ My build:
 https://projectdiablo2.com/armory/builds/68d88f6bde01a6ce6280b223
 Twitch VOD: https://www.twitch.tv/videos/2577613262
 
-## Rathma
+## Rathma - DONE!
+Snapshot: https://projectdiablo2.com/armory/builds/68f6f8cd0215ba2ebd130c4e
+
+Str allocation needed: 84 -----(+14 from belt)-----> 98 -----(+10 from Plague)----> 108  ---(+28)--> 136, which is enough for armor
+
+Armor: 131 req
+Andariel's Visage: 102 strength req, +28 strength -> 103 str req
+Belt: +14 strength -> 89 str req
+Plague: 98 str/dex req, +10 strength
+
+Whispering Mirage/Plague: 98str/dex req 
+
+
 Ago:
 * https://live.projectdiablo2.com/armory/builds/68c25a3f5fc6565bc0c74765
 * Mapping: https://live.projectdiablo2.com/armory/builds/68c25aeb5fc6565bc0c74768
 
 MythicalBlade: https://projectdiablo2.com/armory/builds/68d90b8cde01a6ce6280b522
-Snowclash
+
 
 85 Fire according to loot filter? -> +10+ max res
 90 Psn res -> +15 max res
@@ -147,5 +164,8 @@ Suffixes:
 
 ### Offhand:
 Local mods: https://discord.com/channels/701658302085595158/776859543141089330/1234348584363757628
+
+Mirror offhand option: seanyboi [ VtecKickedInYoo ]
+
 
 ## ED Craft: 
