@@ -4484,7 +4484,7 @@ ItemDisplay[SK149>2 (SOCK=0 OR SOCK=2) !INF NMAG FILTLVL<3]: %NAME% %BLUE%[LORE]
 ItemDisplay[(ob5 OR oba OR obf) (SK40>2 OR SK52>2) !INF (SOCK=0 OR SOCK=3) NMAG FILTLVL<5]: %NAME%{%NAME%}
 
 // Daggers
-ItemDisplay[(7kr OR 9kr OR kri) (SOCK=0 OR SOCK=3) !ETH NMAG (SK73>2) FILTLVL<7]: %NAME%{%NAME%}
+ItemDisplay[(7kr OR 9kr OR kri) (SOCK=0 OR SOCK=3) !ETH NMAG (SK73>2) FILTLVL<8]: %NAME%{%NAME%}
 ItemDisplay[!ID RARE DAGGER ASSASSIN !THROWING FILTLVL<9 ILVL>84]: %NAME%
 
 // Purity Base for leveling
