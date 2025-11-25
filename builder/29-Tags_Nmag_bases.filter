@@ -178,7 +178,7 @@ ItemDisplay[(amc OR amb) NMAG EDAM>0 !RW TABSK0>2 (SOCK=0 OR SOCK=4 OR SOCK=3 OR
 ItemDisplay[(amc OR amb) NMAG !INF !RW TABSK0>2 (SOCK=0 OR SOCK=4) FILTLVL<5]: %DOT-D6%%NAME%{%NAME%}
 ItemDisplay[(amc OR amb) NMAG !INF !RW TABSK0>2 (SOCK=3 OR SOCK=5) FILTLVL<5]: %NAME%{%NAME%}
 // Good merc xbow
-ItemDisplay[6mx NMAG EDAM>0 !RW (SOCK=0 OR SOCK=4) (EDAM=15 OR FILTLVL<7)]: %NAME%{%NAME%}
+ItemDisplay[(6mx OR 6hx) NMAG EDAM>0 !RW (SOCK=0 OR SOCK=4) (EDAM=15 OR FILTLVL<7)]: %NAME%{%NAME%}     // 15ED Faith base
 ItemDisplay[6rx NMAG EDAM>0 !RW (SOCK=0 OR SOCK=5) (EDAM=15 OR FILTLVL<7)]: %NAME%{%NAME%}
 ItemDisplay[6hx NMAG EDAM>0 !RW (SOCK=0 OR SOCK=6) (EDAM=15 OR FILTLVL<7)]: %NAME%{%NAME%}
 // Lower levels
