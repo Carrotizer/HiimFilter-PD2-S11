@@ -968,13 +968,13 @@ ItemDisplay[tbk]: %BLUE%+%WHITE%TP Tome
 // Juvs
 ItemDisplay[rvl FILTLVL<3]: %PURPLE%*  %WHITE%Rejuv %PURPLE%65%  %PURPLE%*
 ItemDisplay[rvl FILTLVL<7]: %PURPLE%*    %WHITE%Rejuv %PURPLE%65%%PURPLE%    *
-ItemDisplay[rvl FILTLVL<8]: %WHITE%Rejuv %PURPLE%65%
+ItemDisplay[rvl FILTLVL<8]: %WHITE%Full Rejuv %PURPLE%65%
 ItemDisplay[rvl FILTLVL<9]: %WHITE%juv %PURPLE%65%
 ItemDisplay[rvl FILTLVL=9]: %PURPLE%GATORADE
 ItemDisplay[rvl]:
 ItemDisplay[rvs FILTLVL<3]: %PURPLE%* %WHITE%Rejuv %PURPLE%35% %PURPLE%*
 ItemDisplay[rvs FILTLVL<7]: %WHITE%juv%PURPLE%35%
-ItemDisplay[rvs FILTLVL<8]: %WHITE%j35%
+ItemDisplay[rvs FILTLVL<8]: %WHITE%Rejuv%PURPLE%35%
 ItemDisplay[rvs FILTLVL=9]: %PURPLE%powerade
 ItemDisplay[rvs]:
 
@@ -996,7 +996,7 @@ ItemDisplay[hp2]: %RED%+ %WHITE%HP2 %RED%+
 ItemDisplay[hp3]: %RED%+ %WHITE%HP3 %RED%+
 ItemDisplay[hp4]: %RED%+ %WHITE%HP4 %RED%+
 ItemDisplay[hp5 FILTLVL<3]: %RED%+ %WHITE%HP5 %RED%+
-ItemDisplay[hp5 (FILTLVL=3 OR FILTLVL=5)]: %RED%+ HP
+ItemDisplay[hp5 (FILTLVL=3 OR FILTLVL=5)]: %WHITE%H%RED%P5
 ItemDisplay[hp5]:
 
 // Show MP Pots
@@ -1005,7 +1005,7 @@ ItemDisplay[mp2]: %BLUE%+ %WHITE%MP2 %BLUE%+
 ItemDisplay[mp3]: %BLUE%+ %WHITE%MP3 %BLUE%+
 ItemDisplay[mp4]: %BLUE%+ %WHITE%MP4 %BLUE%+
 ItemDisplay[mp5 FILTLVL<3]: %BLUE%+ %WHITE%MP5 %BLUE%+
-ItemDisplay[mp5 (FILTLVL=3 OR FILTLVL=5)]: %BLUE%+ MP
+ItemDisplay[mp5 (FILTLVL=3 OR FILTLVL=5)]: %WHITE%M%BLUE%P5
 ItemDisplay[mp5]:
 
 // Other Potion Tooltips
@@ -4347,7 +4347,8 @@ ItemDisplay[NMAG !RW !SHOP THROWING SOCK=3]: %NAME%{%GOLD%Plague %GRAY%Cham + Fa
 //-----------------------------------------------------------------------------------
 
 // S11 Hidden weapon from imbue
-ItemDisplay[7cr NMAG !RW SOCK=0 FILTLVL<5]: %NAME%{%TAN%Imbue at Charsi for Hidden Unique item chance%CL%%NAME%}
+// ItemDisplay[7cr NMAG !RW SOCK=0 FILTLVL<5]: %NAME%{%TAN%Imbue at Charsi for Hidden Unique item chance%CL%%NAME%}
+ItemDisplay[7cr NMAG !RW SOCK=0 FILTLVL<8]: %NAME%{%TAN%Imbue at Charsi for Hidden Unique item chance%CL%%NAME%}
 
 // Eth Axe 1H
 ItemDisplay[7wa ETH !INF NMAG !RW (SOCK=0 OR SOCK=3 OR SOCK=5 OR SOCK=6) EDAM>0 (EDAM=15 OR FILTLVL<7)]: %DOT-E1%%NAME%{%NAME%}%CONTINUE%
@@ -4460,7 +4461,7 @@ ItemDisplay[(SK133>2 OR SK140>2 OR SK143>2 OR SK151>2) (SOCK=0 OR SOCK=3) ETH !I
 ItemDisplay[(ob5 OR oba OR obf) (SK40>2 OR SK52>2) !INF (SOCK=0 OR SOCK=3) NMAG FILTLVL<5]: %NAME%{%NAME%}
 
 // Daggers
-ItemDisplay[(7kr OR 9kr OR kri) (SOCK=0 OR SOCK=3) !ETH NMAG (SK73>2) FILTLVL<7]: %NAME%{%NAME%}
+ItemDisplay[(7kr OR 9kr OR kri) (SOCK=0 OR SOCK=3) !ETH NMAG (SK73>2) FILTLVL<8]: %NAME%{%NAME%}
 
 // Purity Base for leveling
 ItemDisplay[FILTLVL<5 ELT (STAFF OR BOW OR XBOW) !INF NMAG !RW SOCK=3]: %DOT-D6%%NAME% %DARK_GREEN%[Purity]{%NAME%%CL%%GREEN%Purity RW Base}
@@ -4520,7 +4521,7 @@ ItemDisplay[(amc OR amb) NMAG EDAM>0 !RW TABSK0>2 (SOCK=0 OR SOCK=4 OR SOCK=3 OR
 ItemDisplay[(amc OR amb) NMAG !INF !RW TABSK0>2 (SOCK=0 OR SOCK=4) FILTLVL<5]: %DOT-D6%%NAME%{%NAME%}
 ItemDisplay[(amc OR amb) NMAG !INF !RW TABSK0>2 (SOCK=3 OR SOCK=5) FILTLVL<5]: %NAME%{%NAME%}
 // Good merc xbow
-ItemDisplay[6mx NMAG EDAM>0 !RW (SOCK=0 OR SOCK=4) (EDAM=15 OR FILTLVL<7)]: %NAME%{%NAME%}
+ItemDisplay[(6mx OR 6hx) NMAG EDAM>0 !RW (SOCK=0 OR SOCK=4) (EDAM=15 OR FILTLVL<7)]: %NAME%{%NAME%}     // 15ED Faith base
 ItemDisplay[6rx NMAG EDAM>0 !RW (SOCK=0 OR SOCK=5) (EDAM=15 OR FILTLVL<7)]: %NAME%{%NAME%}
 ItemDisplay[6hx NMAG EDAM>0 !RW (SOCK=0 OR SOCK=6) (EDAM=15 OR FILTLVL<7)]: %NAME%{%NAME%}
 // Lower levels
@@ -4555,6 +4556,7 @@ ItemDisplay[crs NMAG !INF !SUP SOCK=0 ILVL>40 FILTLVL<3]: %NAME%{%NAME%}
 ItemDisplay[(bsd OR lsd) NMAG !INF !SUP SOCK=0 ILVL>25 CLVL<80 FILTLVL<3]: %NAME% %DARK_GREEN%[Larzuk 4os]{%NAME%}
 ItemDisplay[(crs OR bsd OR lsd) NMAG !INF !RW SOCK=4 FILTLVL<3]: %NAME% %DARK_GREEN%[Spirit]{%NAME%}
 ItemDisplay[crs ILVL>25 NMAG !INF !RW !ETH SOCK>4 FILTLVL<5]: %NAME%{%NAME%}
+ItemDisplay[crs ILVL>25 NMAG !INF !RW SOCK=5 FILTLVL<8]: %NAME%{%NAME%}     // Crystal Sword CtA
 ItemDisplay[(72h OR 7fb OR 7gd OR 7gs OR 7ls) ETH NMAG !RW !INF (SOCK=0 OR SOCK>2) FILTLVL<7]: %DOT-D6%%NAME%{%NAME%}
 ItemDisplay[7fb ETH NMAG !RW (SOCK=0 OR SOCK>1) FILTLVL<7]: %NAME%{%NAME%}
 ItemDisplay[7gd ETH NMAG !RW (SOCK=0 OR SOCK>1) FILTLVL<7]: %NAME%{%NAME%}
@@ -4568,6 +4570,8 @@ ItemDisplay[7cr !INF SUP !RW EDAM=15 !(SOCK=1)]: %NAME%{%NAME%}
 // Maces
 ItemDisplay[fla NMAG !RW !INF (SOCK=0 OR SOCK>2) FILTLVL<3]: %NAME%{%NAME%}
 ItemDisplay[fla NMAG !RW !INF !ETH SOCK>2 FILTLVL<7]: %NAME%{%NAME%}
+ItemDisplay[fla NMAG !RW !INF !ETH SOCK=4 FILTLVL<8]: %NAME%{%NAME%}    // HotO base
+ItemDisplay[fla NMAG !RW !INF SOCK=5 FILTLVL<8]: %NAME%{%NAME%}    // CtA base
 
 // Wands Dominion SK94	Fire Golem SK85	Blood Golem SK367 Blood Warp SK91 Lower Resist SK68 Bone Armor SK95 revive
 ItemDisplay[WAND !(wnd OR ywn OR 9wn) SK94>2 SK68>0 (SK91>0 OR SK95>0) !SOCK=1 NMAG !RW]: %RW_BASE_GG_LEFT%%PURPLE%O O %NAME% %PURPLE%O O{%NAME%%NL%%PURPLE%GG Dominion Base}
