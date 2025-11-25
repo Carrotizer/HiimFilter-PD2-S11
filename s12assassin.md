@@ -1,26 +1,54 @@
-https://www.reddit.com/r/ProjectDiablo2/comments/1ks8oua/phyx10ns_blade_sentinel_assassin_guide_season_11/
+# Mind Blast
 
-https://docs.google.com/document/d/1CpHXjI-hEWNPGtdA71nTRp3EfaMYYMI6wvBRuRjI4iQ/edit?tab=t.0#heading=h.flkvbp7xsls2
+# Skills
+20 Mind Blast
+20 Psychic Hammer
+20 Cloak of Shadows
+20 Shadow Warrior
+1 Claw Mastery
+1 Burst of Speed
+1 point in Dragon Flight (4 points total)
+Rest in Fade and Weapon Block appropriately
 
-# Blade Fury
-* Target furthest in a line: https://www.theamazonbasin.com/wiki/index.php/Blade_Fury
-"Blades do not pierce, so the best way to attack these Ghoul Lords is to aim at the last one. (otherwise the attack animation will have to wind down and wind up again as each selected Ghoul Lord is killed and the next is selected manually)."
-* Dual claw: only primary
-* The following do NOT work with Blade Fury:
-  Damage + (e.g. Grief)
-  Chance to Cast On Attack
-* Neither attack rate nor cast rate will increase firing frequency.
-  * A single click fires two blades, but it is better to fire blades continuously (one every six frames) without selecting a target by selecting it for the right mouse button and holding it down, or selecting it for the left mouse button and holding it down with the Shift key to prevent movement.
+Shadow Killer has 33% chance to cast level 24 Frost Nova on striking.  Blade Shield could be fun.
+Or if GG caster claw has amplify damage on striking.
+* Never mind - Chance to Cast on Striking gives a percentage chance to use a skill whenever the equipping player character, mercenary or pet uses a weapon attack which does not miss and is not blocked, or to which Dodge, Avoid, Evade or Weapon Block are not applied.
+Unlikely to not miss, so ignore Blade Shield regardless of chance to proc.  Rely on merc for curse.
 
-# Blade Sentinel
+# Stats
+## Strength Requirements
+* Scissors Suwayyah: 118 (108 if eth)
+
+### Strength Bonuses 
+* Tyrael's Might: +27
+* Gravepalm: +10
+
+### Mapping: 108
+* Eth Reaper's Toll: 104
+* Veil of Steel w/ -30% Req: 135 (108 after +27 from Tyrael's Might).
+
+### Lucion:
+* Vampire Gaze Bone Visage: 106
+* Archon Plate Fortitude: 103
+* Eth Reaper's Toll: 104
+* Gore Rider: 94
+
+* Verdungo's Mithril Coil: 106
+
+### Dclone
+* Twilight's Reflection: 127 (100 after +27 from Tyrael's Might)
+
+## Dexterity Requirments
+* Eth Reaper's Toll: 79
+* Scissors Suwayyah: 118 (108 if eth)
+
 
 # Mercenary
 ## Act 1 Vigor
-Faith/Mist.  Faith seems better.
+Wrath - 60% chance to apply lv 31 Amplify damage
+
 Note +1 skill from Tyrael's Might wouldn't increase movement speed for Vigor by itself (1% movespeed every other level).
 
-Gorgon Crossbow Frames (without Faith):
-0, 9, 19, 32, 54, 86, 152 (8 frame max)
 
 # Jewel Affixes
 ## Jewel Prefixes (all possible on rares unless noted otherwise)
@@ -61,32 +89,6 @@ This means with 75% DS, you only need 20% crit chance from claw mastery (Lv 16)!
 
 
 
-# Stats
-## Strength Requirements
-* Scissors Suwayyah: 118 (108 if eth)
-
-### Strength Bonuses 
-* Tyrael's Might: +27
-* Gravepalm: +10
-
-### Mapping: 108
-* Eth Reaper's Toll: 104
-* Veil of Steel w/ -30% Req: 135 (108 after +27 from Tyrael's Might).
-
-### Lucion:
-* Vampire Gaze Bone Visage: 106
-* Archon Plate Fortitude: 103
-* Eth Reaper's Toll: 104
-* Gore Rider: 94
-
-* Verdungo's Mithril Coil: 106
-
-### Dclone
-* Twilight's Reflection: 127 (100 after +27 from Tyrael's Might)
-
-## Dexterity Requirments
-* Eth Reaper's Toll: 79
-* Scissors Suwayyah: 118 (108 if eth)
 
 # Bossing
 https://exiledagain.github.io/bug-free-eureka/areaexplorer.html
@@ -117,11 +119,6 @@ Plague: 98 str/dex req, +10 strength
 Whispering Mirage/Plague: 98str/dex req 
 
 
-Ago:
-* https://live.projectdiablo2.com/armory/builds/68c25a3f5fc6565bc0c74765
-* Mapping: https://live.projectdiablo2.com/armory/builds/68c25aeb5fc6565bc0c74768
-
-MythicalBlade: https://projectdiablo2.com/armory/builds/68d90b8cde01a6ce6280b522
 
 
 85 Fire according to loot filter? -> +10+ max res

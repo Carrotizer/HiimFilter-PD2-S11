@@ -6,14 +6,14 @@ from abc import ABC, abstractmethod
 
 
 class Equipment:
-    def __init__(self, 
-                 name: str, 
-                 plus_skills: int = 0, 
+    def __init__(self,
+                 name: str,
+                 plus_all_skills: int = 0,
                  mastery: int = 0,
                  pierce: int = 0,
                  sockets: int = 0):
         self.name = name
-        self.plus_skills = plus_skills
+        self.plus_all_skills = plus_all_skills
         self.mastery = mastery
         self.pierce = pierce
         self.sockets = sockets
@@ -23,46 +23,110 @@ class Equipment:
 
     def get_total_pierce(self) -> int:
         return self.pierce + self.sockets * 5
-    
+
+
+
+
 
 class DruidEquipment(Equipment):
-    def __init__(self, name, plus_skills = 0, mastery = 0, pierce = 0, sockets = 0,
+    def __init__(self, name, plus_all_skills = 0, mastery = 0, pierce = 0, sockets = 0,
                  plus_elemental_skills = 0,
                  plus_shapeshifting_skills = 0,
                  plus_summoning_skills = 0):
-        super().__init__(name, plus_skills, mastery, pierce, sockets)
+        super().__init__(name, plus_all_skills, mastery, pierce, sockets)
         self.plus_elemental_skills = plus_elemental_skills
         self.plus_shapeshifting_skills = plus_shapeshifting_skills
         self.plus_summoning_skills = plus_summoning_skills
 
     def get_total_plus_elemental_skills(self):
-        return self.plus_skills + self.plus_elemental_skills
+        return self.plus_all_skills + self.plus_elemental_skills
     
     def get_total_plus_shapeshifting_skills(self):
-        return self.plus_skills + self.plus_shapeshifting_skills
+        return self.plus_all_skills + self.plus_shapeshifting_skills
 
     def get_total_plus_summoning_skills(self):
-        return self.plus_skills + self.plus_summoning_skills
+        return self.plus_all_skills + self.plus_summoning_skills
 
 
 class NecromancerEquipment(Equipment):
-    def __init__(self, name, plus_skills = 0, mastery = 0, pierce = 0, sockets = 0,
+    def __init__(self, name, plus_all_skills = 0, mastery = 0, pierce = 0, sockets = 0,
                  plus_curse_skills = 0,
                  plus_poison_and_bone_skills = 0,
                  plus_summoning_skills = 0):
-        super().__init__(name, plus_skills, mastery, pierce, sockets)
+        super().__init__(name, plus_all_skills, mastery, pierce, sockets)
         self.plus_curse_skills = plus_curse_skills
         self.plus_poison_and_bone_skills = plus_poison_and_bone_skills
         self.plus_summoning_skills = plus_summoning_skills
 
     def get_total_plus_curse_skills(self):
-        return self.plus_skills + self.plus_curse_skills
+        return self.plus_all_skills + self.plus_curse_skills
 
     def get_total_plus_poison_and_bone_skills(self):
-        return self.plus_skills + self.plus_poison_and_bone_skills
+        return self.plus_all_skills + self.plus_poison_and_bone_skills
 
     def get_total_plus_summoning_skills(self):
-        return self.plus_skills + self.plus_summoning_skills
+        return self.plus_all_skills + self.plus_summoning_skills
+
+
+
+class AssassinEquipment(Equipment):
+    def __init__(self, name, plus_all_skills = 0, mastery = 0, pierce = 0, sockets = 0,
+                 plus_assassin_skills = 0,
+                 plus_martial_arts_skills = 0,
+                 plus_shadow_disciplines_skills = 0,
+                 plus_traps_skills = 0,
+                 faster_cast_rate = 0,
+                 ):
+        super().__init__(name, plus_all_skills, mastery, pierce, sockets)
+        self.plus_assassin_skills = plus_assassin_skills
+        self.plus_martial_arts_skills = plus_martial_arts_skills
+        self.plus_shadow_disciplines_skills = plus_shadow_disciplines_skills
+        self.plus_traps_skills = plus_traps_skills
+        self.faster_cast_rate = faster_cast_rate
+
+    def get_total_plus_martial_arts_skills(self):
+        return self.plus_all_skills + self.plus_assassin_skills + self.plus_martial_arts_skills
+
+    def get_total_plus_shadow_disciplines_skills(self):
+        return self.plus_all_skills + self.plus_assassin_skills + self.plus_shadow_disciplines_skills
+
+    def get_total_plus_traps_skills(self):
+        return self.plus_all_skills + self.plus_assassin_skills + self.plus_traps_skills
+
+    def get_faster_cast_rate(self):
+        return self.faster_cast_rate
+
+    def get_total_pierce(self) -> int:
+        # No extra pierce from sockets for Mind Blast
+        return self.pierce
+
+
+# TODO: refactor this to be more generic
+class MindBlastEquipmentSet:
+    def __init__(self, equipments: tuple[AssassinEquipment]):
+        self.equipments = equipments
+
+    def get_final_skill_level(self):
+        """
+        Base 20 skill points and +1 from Battle Command offhand.
+        :return:
+        """
+        skill_level = 20 + 1
+        for equipment in self.equipments:
+            skill_level += equipment.get_total_plus_shadow_disciplines_skills()
+        return skill_level
+
+    def get_final_faster_cast_rate(self):
+        fcr = 0
+        for equipment in self.equipments:
+            fcr += equipment.get_faster_cast_rate()
+        return fcr
+
+    def get_total_pierce(self):
+        pierce = 0
+        for equipment in self.equipments:
+            pierce += equipment.get_total_pierce()
+        return pierce
 
 
 
