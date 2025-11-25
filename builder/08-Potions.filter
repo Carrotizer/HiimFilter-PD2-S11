@@ -14,13 +14,13 @@ ItemDisplay[tbk]: %BLUE%+%WHITE%TP Tome
 // Juvs
 ItemDisplay[rvl FILTLVL<3]: %PURPLE%*  %WHITE%Rejuv %PURPLE%65%  %PURPLE%*
 ItemDisplay[rvl FILTLVL<7]: %PURPLE%*    %WHITE%Rejuv %PURPLE%65%%PURPLE%    *
-ItemDisplay[rvl FILTLVL<8]: %WHITE%Rejuv %PURPLE%65%
+ItemDisplay[rvl FILTLVL<8]: %WHITE%Full Rejuv %PURPLE%65%
 ItemDisplay[rvl FILTLVL<9]: %WHITE%juv %PURPLE%65%
 ItemDisplay[rvl FILTLVL=9]: %PURPLE%GATORADE
 ItemDisplay[rvl]:
 ItemDisplay[rvs FILTLVL<3]: %PURPLE%* %WHITE%Rejuv %PURPLE%35% %PURPLE%*
 ItemDisplay[rvs FILTLVL<7]: %WHITE%juv%PURPLE%35%
-ItemDisplay[rvs FILTLVL<8]: %WHITE%j35%
+ItemDisplay[rvs FILTLVL<8]: %WHITE%Rejuv%PURPLE%35%
 ItemDisplay[rvs FILTLVL=9]: %PURPLE%powerade
 ItemDisplay[rvs]:
 
