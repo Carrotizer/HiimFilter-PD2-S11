@@ -1,4 +1,4 @@
-Level,Damage (min),Damage (max),Radius (yards),Mana Cost
+Level,Damage (min),Damage (max),Radius (yards),Mana Cost    RADIUS IS INCORRECT - only looking at DPS.
 1,2,4,4.6,2
 2,3,5,4.6,2.2
 3,4,6,4.6,2.5

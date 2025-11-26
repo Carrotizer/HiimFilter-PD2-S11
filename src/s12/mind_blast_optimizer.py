@@ -2,8 +2,6 @@ import csv
 import itertools
 import math
 
-from pydantic.v1.fields import MAPPING_LIKE_SHAPES
-
 from equipment.equipment import AssassinEquipment, MindBlastEquipmentSet
 
 
@@ -28,9 +26,9 @@ def get_mind_blast_base_damage_mapping() -> dict[int, float]:
             avg_damage = 1.0 * (min_dmg + max_dmg) / 2
             level_to_avg_dmg[skill_level] = avg_damage
 
-    # for level, avg_damage in level_to_avg_dmg.items():
-    #     # Pretty print with f string
-    #     print(f"Level {level:2d}:   Avg Damage = {avg_damage:8.2f}")
+    for level, avg_damage in level_to_avg_dmg.items():
+        # Pretty print with f string
+        print(f"Level {level:2d}:   Avg Damage = {avg_damage:8.2f}")
 
     return level_to_avg_dmg
 
@@ -310,5 +308,6 @@ def calculate_dps(enemy_res: int = 0, is_bosser: bool = False) -> float:
 
 
 if __name__ == "__main__":
-    # get_mind_blast_base_damage_mapping()
-    calculate_dps(enemy_res=50)
+    get_mind_blast_base_damage_mapping()
+    # Skill level cast by Shadow: max([Assassin.slvl/2] + [Shadow Warrior.slvl/3] , 1)
+    # calculate_dps(enemy_res=50)
