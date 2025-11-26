@@ -18,7 +18,7 @@ def get_mind_blast_base_damage_mapping() -> dict[int, float]:
     synergy_total_lvl = 20 * 3
     total_synergy = synergy_total_lvl * synergy_rate_per_lvl
     level_to_avg_dmg = {}
-    with open("../../data/s11_mind_blast.csv", buffering=1) as csvfile:
+    with open("../../data/s12_mind_blast.csv", buffering=1) as csvfile:
         reader = csv.reader(csvfile)
         ignore_header = next(reader)
         for line in reader:
