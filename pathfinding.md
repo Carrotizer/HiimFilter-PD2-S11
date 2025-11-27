@@ -1,4 +1,4 @@
-Path finding (next level tile's orientation)
+# Pathfinding (next level tile's orientation)
 
 D2 Speedrunning/Racing Spreadsheet: 
 https://docs.google.com/spreadsheets/d/1UQP7PjHgCJWN-s42bUtGsR18f9GNh7JJ15QE7D6CnHE/edit#gid=2
@@ -29,7 +29,7 @@ https://docs.google.com/spreadsheets/d/1UQP7PjHgCJWN-s42bUtGsR18f9GNh7JJ15QE7D6C
 * Level 3: Left
 
 ## Halls of the Dead: Left
-* Lv 2: Straight for waypoint, left for Lv 3
+* Lv 2: Straight for waypoint, left for Lv 3.  From WP, right (facing the entrance tile) to Lv 3. 
 
 ## Maggot Lair: Right
 
@@ -38,6 +38,7 @@ https://docs.google.com/spreadsheets/d/1UQP7PjHgCJWN-s42bUtGsR18f9GNh7JJ15QE7D6C
 ## Tal Rasha's Tomb
 * Tomb Symbols: https://www.theamazonbasin.com/wiki/index.php/File:Tomb_symbols.png
 * Left.  
+
 
 # Act 3
 ## Flayer Dungeon
@@ -48,6 +49,7 @@ https://docs.google.com/spreadsheets/d/1UQP7PjHgCJWN-s42bUtGsR18f9GNh7JJ15QE7D6C
 * Lv 2: 
   * Waypoint is left from entrance from lv 1.
   * Lv 3 is left from the waypoint (straight from entrance).
+
 
 # Act 5
 ## Crystalline Passage, Glacial Trail, Ancient's Way
