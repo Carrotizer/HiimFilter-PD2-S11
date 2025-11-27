@@ -12,14 +12,14 @@ ItemDisplay[ibk]: %RED%+%WHITE%ID Tome
 ItemDisplay[tbk]: %BLUE%+%WHITE%TP Tome
 
 // Juvs
-ItemDisplay[rvl FILTLVL<3]: %PURPLE%*  %WHITE%Rejuv %PURPLE%65%  %PURPLE%*
-ItemDisplay[rvl FILTLVL<7]: %PURPLE%*    %WHITE%Rejuv %PURPLE%65%%PURPLE%    *
+ItemDisplay[rvl FILTLVL<3]: %PURPLE%*  %WHITE%Full Rejuv %PURPLE%65%  *
+ItemDisplay[rvl FILTLVL<7]: %PURPLE%*    %WHITE%Full Rejuv %PURPLE%65%    *
 ItemDisplay[rvl FILTLVL<8]: %WHITE%Full Rejuv %PURPLE%65%
-ItemDisplay[rvl FILTLVL<9]: %WHITE%juv %PURPLE%65%
-ItemDisplay[rvl FILTLVL=9]: %PURPLE%GATORADE
+ItemDisplay[rvl FILTLVL<9]: %WHITE%Full Rejuv %PURPLE%65%
+ItemDisplay[rvl FILTLVL=9]: %WHITE%Full Rejuv %PURPLE%65%
 ItemDisplay[rvl]:
-ItemDisplay[rvs FILTLVL<3]: %PURPLE%* %WHITE%Rejuv %PURPLE%35% %PURPLE%*
-ItemDisplay[rvs FILTLVL<7]: %WHITE%juv%PURPLE%35%
+ItemDisplay[rvs FILTLVL<3]: %PURPLE%* %WHITE%Rejuv%PURPLE%35% *
+ItemDisplay[rvs FILTLVL<7]: %WHITE%Rejuv%PURPLE%35%
 ItemDisplay[rvs FILTLVL<8]: %WHITE%Rejuv%PURPLE%35%
 ItemDisplay[rvs FILTLVL=9]: %PURPLE%powerade
 ItemDisplay[rvs]:
@@ -37,20 +37,20 @@ ItemDisplay[mp3 (DIFF>1 OR CLVL>79)]:
 ItemDisplay[mp4 DIFF>1 CLVL>79]:
 
 // Show HP Pots
-ItemDisplay[hp1]: %RED%+ %WHITE%HP1 %RED%+
-ItemDisplay[hp2]: %RED%+ %WHITE%HP2 %RED%+
-ItemDisplay[hp3]: %RED%+ %WHITE%HP3 %RED%+
-ItemDisplay[hp4]: %RED%+ %WHITE%HP4 %RED%+
-ItemDisplay[hp5 FILTLVL<3]: %RED%+ %WHITE%HP5 %RED%+
+ItemDisplay[hp1]: %RED%+ %WHITE%H%RED%P1 +
+ItemDisplay[hp2]: %RED%+ %WHITE%H%RED%P2 +
+ItemDisplay[hp3]: %RED%+ %WHITE%H%RED%P3 +
+ItemDisplay[hp4]: %RED%+ %WHITE%H%RED%P4 +
+ItemDisplay[hp5 FILTLVL<3]: %RED%+ %WHITE%H%RED%P5 +
 ItemDisplay[hp5 (FILTLVL=3 OR FILTLVL=5)]: %WHITE%H%RED%P5
 ItemDisplay[hp5]:
 
 // Show MP Pots
-ItemDisplay[mp1]: %BLUE%+ %WHITE%MP1 %BLUE%+
-ItemDisplay[mp2]: %BLUE%+ %WHITE%MP2 %BLUE%+
-ItemDisplay[mp3]: %BLUE%+ %WHITE%MP3 %BLUE%+
-ItemDisplay[mp4]: %BLUE%+ %WHITE%MP4 %BLUE%+
-ItemDisplay[mp5 FILTLVL<3]: %BLUE%+ %WHITE%MP5 %BLUE%+
+ItemDisplay[mp1]: %BLUE%+ %WHITE%M%BLUE%P1 +
+ItemDisplay[mp2]: %BLUE%+ %WHITE%M%BLUE%P2 +
+ItemDisplay[mp3]: %BLUE%+ %WHITE%M%BLUE%P3 +
+ItemDisplay[mp4]: %BLUE%+ %WHITE%M%BLUE%P4 +
+ItemDisplay[mp5 FILTLVL<3]: %BLUE%+ %WHITE%M%BLUE%P5 +
 ItemDisplay[mp5 (FILTLVL=3 OR FILTLVL=5)]: %WHITE%M%BLUE%P5
 ItemDisplay[mp5]:
 

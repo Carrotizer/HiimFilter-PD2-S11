@@ -966,14 +966,14 @@ ItemDisplay[ibk]: %RED%+%WHITE%ID Tome
 ItemDisplay[tbk]: %BLUE%+%WHITE%TP Tome
 
 // Juvs
-ItemDisplay[rvl FILTLVL<3]: %PURPLE%*  %WHITE%Rejuv %PURPLE%65%  %PURPLE%*
-ItemDisplay[rvl FILTLVL<7]: %PURPLE%*    %WHITE%Rejuv %PURPLE%65%%PURPLE%    *
+ItemDisplay[rvl FILTLVL<3]: %PURPLE%*  %WHITE%Full Rejuv %PURPLE%65%  *
+ItemDisplay[rvl FILTLVL<7]: %PURPLE%*    %WHITE%Full Rejuv %PURPLE%65%    *
 ItemDisplay[rvl FILTLVL<8]: %WHITE%Full Rejuv %PURPLE%65%
-ItemDisplay[rvl FILTLVL<9]: %WHITE%juv %PURPLE%65%
-ItemDisplay[rvl FILTLVL=9]: %PURPLE%GATORADE
+ItemDisplay[rvl FILTLVL<9]: %WHITE%Full Rejuv %PURPLE%65%
+ItemDisplay[rvl FILTLVL=9]: %WHITE%Full Rejuv %PURPLE%65%
 ItemDisplay[rvl]:
-ItemDisplay[rvs FILTLVL<3]: %PURPLE%* %WHITE%Rejuv %PURPLE%35% %PURPLE%*
-ItemDisplay[rvs FILTLVL<7]: %WHITE%juv%PURPLE%35%
+ItemDisplay[rvs FILTLVL<3]: %PURPLE%* %WHITE%Rejuv%PURPLE%35% *
+ItemDisplay[rvs FILTLVL<7]: %WHITE%Rejuv%PURPLE%35%
 ItemDisplay[rvs FILTLVL<8]: %WHITE%Rejuv%PURPLE%35%
 ItemDisplay[rvs FILTLVL=9]: %PURPLE%powerade
 ItemDisplay[rvs]:
@@ -991,20 +991,20 @@ ItemDisplay[mp3 (DIFF>1 OR CLVL>79)]:
 ItemDisplay[mp4 DIFF>1 CLVL>79]:
 
 // Show HP Pots
-ItemDisplay[hp1]: %RED%+ %WHITE%HP1 %RED%+
-ItemDisplay[hp2]: %RED%+ %WHITE%HP2 %RED%+
-ItemDisplay[hp3]: %RED%+ %WHITE%HP3 %RED%+
-ItemDisplay[hp4]: %RED%+ %WHITE%HP4 %RED%+
-ItemDisplay[hp5 FILTLVL<3]: %RED%+ %WHITE%HP5 %RED%+
+ItemDisplay[hp1]: %RED%+ %WHITE%H%RED%P1 +
+ItemDisplay[hp2]: %RED%+ %WHITE%H%RED%P2 +
+ItemDisplay[hp3]: %RED%+ %WHITE%H%RED%P3 +
+ItemDisplay[hp4]: %RED%+ %WHITE%H%RED%P4 +
+ItemDisplay[hp5 FILTLVL<3]: %RED%+ %WHITE%H%RED%P5 +
 ItemDisplay[hp5 (FILTLVL=3 OR FILTLVL=5)]: %WHITE%H%RED%P5
 ItemDisplay[hp5]:
 
 // Show MP Pots
-ItemDisplay[mp1]: %BLUE%+ %WHITE%MP1 %BLUE%+
-ItemDisplay[mp2]: %BLUE%+ %WHITE%MP2 %BLUE%+
-ItemDisplay[mp3]: %BLUE%+ %WHITE%MP3 %BLUE%+
-ItemDisplay[mp4]: %BLUE%+ %WHITE%MP4 %BLUE%+
-ItemDisplay[mp5 FILTLVL<3]: %BLUE%+ %WHITE%MP5 %BLUE%+
+ItemDisplay[mp1]: %BLUE%+ %WHITE%M%BLUE%P1 +
+ItemDisplay[mp2]: %BLUE%+ %WHITE%M%BLUE%P2 +
+ItemDisplay[mp3]: %BLUE%+ %WHITE%M%BLUE%P3 +
+ItemDisplay[mp4]: %BLUE%+ %WHITE%M%BLUE%P4 +
+ItemDisplay[mp5 FILTLVL<3]: %BLUE%+ %WHITE%M%BLUE%P5 +
 ItemDisplay[mp5 (FILTLVL=3 OR FILTLVL=5)]: %WHITE%M%BLUE%P5
 ItemDisplay[mp5]:
 
@@ -4290,7 +4290,7 @@ ItemDisplay[NMAG !RW !SHOP DIN SOCK=4]: %NAME%{%GOLD%Epiphany %GRAY%Lo + Ith + L
 ItemDisplay[NMAG !RW !SHOP WAND SOCK=2]: %NAME%{%GOLD%Wind %GRAY%Sur + El%CL%%GOLD%White %GRAY%Dol + Io%CL%%GOLD%Strength %GRAY%Amn + Tir%CL%%GOLD%Dominion %GRAY%Cham + Ohm%CL%%GOLD%X Runewords X}%CONTINUE%																																											// Wand
 ItemDisplay[NMAG !RW !SHOP SOR SOCK=2]: %NAME%{%GOLD%Neophyte %GRAY%Thul + Tir%CL%%GOLD%X Runewords X}%CONTINUE%																																																						// Orb 2s
 ItemDisplay[NMAG !RW !SHOP SOR SOCK=3]: %NAME%{%GOLD%Venom %GRAY%Tal + Dol + Mal%CL%%GOLD%Plague %GRAY%Cham + Fal + Um%CL%%GOLD%X Runewords X}%CONTINUE%																																																	// Orb 3s
-ItemDisplay[NMAG !RW !SHOP SIN SOCK=2]: %NAME%{%GOLD%Wind %GRAY%Sur + El%CL%%GOLD%Strength %GRAY%Amn + Tir%CL%%GOLD%Steel %GRAY%Tir + El%CL%%GOLD%X Runewords X%CL%%NAME%}%CONTINUE%																																															// Claw 2s
+ItemDisplay[NMAG !RW !SHOP SIN SOCK=2]: %NAME%{%GOLD%Neophyte %GRAY%Thul + Tir%CL%%GOLD%Wind %GRAY%Sur + El%CL%%GOLD%Strength %GRAY%Amn + Tir%CL%%GOLD%Steel %GRAY%Tir + El%CL%%GOLD%X Runewords X%CL%%NAME%}%CONTINUE%																																															// Claw 2s
 ItemDisplay[NMAG !RW !SHOP SIN SOCK=3]: %NAME%{%GOLD%Venom %GRAY%Tal + Dol + Mal%CL%%GOLD%Plague %GRAY%Cham + Fal + Um%CL%%GOLD%Pattern %GRAY%Tal + Ort + Tir%CL%%GOLD%Malice %GRAY%Ith + El + Eth%CL%%GOLD%Lawbringer %GRAY%Amn + Lem + Ko%CL%%GOLD%King's Grace %GRAY%Amn + Ral + Thul%CL%%GOLD%Fury %GRAY%Jah + Gul + Eth%CL%%GOLD%Crescent Moon %GRAY%Shael + Um + Tir%CL%%GOLD%Chaos %GRAY%Fal + Ohm + Um%CL%%GOLD%Black %GRAY%Thul + Io + Nef%CL%%GOLD%X Runewords X%CL%%NAME%}%CONTINUE%														// Claw 3s
 ItemDisplay[NMAG !RW !SHOP SCEPTER SOCK=2]: %NAME%{%GOLD%Wind %GRAY%Sur + El%CL%%GOLD%Strength %GRAY%Amn + Tir%CL%%GOLD%Neophyte %GRAY%Thul + Tir%CL%%GOLD%X Runewords X%CL%%NAME%}%CONTINUE%																																														// Scepter 2s
 ItemDisplay[NMAG !RW !SHOP SCEPTER SOCK=3]: %NAME%{%GOLD%Venom %GRAY%Tal + Dol + Mal%CL%%GOLD%Plague %GRAY%Cham + Fal + Um%CL%%GOLD%Malice %GRAY%Ith + El + Eth%CL%%GOLD%Lawbringer %GRAY%Amn + Lem + Ko%CL%%GOLD%King's Grace %GRAY%Amn + Ral + Thul%CL%%GOLD%Fury %GRAY%Jah + Gul + Eth%CL%%GOLD%Crescent Moon %GRAY%Shael + Um + Tir%CL%%GOLD%X Runewords X%CL%%NAME%}%CONTINUE%																															// Scepter 3s
@@ -4887,6 +4887,24 @@ ItemDisplay[(SORCERESS OR FILTLVL<2) CL6 FILTLVL<3 (MAG OR RARE) !ID]: %NAME%{%N
 
 //------------------------------------
 //----- ASSASSIN
+// Neophyte base with Psychic Hammer or Mind Blast
+ItemDisplay[NMAG !RW SK253>0 (SOCK=0 OR SOCK=2) FILTLVL<3 CLVL<80 (ASSASSIN OR FILTLVL<2)]: %PX-62%%NAME% %LEVELING_TAG%{%RED%Neophyte Base%CL%%NAME%}
+ItemDisplay[NMAG !RW SK273>0 SIN (SOCK=0 OR SOCK=2) FILTLVL<3 CLVL<80 (ASSASSIN OR FILTLVL<2)]: %PX-62%%NAME% %LEVELING_TAG%{%RED%Neophyte Base%CL%%NAME%}
+
+// Psychic Hammer
+ItemDisplay[SK253>0 DIFF<1 FILTLVL<3 (ASSASSIN OR FILTLVL<2)]: %PX-62%%NAME% %LEVELING_TAG%{%RED%Leveling Item%CL%%NAME%}
+ItemDisplay[SK253>1 DIFF<2 FILTLVL<3 (ASSASSIN OR FILTLVL<2)]: %PX-62%%NAME% %LEVELING_TAG%{%RED%Leveling Item%CL%%NAME%}
+
+// Mind Blast
+ItemDisplay[SK273>0 DIFF<1 FILTLVL<3 (ASSASSIN OR FILTLVL<2)]: %PX-62%%NAME% %LEVELING_TAG%{%RED%Leveling Item%CL%%NAME%}
+ItemDisplay[SK273>1 DIFF<2 FILTLVL<3 (ASSASSIN OR FILTLVL<2)]: %PX-62%%NAME% %LEVELING_TAG%{%RED%Leveling Item%CL%%NAME%}
+ItemDisplay[SK273>2 CLVL<80 FILTLVL<3 (ASSASSIN OR FILTLVL<2)]: %PX-62%%NAME% %LEVELING_TAG%{%RED%Leveling Item%CL%%NAME%}
+
+// Burst of Speed
+ItemDisplay[SK258>0 DIFF<1 FILTLVL<3 (ASSASSIN OR FILTLVL<2)]: %PX-62%%NAME% %LEVELING_TAG%{%RED%Leveling Item%CL%%NAME%}
+ItemDisplay[SK258>1 DIFF<2 FILTLVL<3 (ASSASSIN OR FILTLVL<2)]: %PX-62%%NAME% %LEVELING_TAG%{%RED%Leveling Item%CL%%NAME%}
+ItemDisplay[SK258>2 CLVL<80 FILTLVL<3 (ASSASSIN OR FILTLVL<2)]: %PX-62%%NAME% %LEVELING_TAG%{%RED%Leveling Item%CL%%NAME%}
+
 // Wake of fire
 ItemDisplay[SK262>0 DIFF<1 FILTLVL<3 (ASSASSIN OR FILTLVL<2)]: %PX-62%%NAME% %LEVELING_TAG%{%RED%Leveling Item%CL%%NAME%}
 ItemDisplay[SK262>1 DIFF<2 FILTLVL<3 (ASSASSIN OR FILTLVL<2)]: %PX-62%%NAME% %LEVELING_TAG%{%RED%Leveling Item%CL%%NAME%}
