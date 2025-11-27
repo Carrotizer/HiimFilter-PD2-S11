@@ -22,7 +22,7 @@ ItemDisplayFilterName[]: No Items Out of Town
 //-----------------------------------------------------------------------------------
 // SHOW VERSION AND LEVEL DETAILS ON CUBE/KEYS
 //-----------------------------------------------------------------------------------
-ItemDisplay[box]: %NAME%{Send Feedback via PD2 Discord #lootfilter%CL%Last updated  2025th%CL%Season 12 - version 13%CL%HiimFilter - Vanilla+ -}%CONTINUE%
+ItemDisplay[box]: %NAME%{Send Feedback via PD2 Discord #lootfilter%CL%Last updated November 24th%CL%Season 12 - version 11%CL%HiimFilter - Vanilla+ -}%CONTINUE%
 
 ItemDisplay[box FILTLVL=0]: %NAME%{%NAME% OFF}%CONTINUE%
 ItemDisplay[box FILTLVL=1]: %NAME%{%NAME% Base}%CONTINUE%
@@ -1226,6 +1226,7 @@ ItemDisplay[MAG cm1 !ID FILTLVL<9]: %NAME%
 // large
 ItemDisplay[MAG cm2 !ID FILTLVL>6]: %BLUE%LC%CONTINUE%
 ItemDisplay[MAG cm2 !ID ILVL>89 FILTLVL<9]: %DOT-9B%%TIER-6%%MAG_DBL_AFFIX_ITEM_LEFT% %NAME% %MAG_DBL_AFFIX_ITEM_RIGHT%
+ItemDisplay[MAG cm1 !ID FILTLVL<8]: %DOT-9B%%TIER-6%%MAG_ITEM_LEFT%   %NAME%    %MAG_ITEM_RIGHT%
 ItemDisplay[MAG cm2 !ID FILTLVL<7]: %NAME%
 // Unique Charms - UNID
 ItemDisplay[cm2 UNI !ID]: %BORDER-68%%UBER_KEYS_LEFT%%GOLD%  Unidentified Hellfire Torch  %UBER_KEYS_RIGHT%
@@ -4887,8 +4888,8 @@ ItemDisplay[(SORCERESS OR FILTLVL<2) CL6 FILTLVL<3 (MAG OR RARE) !ID]: %NAME%{%N
 //------------------------------------
 //----- ASSASSIN
 // Neophyte base with Psychic Hammer or Mind Blast
-ItemDisplay[NMAG !RW SK253>0 (SOCK=0 OR SOCK=2) FILTLVL<3 CLVL<80 (ASSASSIN OR FILTLVL<2)]: %PX-62%%NAME% %LEVELING_TAG%{%RED%Neophyte Base%CL%%NAME%}
-ItemDisplay[NMAG !RW SK273>0 SIN (SOCK=0 OR SOCK=2) FILTLVL<3 CLVL<80 (ASSASSIN OR FILTLVL<2)]: %PX-62%%NAME% %LEVELING_TAG%{%RED%Neophyte Base%CL%%NAME%}
+ItemDisplay[NMAG !RW SK253>0 (SOCK=0 OR SOCK=2) FILTLVL<4 CLVL<80 (ASSASSIN OR FILTLVL<2)]: %PX-62%%NAME% %LEVELING_TAG%{%RED%Neophyte Base%CL%%NAME%}
+ItemDisplay[NMAG !RW SK273>0 SIN (SOCK=0 OR SOCK=2) FILTLVL<6 CLVL<80 (ASSASSIN OR FILTLVL<2)]: %PX-62%%NAME% %LEVELING_TAG%{%RED%Neophyte Base%CL%%NAME%}
 
 // Psychic Hammer
 ItemDisplay[SK253>0 DIFF<1 FILTLVL<3 (ASSASSIN OR FILTLVL<2)]: %PX-62%%NAME% %LEVELING_TAG%{%RED%Leveling Item%CL%%NAME%}
@@ -4902,7 +4903,7 @@ ItemDisplay[SK273>2 CLVL<80 FILTLVL<3 (ASSASSIN OR FILTLVL<2)]: %PX-62%%NAME% %L
 // Burst of Speed
 ItemDisplay[SK258>0 DIFF<1 FILTLVL<3 (ASSASSIN OR FILTLVL<2)]: %PX-62%%NAME% %LEVELING_TAG%{%RED%Leveling Item%CL%%NAME%}
 ItemDisplay[SK258>1 DIFF<2 FILTLVL<3 (ASSASSIN OR FILTLVL<2)]: %PX-62%%NAME% %LEVELING_TAG%{%RED%Leveling Item%CL%%NAME%}
-ItemDisplay[SK258>2 CLVL<80 FILTLVL<3 (ASSASSIN OR FILTLVL<2)]: %PX-62%%NAME% %LEVELING_TAG%{%RED%Leveling Item%CL%%NAME%}
+ItemDisplay[SK258>2 CLVL<80 FILTLVL<4 (ASSASSIN OR FILTLVL<2)]: %PX-62%%NAME% %LEVELING_TAG%{%RED%Leveling Item%CL%%NAME%}
 
 // Wake of fire
 ItemDisplay[SK262>0 DIFF<1 FILTLVL<3 (ASSASSIN OR FILTLVL<2)]: %PX-62%%NAME% %LEVELING_TAG%{%RED%Leveling Item%CL%%NAME%}

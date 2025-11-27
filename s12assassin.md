@@ -1,8 +1,8 @@
 # Mind Blast
 
 # Skills
+20 Psychic Hammer (max this first for leveling)
 20 Mind Blast
-20 Psychic Hammer
 20 Cloak of Shadows
 20 Shadow Warrior
 1 Claw Mastery
@@ -18,6 +18,7 @@ Unlikely to not miss, so ignore Blade Shield regardless of chance to proc.  Rely
 # Stats
 ## Strength Requirements
 * Scissors Suwayyah: 118 (108 if eth)
+* Shadow Dancers
 
 ### Strength Bonuses 
 * Tyrael's Might: +27

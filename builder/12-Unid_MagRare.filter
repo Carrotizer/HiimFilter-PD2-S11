@@ -94,6 +94,7 @@ ItemDisplay[MAG cm1 !ID FILTLVL<9]: %NAME%
 // large
 ItemDisplay[MAG cm2 !ID FILTLVL>6]: %BLUE%LC%CONTINUE%
 ItemDisplay[MAG cm2 !ID ILVL>89 FILTLVL<9]: %DOT-9B%%TIER-6%%MAG_DBL_AFFIX_ITEM_LEFT% %NAME% %MAG_DBL_AFFIX_ITEM_RIGHT%
+ItemDisplay[MAG cm1 !ID FILTLVL<8]: %DOT-9B%%TIER-6%%MAG_ITEM_LEFT%   %NAME%    %MAG_ITEM_RIGHT%
 ItemDisplay[MAG cm2 !ID FILTLVL<7]: %NAME%
 // Unique Charms - UNID
 ItemDisplay[cm2 UNI !ID]: %BORDER-68%%UBER_KEYS_LEFT%%GOLD%  Unidentified Hellfire Torch  %UBER_KEYS_RIGHT%
