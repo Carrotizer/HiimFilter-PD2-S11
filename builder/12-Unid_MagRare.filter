@@ -51,6 +51,10 @@ ItemDisplay[MAG (rin OR amu) !ID FILTLVL<3]: %DOT-91%%MAG_ITEM_LEFT%     %NAME% 
 ItemDisplay[MAG amu !ID MAPID=83 FILTLVL<7]: %NAME%%DOT-91%%TIER-2%
 //Warlords
 ItemDisplay[MAG amu !ID (MAPID=181 OR MAPID=182)]: %NAME%%DOT-91%%TIER-2%
+
+// Unid magic Amulet
+ItemDisplay[MAG amu !ID FILTLVL<7]: %DOT-91%%MAG_ITEM_LEFT%     %NAME%     %MAG_ITEM_LEFT%
+
 //90+ amu 2skill
 ItemDisplay[RARE amu !ID (FILTLVL<5 OR ALVL>89) FILTLVL<7]: %RARE_HIGH_ITEM_LEFT%    %NAME%    %RARE_HIGH_ITEM_RIGHT%%CONTINUE%
 ItemDisplay[RARE amu !ID (FILTLVL<5 OR ALVL>89) FILTLVL<8]: %RARE_ITEM_LEFT%   %NAME%   %RARE_ITEM_RIGHT%%CONTINUE%

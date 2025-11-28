@@ -1,23 +1,20 @@
 # Mind Blast
 
-# Skills
-20 Psychic Hammer (max this first for leveling)
-20 Mind Blast
-20 Cloak of Shadows
-20 Shadow Warrior
-1 Claw Mastery
-1 Burst of Speed
-1 point in Dragon Flight (4 points total)
-Rest in Fade and Weapon Block appropriately
+# Skills & Leveling
+* 20 Psychic Hammer (max this first for leveling)
+* 20 Shadow Warrior (master this second; Mind Blast won't be good until later)
+* 20 Mind Blast
+* 20 Cloak of Shadows
+* 1 Claw Mastery
+* 1 Burst of Speed
+* 1 point in Dragon Flight (4 points total)
+  * Can skip this with Teleport staff early on, so focus on DPS more. 
+* Rest in Fade and Weapon Block appropriately
 
-Shadow Killer has 33% chance to cast level 24 Frost Nova on striking.  Blade Shield could be fun.
-Or if GG caster claw has amplify damage on striking.
-* Never mind - Chance to Cast on Striking gives a percentage chance to use a skill whenever the equipping player character, mercenary or pet uses a weapon attack which does not miss and is not blocked, or to which Dodge, Avoid, Evade or Weapon Block are not applied.
-Unlikely to not miss, so ignore Blade Shield regardless of chance to proc.  Rely on merc for curse.
 
 # Stats
 ## Strength Requirements
-* Scissors Suwayyah: 118 (108 if eth)
+* War Fist: 118 (108 if eth)
 * Shadow Dancers
 
 ### Strength Bonuses 
