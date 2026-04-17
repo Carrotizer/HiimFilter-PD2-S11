@@ -8,7 +8,7 @@ This file tracks the status of porting changes from the Season 12 branch to the 
 
 ## Commits to Port
 
-- [ ] **89091ac** - Show HP5 and MP5 in dungeons
+- [x] **89091ac** - Show HP5 and MP5 in dungeons
 - [ ] **ea9333a** - Hide 0ed 0os eth Infinity bases
 - [ ] **5a0d7c6** - Hide rare chests; show magic amulets to craft for PvP tournament
 - [ ] **abe381e** - Show Infinity bases if SOC=4 or SOC=0 & EDAM>0
