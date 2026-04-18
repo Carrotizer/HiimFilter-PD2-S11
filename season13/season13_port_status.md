@@ -32,9 +32,9 @@ This file tracks the status of porting changes from the Season 12 branch to the 
 - [ ] **5683949** - Update rune filters
 - [x] **b0dc6c3** - Show longer names for unid Small and Large Charms for FILTLVL 7
 - [ ] **550322e** - Show HP5 for FILTLVL 7+.  Show unid rare boots, belt, and chest for FILTLVL<8
-- [ ] **b0d2ed6** - Show magic unid jewels bigger for FILTLVL 7
+- [x] **b0d2ed6** - Show magic unid jewels bigger for FILTLVL 7 (not needed for season 13)
 - [ ] **0189aac** - Show unid magic Tiara or Diadem for FILTLVL 7
-- [ ] **0482c06** - Remove map marker for Infused Arcane Orb
+- [x] **0482c06** - Remove map marker for Infused Arcane Orb
 - [ ] **6c43e99** - Remove map icon for magic jewels FILTLVL 7+
 - [x] **a882ebf** - Show crafting low runes Tir, Eth, Ort, Ral, Amn, Sol for FILTLVL<8
 - [ ] **8227097** - Update RUNE_LOW_CRAFT prefix/suffix to more closely match season 11
