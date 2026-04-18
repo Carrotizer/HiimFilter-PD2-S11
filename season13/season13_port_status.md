@@ -22,7 +22,7 @@ This file tracks the status of porting changes from the Season 12 branch to the 
 - [ ] **0ef7805** - Update create_filters.bat to copy the filter to the local filter directory
 - [ ] **c44c008** - Fix Horadric Cube filter line getting cut
 - [ ] **9335225** - Raise upper limit for showing Neophyte claw bases, and show tags for Large Charms as it would for other charms
-- [ ] **e55c0e5** - Show magic Amulets for FILTLVL<7
+- [x] **e55c0e5** - Show magic Amulets for FILTLVL<7
 - [ ] **2a0cbe0** - Hide magic quivers
 - [x] **295093a** - Show magic Circlets for FILTLVL<5
 - [x] **054bdbc** - Hide gold<9999
@@ -39,7 +39,6 @@ This file tracks the status of porting changes from the Season 12 branch to the 
 - [ ] **e4ec6a4** - Show 4os Faith Crossbow base with ED>0 for FILTLVL<8
 - [ ] **5e5fdf1** - Update low rune and craft rune decorators
 - [ ] **92e359b** - Hide unid magic Necromancer heads
-- [ ] **4d81b5a** - Hide magic amulets
 - [ ] **ec4cb25** - Hide non-15ed superior Faith bases
 - [ ] **b3d92e9** - Hide Arcanna's Flesh Light Plate
 - [ ] **70406d4** - Hide arrows & bolts for non-Amazon
