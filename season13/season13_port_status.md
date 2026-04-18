@@ -16,7 +16,7 @@ This file tracks the status of porting changes from the Season 12 branch to the 
 - [x] **e9beb6e** - Show 4os and 5os Flail for HotO and CtA
 - [x] **b5330df** - Raise +3 Poison Strike on Kris-line to FILTLVL<8
 - [x] **077450f** - Show 5os Crystal Sword for CtA
-- [ ] **c3850e2** - Show 15ed merc Faith base
+- [x] **c3850e2** - Show 15ed merc Faith base
 - [x] **1133223** - Update Rejuvenation Potions
 - [ ] **f860d53** - Ran create_filters.bat and updated vanilla plus filter
 - [ ] **0ef7805** - Update create_filters.bat to copy the filter to the local filter directory
@@ -36,7 +36,7 @@ This file tracks the status of porting changes from the Season 12 branch to the 
 - [ ] **0189aac** - Show unid magic Tiara or Diadem for FILTLVL 7
 - [ ] **0482c06** - Remove map marker for Infused Arcane Orb
 - [ ] **6c43e99** - Remove map icon for magic jewels FILTLVL 7+
-- [ ] **a882ebf** - Show crafting low runes Tir, Eth, Ort, Ral, Amn, Sol for FILTLVL<8
+- [x] **a882ebf** - Show crafting low runes Tir, Eth, Ort, Ral, Amn, Sol for FILTLVL<8
 - [ ] **8227097** - Update RUNE_LOW_CRAFT prefix/suffix to more closely match season 11
 - [ ] **e4ec6a4** - Show 4os Faith Crossbow base with ED>0 for FILTLVL<8
 - [ ] **5e5fdf1** - Update low rune and craft rune decorators
