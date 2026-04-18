@@ -21,12 +21,6 @@ This file tracks the status of porting changes from the Season 12 branch to the 
 - [ ] **5c4097f** - Add all notes
 - [ ] **f860d53** - Ran create_filters.bat and updated vanilla plus filter
 - [ ] **0ef7805** - Update create_filters.bat to copy the filter to the local filter directory
-- [ ] **6d852cd** - Add CSV files
-- [ ] **a175c34** - Add CSV files
-- [ ] **8c95a6c** - Add War Cry calculator and comparison
-- [ ] **8d40198** - Add Neophyte hint to 2 soc Claws
-- [ ] **6dafbb4** - Update Assassin leveling section to show Neophyte base and Psychic Hammer/Mind Blast
-- [ ] **4036611** - Update potion names to more closely match D2R version
 - [ ] **c44c008** - Fix Horadric Cube filter line getting cut
 - [ ] **9335225** - Raise upper limit for showing Neophyte claw bases, and show tags for Large Charms as it would for other charms
 - [ ] **e55c0e5** - Show magic Amulets for FILTLVL<7
@@ -35,8 +29,8 @@ This file tracks the status of porting changes from the Season 12 branch to the 
 - [ ] **295093a** - Show magic Circlets for FILTLVL<5
 - [ ] **054bdbc** - Hide gold<9999
 - [ ] **cd4db8c** - Change WORLDSTAR back to Worldstone Shard
-- [ ] **ef673e0** - Spell out flawless and perfect for gems
-- [ ] **7f73db2** - Show Large Charm same way as Small Charm
+- [x] **ef673e0** - Spell out flawless and perfect for gems
+- [x] **7f73db2** - Show Large Charm same way as Small Charm
 - [ ] **5683949** - Update rune filters
 - [ ] **b0dc6c3** - Show longer names for unid Small and Large Charms for FILTLVL 7
 - [ ] **550322e** - Show HP5 for FILTLVL 7+.  Show unid rare boots, belt, and chest for FILTLVL<8
@@ -61,10 +55,7 @@ This file tracks the status of porting changes from the Season 12 branch to the 
 - [ ] **ca290a5** - Show Death's Hand, Death's Guard, and Tancred's Hobnails for FILTLVL<8
 - [ ] **e0d7439** - Unid rare Necromancer heads now only show for FILTLVL<7
 - [ ] **61abda9** - Remove high drop sound from Death's Hand, Guard, and Tancred's Hobnails
-- [ ] **ba71342** - Show 5os Heavy Crossbow for offhand Call to Arms base
 - [ ] **735a8fd** - Show superior 4os Demon Crossbow for Wrath base
-- [ ] **7255ce3** - Hide 5os Heavy Crossbow base
-- [ ] **f94e894** - Hide 4os/5os Flail and show Phase Blades again
 - [ ] **abe381e** - Show Infinity bases if SOC=4 or SOC=0 & EDAM>0
 - [ ] **5a0d7c6** - Hide rare chests; show magic amulets to craft for PvP tournament
 - [ ] **ea9333a** - Hide 0ed 0os eth Infinity bases
