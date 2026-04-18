@@ -17,7 +17,7 @@ This file tracks the status of porting changes from the Season 12 branch to the 
 - [x] **b5330df** - Raise +3 Poison Strike on Kris-line to FILTLVL<8
 - [x] **077450f** - Show 5os Crystal Sword for CtA
 - [ ] **c3850e2** - Show 15ed merc Faith base
-- [ ] **1133223** - Update Rejuvenation Potions
+- [x] **1133223** - Update Rejuvenation Potions
 - [ ] **f860d53** - Ran create_filters.bat and updated vanilla plus filter
 - [ ] **0ef7805** - Update create_filters.bat to copy the filter to the local filter directory
 - [ ] **c44c008** - Fix Horadric Cube filter line getting cut
