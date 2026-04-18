@@ -11,7 +11,7 @@ ItemDisplay[ibk]: %RED%+%WHITE%ID Tome
 ItemDisplay[tbk]: %BLUE%+%WHITE%TP Tome
 
 // Juvs - always show, keep same name.
-ItemDisplay[rvl]: %WHITE%Full Rejuv %PURPLE%65%%CONTINUE%   // 
+ItemDisplay[rvl]: %WHITE%Full Rejuv %PURPLE%65%%CONTINUE%   
 ItemDisplay[rvs]: %WHITE%Rejuv%PURPLE%35%%CONTINUE%
 
 // Hide bad pots when appropriate based on filter level
