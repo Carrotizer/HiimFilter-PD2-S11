@@ -152,17 +152,17 @@ ItemDisplay[lucb GROUND]: Dorito%CONTINUE%
 ItemDisplay[lucb QTY>1 GROUND]: %NAME% %QTY_TAG%%CONTINUE%
 
 // Formating for names
-ItemDisplay[gzv OR gzvs]: %PURPLE%F. Amethyst%CONTINUE%
-ItemDisplay[gpv OR gpvs]: %PURPLE%O  P. Amethyst  O%CONTINUE%
-ItemDisplay[glw OR glws]: %WHITE%F. Diamond%CONTINUE%
-ItemDisplay[gpw OR gpws]: %PURPLE%O  %WHITE%P. Diamond  %PURPLE%O%CONTINUE%
-ItemDisplay[glg OR glgs]: %GREEN%F. Emerald%CONTINUE%
-ItemDisplay[gpg OR gpgs]: %GREEN%O  P. Emerald  O%CONTINUE%
-ItemDisplay[glr OR glrs]: %RED%F. Ruby%CONTINUE%
-ItemDisplay[gpr OR gprs]: %RED%O  P. Ruby  O%CONTINUE%
-ItemDisplay[glb OR glbs]: %BLUE%F. Sapphire%CONTINUE%
-ItemDisplay[gpb OR gpbs]: %BLUE%O  P. Sapphire  O%CONTINUE%
-ItemDisplay[gly OR glys]: %YELLOW%F. Topaz%CONTINUE%
-ItemDisplay[gpy OR gpys]: %YELLOW%O  P. Topaz  O%CONTINUE%
-ItemDisplay[skl OR skls]: %CORAL%. %LIGHT_GRAY%F. Skull %CORAL%.%CONTINUE%
-ItemDisplay[skz OR skzs]: %CORAL%O O  %LIGHT_GRAY%P. Skull  %CORAL%O O%CONTINUE%
+ItemDisplay[gzv OR gzvs]: %PURPLE%Flawless Amethyst%CONTINUE%
+ItemDisplay[gpv OR gpvs]: %PURPLE%O  Perfect Amethyst  O%CONTINUE%
+ItemDisplay[glw OR glws]: %WHITE%Flawless Diamond%CONTINUE%
+ItemDisplay[gpw OR gpws]: %PURPLE%O  Perfect Diamond  %PURPLE%O%CONTINUE%
+ItemDisplay[glg OR glgs]: %GREEN%Flawless Emerald%CONTINUE%
+ItemDisplay[gpg OR gpgs]: %GREEN%O  Perfect Emerald  O%CONTINUE%
+ItemDisplay[glr OR glrs]: %RED%Flawless Ruby%CONTINUE%
+ItemDisplay[gpr OR gprs]: %RED%O  Perfect Ruby  O%CONTINUE%
+ItemDisplay[glb OR glbs]: %BLUE%Flawless Sapphire%CONTINUE%
+ItemDisplay[gpb OR gpbs]: %BLUE%O  Perfect Sapphire  O%CONTINUE%
+ItemDisplay[gly OR glys]: %YELLOW%Flawless Topaz%CONTINUE%
+ItemDisplay[gpy OR gpys]: %YELLOW%O  Perfect Topaz  O%CONTINUE%
+ItemDisplay[skl OR skls]: %CORAL%. %LIGHT_GRAY%Flawless Skull %CORAL%.%CONTINUE%
+ItemDisplay[skz OR skzs]: %CORAL%O O  %LIGHT_GRAY%Perfect Skull  %CORAL%O O%CONTINUE%
