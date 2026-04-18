@@ -27,12 +27,12 @@ This file tracks the status of porting changes from the Season 12 branch to the 
 - [ ] **2056b2e** - Merged changes from Hiim. Generated filter. Season 12 start!
 - [ ] **2a0cbe0** - Hide magic quivers
 - [ ] **295093a** - Show magic Circlets for FILTLVL<5
-- [ ] **054bdbc** - Hide gold<9999
-- [ ] **cd4db8c** - Change WORLDSTAR back to Worldstone Shard
+- [x] **054bdbc** - Hide gold<9999
+- [x] **cd4db8c** - Change WORLDSTAR back to Worldstone Shard
 - [x] **ef673e0** - Spell out flawless and perfect for gems
 - [x] **7f73db2** - Show Large Charm same way as Small Charm
 - [ ] **5683949** - Update rune filters
-- [ ] **b0dc6c3** - Show longer names for unid Small and Large Charms for FILTLVL 7
+- [x] **b0dc6c3** - Show longer names for unid Small and Large Charms for FILTLVL 7
 - [ ] **550322e** - Show HP5 for FILTLVL 7+.  Show unid rare boots, belt, and chest for FILTLVL<8
 - [ ] **b0d2ed6** - Show magic unid jewels bigger for FILTLVL 7
 - [ ] **0189aac** - Show unid magic Tiara or Diadem for FILTLVL 7

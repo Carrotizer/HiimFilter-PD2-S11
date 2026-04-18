@@ -146,8 +146,8 @@ Alias[CRAFT_LLD]: %NAME% %GREEN%[LLD Craft]
 // General Item re-names
 //-----------------------------------------------------------------------------------
 
-ItemDisplay[wss]: %PURPLE%WORLDSTAR HIPHOP%CONTINUE%
-ItemDisplay[cwss]: %ORANGE%Tainted %PURPLE%WORLDSTAR HIPHOP%CONTINUE%
+ItemDisplay[wss]: %PURPLE%Worldstone Shard%CONTINUE%
+ItemDisplay[cwss]: %ORANGE%Tainted %PURPLE%Worldstone Shard%CONTINUE%
 ItemDisplay[lucb GROUND]: Dorito%CONTINUE%
 ItemDisplay[lucb QTY>1 GROUND]: %NAME% %QTY_TAG%%CONTINUE%
 
