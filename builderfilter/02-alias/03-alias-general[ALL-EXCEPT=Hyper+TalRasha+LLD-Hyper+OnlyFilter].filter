@@ -149,8 +149,8 @@ Alias[CRAFT_LLD]: %NAME% %GREEN%[LLD Craft]
 // General Item re-names
 //-----------------------------------------------------------------------------------
 
-ItemDisplay[wss]: %PURPLE%WORLDSTONE SHARD%CONTINUE%
-ItemDisplay[cwss]: %ORANGE%Tainted %PURPLE%WORLDSTONE SHARD%CONTINUE%
+ItemDisplay[wss]: %PURPLE%Worldstone Shard%CONTINUE%
+ItemDisplay[cwss]: %ORANGE%Tainted %PURPLE%Worldstone Shard%CONTINUE%
 
 // Formating for names
 ItemDisplay[gzv OR gzvs]: %PURPLE%Flawless Amethyst%CONTINUE%
