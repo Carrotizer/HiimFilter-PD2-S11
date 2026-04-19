@@ -26,7 +26,7 @@ This file tracks the status of porting changes from the Season 12 branch to the 
 - [x] **cd4db8c** - Change WORLDSTAR back to Worldstone Shard
 - [x] **ef673e0** - Spell out flawless and perfect for gems
 - [x] **7f73db2** - Show Large Charm same way as Small Charm
-- [ ] **5683949** - Update rune filters
+- [x] **5683949** - Update rune filters
 - [x] **b0dc6c3** - Show longer names for unid Small and Large Charms for FILTLVL 7
 - [ ] **550322e** - Show HP5 for FILTLVL 7+.  Show unid rare boots, belt, and chest for FILTLVL<8
 - [x] **0482c06** - Remove map marker for Infused Arcane Orb
