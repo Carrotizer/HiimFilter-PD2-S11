@@ -1,9 +1,6 @@
 {
   "filters": [
-    { "name": "Hiim",       "file": "Hiim.filter",                           "tags": ["Base"] },
-    { "name": "Vanilla",    "file": "Carrotizer_Vanilla_Plus.filter",              "tags": ["Vanilla"] },
-    { "name": "Assassin",   "file": "Hiim_Crafting_Assassin_Focused.filter", "tags": ["Assassin","Crafting"] },
-    { "name": "ClosedBeta", "file": "Hiim_Closed_Beta.filter",               "tags": ["ClosedBeta"] }
+    { "name": "Vanilla", "file": "Carrotizer_Vanilla_Plus.filter", "tags": ["Vanilla"] }
   ],
-  "beta": true
+  "beta": false
 }
