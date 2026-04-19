@@ -18,9 +18,9 @@ This file tracks the status of porting changes from the Season 12 branch to the 
 - [x] **077450f** - Show 5os Crystal Sword for CtA
 - [x] **c3850e2** - Show 15ed merc Faith base
 - [x] **1133223** - Update Rejuvenation Potions
-- [ ] **9335225** - Raise upper limit for showing Neophyte claw bases, and show tags for Large Charms as it would for other charms
+- [x] **9335225** - Raise upper limit for showing Neophyte claw bases, and show tags for Large Charms as it would for other charms
 - [x] **e55c0e5** - Show magic Amulets for FILTLVL<7
-- [ ] **2a0cbe0** - Hide magic quivers
+- [x] **2a0cbe0** - Hide magic quivers
 - [x] **295093a** - Show magic Circlets for FILTLVL<5
 - [x] **054bdbc** - Hide gold<9999
 - [x] **cd4db8c** - Change WORLDSTAR back to Worldstone Shard
