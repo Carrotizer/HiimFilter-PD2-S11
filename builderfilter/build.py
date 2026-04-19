@@ -2,6 +2,7 @@ import datetime
 import json
 import os
 import re
+import shutil
 
 SCRIPT_DIR  = os.path.dirname(os.path.abspath(__file__))
 OUTPUT_DIR  = os.path.dirname(SCRIPT_DIR)
@@ -151,6 +152,25 @@ def build_filter(entry, groups):
     return "".join(parts)
 
 
+def copy_to_local_folder():
+    """Copy Carrotizer_Vanilla_Plus.filter to the PD2 local filters directory."""
+    source = os.path.join(OUTPUT_DIR, "Carrotizer_Vanilla_Plus.filter")
+    destination_dir = r"D:\Program Files (x86)\Diablo II\ProjectD2\filters\local"
+    destination = os.path.join(destination_dir, "Carrotizer_Vanilla_Plus.filter")
+
+    if not os.path.exists(source):
+        print(f"  Warning: {source} not found, skipping copy.")
+        return
+
+    try:
+        if not os.path.exists(destination_dir):
+            os.makedirs(destination_dir)
+        shutil.copy2(source, destination)
+        print(f"  Copied {source} to {destination}")
+    except Exception as e:
+        print(f"  Error copying file: {e}")
+
+
 def main():
     update_version()
     filters, groups, beta = load_config()
@@ -167,7 +187,9 @@ def main():
         with open(out_path, "w", encoding="utf-8") as f:
             f.write(content)
         print(f"  wrote {len(content):,} chars -> {out_path}")
+    
     print("All filters built.")
+    copy_to_local_folder()
 
 
 if __name__ == "__main__":
