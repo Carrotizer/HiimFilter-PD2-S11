@@ -44,3 +44,5 @@ This file tracks the status of porting changes from the Season 12 branch to the 
 - [ ] **5a0d7c6** - Hide rare chests; show magic amulets to craft for PvP tournament
 - [ ] **ea9333a** - Hide 0ed 0os eth Infinity bases
 - [x] **89091ac** - Show HP5 and MP5 in dungeons
+
+TODO: Move up Pavise and Steelclash
