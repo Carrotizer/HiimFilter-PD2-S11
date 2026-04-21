@@ -1,3 +1,15 @@
+# Season 13
+## Closed Beta
+### Kicksin (Dragon Tail)
+Great DPS, but bossing seems hard.  You lose Weapon Block (and this is a main reason I play Assassin).
+
+### Venom Chaos WWsin
+Losing splash radius feels bad.  Don't play a nerfed build. For the investment, not worth.
+
+### Death Sentry
+Probably ok but Lightning Trap range is NICE (especially if I want to alt tab and update listings)
+
+
 # Fist of Fire
 
 ## Leveling
