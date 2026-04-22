@@ -47,10 +47,12 @@ ItemDisplay[(SORCERESS OR FILTLVL<2) CL6 FILTLVL<3 (MAG OR RARE) !ID]: %NAME%{%N
 // Pattern: Tal • Ort • Tir -> +15@ Res
 // Black: Thul • Io • Nef -> 15 IAS, +10 Vitality
 
+// Tiger Strike - SK254: Leveling until Charged Sentry
+ItemDisplay[SK254>0 DIFF<1 FILTLVL<3 (ASSASSIN OR FILTLVL<2)]: %NAME% %LEVELING_TAG%{%RED%Leveling Item%CL%%NAME%}
+
 // Fire Blast - SK251
 ItemDisplay[SK251>0 DIFF<1 FILTLVL<4 (ASSASSIN OR FILTLVL<2)]: %NAME% %LEVELING_TAG%{%RED%Leveling Item%CL%%NAME%}
 ItemDisplay[SK251>1 DIFF<2 FILTLVL<4 (ASSASSIN OR FILTLVL<2)]: %NAME% %LEVELING_TAG%{%RED%Leveling Item%CL%%NAME%}
-ItemDisplay[SK251>2 CLVL<80 FILTLVL<4 (ASSASSIN OR FILTLVL<2)]: %NAME% %LEVELING_TAG%{%RED%Leveling Item%CL%%NAME%}
 
 // Charged Bolt Sentry - SK261
 ItemDisplay[SK261>0 DIFF<1 FILTLVL<6 (ASSASSIN OR FILTLVL<2)]: %NAME% %LEVELING_TAG%{%RED%Leveling Item%CL%%NAME%}
