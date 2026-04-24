@@ -35,9 +35,9 @@ ItemDisplay[QUIVER RARE !ID AMAZON FILTLVL<7]: %YELLOW%*   %NAME%   *
 
 // Arrows and Bolts - Non zon
 ItemDisplay[QUIVER NMAG]:
-ItemDisplay[QUIVER MAG !ID FILTLVL<5]:%NAME%
+ItemDisplay[QUIVER MAG !ID FILTLVL<3]:%NAME%
 ItemDisplay[QUIVER MAG !ID]:
-ItemDisplay[QUIVER RARE !ID FILTLVL<9]:%NAME%
+ItemDisplay[QUIVER RARE !ID FILTLVL<7]:%NAME%
 //-----------------------------------------------------------------------------------
 
 //-----------------------------------------------------------------------------------

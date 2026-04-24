@@ -47,16 +47,18 @@ ItemDisplay[(SORCERESS OR FILTLVL<2) CL6 FILTLVL<3 (MAG OR RARE) !ID]: %NAME%{%N
 // Pattern: Tal • Ort • Tir -> +15@ Res
 // Black: Thul • Io • Nef -> 15 IAS, +10 Vitality
 
-// Tiger Strike - SK254: Leveling until Charged Sentry
+// Leveling until Charged Sentry
+// Tiger Strike - SK254 
 ItemDisplay[SK254>0 DIFF<1 FILTLVL<3 (ASSASSIN OR FILTLVL<2)]: %NAME% %LEVELING_TAG%{%RED%Leveling Item%CL%%NAME%}
+
+// Fists of Fire - SK259
+ItemDisplay[SK259>0 DIFF<1 FILTLVL<3 (ASSASSIN OR FILTLVL<2)]: %NAME% %LEVELING_TAG%{%RED%Leveling Item%CL%%NAME%}
 
 // Fire Blast - SK251
 ItemDisplay[SK251>0 DIFF<1 FILTLVL<4 (ASSASSIN OR FILTLVL<2)]: %NAME% %LEVELING_TAG%{%RED%Leveling Item%CL%%NAME%}
-ItemDisplay[SK251>1 DIFF<2 FILTLVL<4 (ASSASSIN OR FILTLVL<2)]: %NAME% %LEVELING_TAG%{%RED%Leveling Item%CL%%NAME%}
 
 // Charged Bolt Sentry - SK261
 ItemDisplay[SK261>0 DIFF<1 FILTLVL<6 (ASSASSIN OR FILTLVL<2)]: %NAME% %LEVELING_TAG%{%RED%Leveling Item%CL%%NAME%}
-ItemDisplay[SK261>1 DIFF<2 FILTLVL<6 (ASSASSIN OR FILTLVL<2)]: %NAME% %LEVELING_TAG%{%RED%Leveling Item%CL%%NAME%}
 
 // Lightning Sentry - SK366
 ItemDisplay[SK366>0 DIFF<1 FILTLVL<5 (ASSASSIN OR FILTLVL<2)]: %NAME% %LEVELING_TAG%{%RED%Leveling Item%CL%%NAME%}
@@ -76,7 +78,6 @@ ItemDisplay[SK257>2 CLVL<80 FILTLVL<3 (ASSASSIN OR FILTLVL<2)]: %NAME% %LEVELING
 // blade fury
 ItemDisplay[SK266>0 DIFF<1 FILTLVL<3 (ASSASSIN OR FILTLVL<2)]: %NAME% %LEVELING_TAG%{%RED%Leveling Item%CL%%NAME%}
 ItemDisplay[SK266>1 DIFF<2 FILTLVL<3 (ASSASSIN OR FILTLVL<2)]: %NAME% %LEVELING_TAG%{%RED%Leveling Item%CL%%NAME%}
-ItemDisplay[SK266>2 CLVL<80 FILTLVL<3 (ASSASSIN OR FILTLVL<2)]: %NAME% %LEVELING_TAG%{%RED%Leveling Item%CL%%NAME%}
 
 // dragon claw
 ItemDisplay[SK260>0 DIFF<1 FILTLVL<3 (ASSASSIN OR FILTLVL<2)]: %NAME% %LEVELING_TAG%{%RED%Leveling Item%CL%%NAME%}
