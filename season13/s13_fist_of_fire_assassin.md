@@ -13,6 +13,15 @@ Probably ok but Lightning Trap range is NICE (especially if I want to alt tab an
 # Fist of Fire
 
 ## Leveling
+//----- ASSASSIN
+// Steel: Tir + El -> 25 IAS
+// Neophyte: Thul + Tir -> HFD
+// Strength: Amn + Tir -> +20 Strength, +10 Vitality
+// Pattern: Tal • Ort • Tir -> +15@ Res
+// Black: Thul • Io • Nef -> 15 IAS, +10 Vitality
+
+
+
 Blade Sentinel -> Lightning Trapper
 Or just Fire Blast to save a respect token? Fire Blast doesn't seem bad esp if I'm running in a group.
 Only need to last until Charged Bolt Sentinel 
