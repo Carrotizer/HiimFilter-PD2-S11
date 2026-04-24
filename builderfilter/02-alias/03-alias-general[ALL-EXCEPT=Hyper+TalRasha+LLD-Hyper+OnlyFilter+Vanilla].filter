@@ -6,7 +6,7 @@
 Alias[GEN_ITEM]: %ORANGE%O O O %NAME% %ORANGE%O O O
 
 // General item Alt
-Alias[GEN_ALT]: %PURPLE%O O O %NAME% %PURPLE%O O O
+Alias[GEN_ALT]: %PURPLE%O O O O O %NAME% %PURPLE%O O O O O
 
 // Token parts
 Alias[TOKEN_PARTS]: %ORANGE%> > %NAME% %ORANGE%< <
@@ -18,7 +18,7 @@ Alias[UBER_KEYS]: %RED%>>  > %NAME% %RED%<  <<
 Alias[BOSS_MAT]: %YELLOW%<> <> <> %NAME% %YELLOW%<> <> <>
 
 // Boss Mat Item Alt
-Alias[BOSS_ALT]: %YELLOW%X X X X %NAME% %YELLOW%X X X X
+Alias[BOSS_ALT]: %YELLOW%X X X X X %NAME% %YELLOW%X X X X X
 
 // Boss Entry Item
 Alias[BOSS_ENTRY]: %RED%* * %NAME% %RED%* *
