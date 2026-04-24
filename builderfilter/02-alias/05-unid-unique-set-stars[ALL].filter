@@ -286,7 +286,7 @@ Alias[NO_STAR_UNIQUE]: (xul OR tbl OR vbt OR xlb OR lgl OR cap OR xkp OR xts OR 
 // True Silver - Maiden Javelin
 // Tearhaunch - Greaves
 
-Alias[LLD_UNIQUE]: (stu OR gth OR aar OR vgl OR xap OR kit OR wax OR cbw OR mau OR gma OR wst OR flb OR gsd OR tbt OR zlb OR dr2 OR tgl OR fld OR am5 OR hbt)
+Alias[LLD_UNIQUE]: (stu OR gth OR aar OR vgl OR xap OR wax OR cbw OR mau OR gma OR wst OR flb OR gsd OR tbt OR zlb OR dr2 OR tgl OR fld OR am5 OR hbt)
 
 // Set 3 star Callouts
 //-----------------------------------------------------------------------------------

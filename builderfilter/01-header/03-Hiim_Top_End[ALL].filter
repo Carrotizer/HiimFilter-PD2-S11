@@ -74,5 +74,5 @@ ItemDisplay[FILTLVL>10 !(rvl OR rvs) !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=
 //-----------------------------------------------------------------------------------
 ItemDisplay[GOLD<100 CLVL<18]:
 ItemDisplay[GOLD<1000 (CLVL>17 AND CLVL<80)]:
-ItemDisplay[GOLD<5000 CLVL>79]:
+ItemDisplay[GOLD<9999 CLVL>79]:
 //-----------------------------------------------------------------------------------

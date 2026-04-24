@@ -1,2 +1,9 @@
 /target/
 /.claude/settings.local.json
+.idea/
+.vscode/
+*.pyc
+__pycache__/
+Hiim*.filter
+builderfilter/01-header/01-Version\[ALL\].filter
+Carrotizer_Vanilla_Plus.filter
