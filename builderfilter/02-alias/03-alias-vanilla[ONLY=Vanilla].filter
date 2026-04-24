@@ -62,6 +62,7 @@ Alias[MAG_ITEM]: %MAP-6A%%DOT-94%%NAME%
 
 // Magic Item 2 Affix
 Alias[MAG_DBL_AFFIX_ITEM]: %BORDER-6A%%DOT-94%%NAME%
+Alias[MAG_DBL_AFFIX_ITEM_NO_ICON]: %NAME%
 
 // Rare Item basic
 Alias[RARE_ITEM]: %MAP-0B%%DOT-6A%%NAME%
@@ -150,7 +151,7 @@ Alias[CRAFT_LLD]: %NAME% %GREEN%[LLD Craft]
 //-----------------------------------------------------------------------------------
 
 ItemDisplay[wss]: %RED%WORLDSTONE SHARD%CONTINUE%
-ItemDisplay[cwss]: %ORANGE%Tainted %RED%WORLDSTONE SHARD%CONTINUE%remo
+ItemDisplay[cwss]: %ORANGE%Tainted %RED%WORLDSTONE SHARD%CONTINUE%
 
 // Formating for names
 ItemDisplay[gzv OR gzvs]: %PURPLE%F. Amethyst%CONTINUE%

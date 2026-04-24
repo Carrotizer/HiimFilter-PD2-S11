@@ -248,6 +248,21 @@ ItemDisplay[!RW !UNI !SET ID SK236>0 (MULTI188,40+MULTI83,5+MULTI107,236+STAT127
 //-----------------------------------------------------------------------------------
 // Assassin
 //-----------------------------------------------------------------------------------
+
+//------------------------------------
+// Leveling Claws (+3 or higher)
+// Fire Blast (SK251)
+ItemDisplay[SIN !RW !UNI !SET SK251>0 (MULTI188,48+MULTI107,251+STAT127>2) ASSASSIN DIFF<1 FILTLVL<3]: %CONTINUE%%NAME%{%PURPLE%> > > >   +$f(MULTI188,48+MULTI107,251+STAT127) Fire Blast   < < < <%CL%%NAME%}
+// Tiger Strike (SK254)
+ItemDisplay[SIN !RW !UNI !SET SK254>0 (MULTI188,50+MULTI107,254+STAT127>2) ASSASSIN DIFF<1 FILTLVL<3]: %CONTINUE%%NAME%{%PURPLE%> > > >   +$f(MULTI188,50+MULTI107,254+STAT127) Tiger Strike   < < < <%CL%%NAME%}
+// Fists of Fire (SK259)
+ItemDisplay[SIN !RW !UNI !SET SK259>0 (MULTI188,50+MULTI107,259+STAT127>2) ASSASSIN DIFF<1 FILTLVL<3]: %CONTINUE%%NAME%{%PURPLE%> > > >   +$f(MULTI188,50+MULTI107,259+STAT127) Fists of Fire   < < < <%CL%%NAME%}
+// Charged Bolt Sentry (SK261)
+ItemDisplay[SIN !RW !UNI !SET SK261>0 (MULTI188,48+MULTI107,261+STAT127>2) ASSASSIN DIFF<1 FILTLVL<4]: %CONTINUE%%NAME%{%PURPLE%> > > >   +$f(MULTI188,48+MULTI107,261+STAT127) Charged Bolt Sentry   < < < <%CL%%NAME%}
+// Lightning Sentry (SK366)
+ItemDisplay[SIN !RW !UNI !SET SK366>0 (MULTI188,48+MULTI107,366+STAT127>2) ASSASSIN DIFF<2 FILTLVL<6]: %CONTINUE%%NAME%{%PURPLE%> > > >   +$f(MULTI188,48+MULTI107,366+STAT127) Lightning Sentry   < < < <%CL%%NAME%}
+//------------------------------------
+
 // Phoenix Strike Skills Tab+Class+Skill+AllSK
 ItemDisplay[!RW !UNI !SET ID SK280>0 (MULTI188,50+MULTI83,6+MULTI107,280+STAT127>4)]:%CONTINUE%%NAME%%BORDER-ED%{%PURPLE%> > > >   +$f(MULTI188,50+MULTI83,6+MULTI107,280+STAT127) Phoenix Strike   < < < <%CL%%NAME%}
 // Tiger Strike Skills Tab+Class+Skill+AllSK
