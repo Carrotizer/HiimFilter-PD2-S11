@@ -39,7 +39,7 @@ Alias[RARE_GG_ITEM]: %PURPLE%<%GREEN%!%PURPLE%> %PURPLE%<%GREEN%!%PURPLE%> %PURP
 Alias[RARE_GG_ALT]: %RED%X x X x X x X %NAME% %RED%X x X x X x X
 
 // Low rune
-Alias[RUNE_LOW]: %PX-0B%%ORANGE%* * * %NAME% %ORANGE%* * *
+Alias[RUNE_LOW]: %PX-0B%%ORANGE%* * %NAME% %ORANGE%* *
 
 // Craft rune
 Alias[RUNE_CRAFT]: %DOT-0B%%ORANGE%* %NAME% %ORANGE%*

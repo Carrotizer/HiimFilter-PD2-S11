@@ -9,7 +9,10 @@ This file tracks the status of porting changes from the Season 12 branch to the 
 ## Commits to Port (Carrotizer only, Oldest First)
 
 - [x] **30a6969** - Add .gitignore
-- [x] **fa631df** - Add calculators (Skipped)
+- [x] **fa631df** - Add calculators
+- [x] **6d852cd** - Add CSV files
+- [x] **a175c34** - Add CSV files
+- [x] **8c95a6c** - Add War Cry calculator and comparison
 - [x] **6c8063a** - Update .gitignore to ignore pychache and add markdown files from S11
 - [x] **106f7e8** - Update 08-Potions.filter to match D2R potion label for HP5 and MP5
 - [x] **feac47c** - Show Phase Blade for imbueing filr FILTLVL<8

@@ -19,6 +19,7 @@ The current main task is porting feature-complete changes from the `season12` br
 - **Git Hygiene:** Standard generated `Hiim*.filter` files should be ignored by `.gitignore` and kept out of the Git index. However, **`Carrotizer_Hiim*.filter` files should be tracked and NOT ignored.**
 
 ## Project Conventions
+- **Commits:** Follow the [Conventional Commits](https://www.conventionalcommits.org/) specification (e.g., `feat:`, `fix:`, `refactor:`, `docs:`).
 - **Aliases:** Item decorations (stars, brackets, symbols) are defined in `builderfilter/02-alias/`. Respect the style differences between `Standard`, `Hyper`, and `TalRasha`.
 - **Naming:** Season 13 favors explicit names (e.g., "Small Charm") over short-hand codes (e.g., "SC") at high filter levels (FILTLVL 7+).
 - **Prefixes:** Use the `Carrotizer_` prefix for personalized filter outputs as specified in `filters.json`.
