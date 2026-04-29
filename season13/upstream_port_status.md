@@ -9,19 +9,19 @@ This file tracks the status of porting/merging changes from the `upstream/main` 
 
 ## Upstream Commits Tracking
 
-- [ ] **ac2d2c4** - Limit map mob warnings to MAPTIER<4
+- [x] **ac2d2c4** - Limit map mob warnings to MAPTIER<4
 - [!] **837593d** - ci: build filters (version 54) (Ignored: Upstream CI specific)
-- [ ] **61a1d79** - Adjust unique/set star ratings
+- [x] **61a1d79** - Adjust unique/set star ratings
 - [!] **34202e2** - ci: build filters (version 55) (Ignored: Upstream CI specific)
 - [ ] **ce8d15d** - Merge pull request #762 (fix/maps-warnings-high-tier-scope)
-- [ ] **de42a01** - S13 res hotfix: t14/t26 Poison 120 -> 75
+- [x] **de42a01** - S13 res hotfix: t14/t26 Poison 120 -> 75
 - [!] **0ca64d4** - ci: build filters (version 56) (Ignored: Upstream CI specific)
-- [ ] **3d4ebe0** - Merge pull request #763 (update/s13-poison-res-t14-t26)
-- [ ] **88fbe4b** - Mid-season updates: unid rare tiers, gem filtlvl, boss mat sound, sorc orb
+- [x] **3d4ebe0** - Merge pull request #763 (update/s13-poison-res-t14-t26)
+- [x] **88fbe4b** - Mid-season updates: unid rare tiers, gem filtlvl, boss mat sound, sorc orb
 - [!] **7e7462c** - ci: build filters (version 57) (Ignored: Upstream CI specific)
-- [ ] **a4247a1** - Sorc: extend unid rare staff visibility to FILTLVL<11
+- [x] **a4247a1** - Sorc: extend unid rare staff visibility to FILTLVL<11
 - [!] **9fce01f** - ci: build filters (version 58) (Ignored: Upstream CI specific)
-- [ ] **29094fc** - Merge pull request #765 (update/mid-season-2026-04)
+- [x] **29094fc** - Merge pull request #765 (update/mid-season-2026-04)
 - [x] **882810a** - Crafting: tighten FILTLVL gates, add 4os natural shield rule, exclude pala shields from generic 4os rare
 - [!] **33e2993** - ci: build filters (version 59) (Ignored: Upstream CI specific)
 - [ ] **6f9f697** - Add Vanilla+ Crafting filter; rename variant headers to filter names; drop Closed Beta
