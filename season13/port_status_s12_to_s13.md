@@ -31,7 +31,7 @@ This file tracks the status of porting changes from the Season 12 branch to the 
 - [x] **7f73db2** - Show Large Charm same way as Small Charm
 - [x] **5683949** - Update rune filters
 - [x] **b0dc6c3** - Show longer names for unid Small and Large Charms for FILTLVL 7
-- [ ] **550322e** - Show HP5 for FILTLVL 7+.  Show unid rare boots, belt, and chest for FILTLVL<8
+- [x] **550322e** - Show HP5 for FILTLVL 7+.  Show unid rare boots, belt, and chest for FILTLVL<8
 - [x] **0482c06** - Remove map marker for Infused Arcane Orb
 - [x] **a882ebf** - Show crafting low runes Tir, Eth, Ort, Ral, Amn, Sol for FILTLVL<8
 - [ ] **e4ec6a4** - Show 4os Faith Crossbow base with ED>0 for FILTLVL<8
