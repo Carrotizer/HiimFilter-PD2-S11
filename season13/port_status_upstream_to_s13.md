@@ -36,8 +36,8 @@ This file tracks the status of porting/merging changes from the `upstream/main` 
 - [ ] **921e691** - Promote Wraithskin (Diamond Mail) from 0-star to 2-star unique
 - [ ] **8ee9144** - Add hover tooltip to town gems in Crafting/LLD filter
 - [ ] **ed892cd** - Hover tooltips on terminal display rules + small cleanups
-- [ ] **f3d0c0b** - Currency update: Jah 1.5, Cham 1.5, Zod 3 HR
-- [ ] **fa3d685** - Uber mat values update
+- [x] **f3d0c0b** - Currency update: Jah 1.5, Cham 1.5, Zod 3 HR
+- [x] **fa3d685** - Uber mat values update
 - [ ] **8a4f99d** - Show non-eth BotD/Last Wish RW bases at FILTLVL<9
 - [ ] **4a70559** - Add filter buckets: per-folder builds, definitions, and READMEs
 - [ ] **21be22f** - Promote Bloodtree Stump to 4-star unique
