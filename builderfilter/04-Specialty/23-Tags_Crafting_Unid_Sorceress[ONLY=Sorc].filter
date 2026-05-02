@@ -10,5 +10,4 @@ ItemDisplay[!ID STAFF RARE FILTLVL<11 ILVL>84]: %RARE_PLUS%
 ItemDisplay[MAG amu !ID FILTLVL<5]: %NAME%
 ItemDisplay[MAG amu !ID FILTLVL<7]: %BLUE%Amu
 
-ItemDisplay[GEM=5]: %NAME%
 //-----------------------------------------------------------------------------------

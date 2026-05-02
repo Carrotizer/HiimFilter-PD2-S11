@@ -123,6 +123,4 @@ ItemDisplay[ID SHOP (CHSK54>0) FCR>0 STAFF LVLREQ<31]: %ORANGE%* * *   LLD FCR T
 ItemDisplay[ID SHOP STAFF]: {%NAME%} // Hide the rest
 // No longer possible because of automod ItemDisplay[ID (CHSK54>0) STAFF LVLREQ<31]: %GREEN%LLD FCR Teleport Charges Staff [LLD]{%GREEN%LLD Teleport Charges Staff} // Teleport charges
 
-ItemDisplay[GEM=5]: %NAME%
-ItemDisplay[GEM=4]: %NAME%
 //-----------------------------------------------------------------------------------
