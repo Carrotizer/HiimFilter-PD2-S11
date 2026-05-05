@@ -32,17 +32,17 @@ This file tracks the status of porting/merging changes from the `upstream/main` 
 - [x] **5f7746d** - Vanilla+: enable formatted charms, mag/rare names, and ID'd mag/rare tooltips
 - [!] **cbb9dac** - ci: build filters (version 62) (Ignored: Upstream CI specific)
 - [x] **43da270** - Merge pull request #767 (update/late-april-2026)
-- [ ] **be41d91** - Paladin Crafting: show 4os natural mag/rare paladin shields
-- [ ] **921e691** - Promote Wraithskin (Diamond Mail) from 0-star to 2-star unique
+- [x] **be41d91** - Paladin Crafting: show 4os natural mag/rare paladin shields
+- [x] **921e691** - Promote Wraithskin (Diamond Mail) from 0-star to 2-star unique
 - [ ] **8ee9144** - Add hover tooltip to town gems in Crafting/LLD filter
 - [ ] **ed892cd** - Hover tooltips on terminal display rules + small cleanups
 - [x] **f3d0c0b** - Currency update: Jah 1.5, Cham 1.5, Zod 3 HR
 - [x] **fa3d685** - Uber mat values update
 - [ ] **8a4f99d** - Show non-eth BotD/Last Wish RW bases at FILTLVL<9
 - [ ] **4a70559** - Add filter buckets: per-folder builds, definitions, and READMEs
-- [ ] **21be22f** - Promote Bloodtree Stump to 4-star unique
+- [x] **21be22f** - Promote Bloodtree Stump to 4-star unique
 - [ ] **798fcd3** - Fix #778: Remove stray comma in charm affix rule
 - [ ] **148d5f3** - Auto-generate filter top headers and add filter-bucket tags
-- [ ] **e07ae62** - Fix #782: Adjust Lazuk Puzzlebox value to 0.5
-- [ ] **c116506** - Rebalance unique tier ratings
+- [x] **e07ae62** - Fix #782: Adjust Lazuk Puzzlebox value to 0.5
+- [x] **c116506** - Rebalance unique tier ratings
 - [ ] **2fb913f** - Rune tier sound tweaks
