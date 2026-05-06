@@ -31,7 +31,7 @@ ItemDisplay[hp1]: %WHITE%H%RED%P1
 ItemDisplay[hp2]: %WHITE%H%RED%P2
 ItemDisplay[hp3]: %WHITE%H%RED%P3
 ItemDisplay[hp4]: %WHITE%H%RED%P4
-ItemDisplay[hp5 (FILTLVL<3 OR FILTLVL=3 OR FILTLVL=5 OR FILTLVL>6)]: %WHITE%H%RED%P5
+ItemDisplay[hp5 (FILTLVL<3 OR FILTLVL=3 OR FILTLVL=5)]: %WHITE%H%RED%P5
 ItemDisplay[hp5 MAPTIER=4]: %WHITE%H%RED%P5     // Show in dungeons
 ItemDisplay[hp5]:
 
