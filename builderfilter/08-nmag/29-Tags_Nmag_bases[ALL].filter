@@ -149,6 +149,7 @@ ItemDisplay[CHEST ELT ETH !INF (SOCK=4 OR SOCK=0 OR SOCK=3) NMAG FILTLVL<7]: %NA
 ItemDisplay[(xtp OR utp OR uui OR uea OR ula OR utu OR urs OR uar) SOCK=0 NMAG EDEF>0 (EDEF>14 OR FILTLVL<7)]: %NAME%{%NAME%}
 ItemDisplay[(xtp OR utp OR uui OR uea OR ula OR utu OR urs OR uar) SOCK=0 NMAG EDEF>17 FILTLVL<8]: %NAME%{%NAME%}
 ItemDisplay[(xtp OR utp OR uui OR uea OR ula OR utu OR urs OR uar) SOCK=0 NMAG EDEF>19 FILTLVL<9]: %NAME%{%NAME%}
+ItemDisplay[xtp !INF !ETH NMAG !RW SOCK=3 DEF>186 FILTLVL<8]: %NAME%{%NAME%}
 ItemDisplay[xtp !INF !ETH NMAG !RW !SOCK=1 (EDEF>14 OR FILTLVL<7)]: %NAME%{%NAME%}
 ItemDisplay[xtp !INF !ETH NMAG !RW !SOCK=1 EDEF>17 FILTLVL<8]: %NAME%{%NAME%}
 ItemDisplay[xtp !INF !ETH NMAG !RW !SOCK=1 EDEF>19 FILTLVL<9]: %NAME%{%NAME%}
