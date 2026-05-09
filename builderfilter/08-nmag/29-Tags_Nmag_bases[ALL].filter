@@ -369,6 +369,7 @@ ItemDisplay[7xf ETH SK257>2 SK252>2 SK263>2 !INF NMAG !RW (SOCK=0 OR SOCK=3) FIL
 ItemDisplay[7xf ETH SK257>2 (SK252>2 OR SK263>2) !INF NMAG !RW (SOCK=0 OR SOCK=3) FILTLVL<7]: %NAME%{%NAME%}
 ItemDisplay[(ob5 OR oba OR obf) SK40>2 SK52>2 !INF NMAG !RW SOCK=0 FILTLVL<9]: %NAME% %DOT-0B%%ORANGE%[PLAGUE]{%NAME%}
 ItemDisplay[(ob5 OR oba OR obf) SK40>2 SK52>2 !INF NMAG !RW SOCK=0 FILTLVL<9]: %NAME% %DOT-0B%%ORANGE%< < <{%GREEN%Roll 3 open sockets for Plague Base%CL%%NAME%}
+ItemDisplay[SIN !ETH SK259>2 (SK252>1 OR SK263>1) !INF (SOCK=0 OR SOCK=3) !RW NMAG FILTLVL<8]: %NAME%{%NAME%}
 
 // Low/mid level nec heads
 // pnova descreate teeth bone spear ce
