@@ -34,11 +34,11 @@ This file tracks the status of porting/merging changes from the `upstream/main` 
 - [x] **43da270** - Merge pull request #767 (update/late-april-2026)
 - [x] **be41d91** - Paladin Crafting: show 4os natural mag/rare paladin shields
 - [x] **921e691** - Promote Wraithskin (Diamond Mail) from 0-star to 2-star unique
-- [ ] **8ee9144** - Add hover tooltip to town gems in Crafting/LLD filter
+- [x] **8ee9144** - Add hover tooltip to town gems in Crafting/LLD filter
 - [ ] **ed892cd** - Hover tooltips on terminal display rules + small cleanups
 - [x] **f3d0c0b** - Currency update: Jah 1.5, Cham 1.5, Zod 3 HR
 - [x] **fa3d685** - Uber mat values update
-- [ ] **8a4f99d** - Show non-eth BotD/Last Wish RW bases at FILTLVL<9
+- [x] **8a4f99d** - Show non-eth BotD/Last Wish RW bases at FILTLVL<9
 - [ ] **4a70559** - Add filter buckets: per-folder builds, definitions, and READMEs
 - [x] **21be22f** - Promote Bloodtree Stump to 4-star unique
 - [ ] **798fcd3** - Fix #778: Remove stray comma in charm affix rule

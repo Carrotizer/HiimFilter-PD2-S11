@@ -76,6 +76,12 @@ Shared pieces w/ Fist of Fire
 * Call to Arms + Lidless
 * Fire facets
 
+# Gerke's Sanctuary
+Chance to hit +1 skill: 1/2 * 1/5 * 1/8 = 1/80
+
+# Firelizard's Talon
+Chance to hit 3 soc: 1/4
+
 # Testing Martial Arts
 ## Blade of Ice?
 FoF is superior.  BoI may have better AoE but damage is so much worse.  Not having dedicated pierce weapon like Firelizard is a big minus.  It needs full 5/5 Facets to compete, and at that point, just play FoF.
