@@ -40,7 +40,7 @@ ItemDisplay[mp1]: %WHITE%M%BLUE%P1
 ItemDisplay[mp2]: %WHITE%M%BLUE%P2
 ItemDisplay[mp3]: %WHITE%M%BLUE%P3
 ItemDisplay[mp4]: %WHITE%M%BLUE%P4
-ItemDisplay[mp5 (FILTLVL<3 OR FILTLVL=3 OR FILTLVL=5 OR FILTLVL>6)]: %WHITE%M%BLUE%P5
+ItemDisplay[mp5 (FILTLVL<3 OR FILTLVL=3 OR FILTLVL=5)]: %WHITE%M%BLUE%P5
 ItemDisplay[mp5 MAPTIER=4]: %WHITE%M%BLUE%P5     // Show in dungeons
 ItemDisplay[mp5]:
 
