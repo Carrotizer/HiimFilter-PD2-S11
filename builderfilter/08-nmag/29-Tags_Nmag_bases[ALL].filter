@@ -211,6 +211,7 @@ ItemDisplay[(6mx OR 6hx) NMAG !RW (SOCK=0 OR SOCK=4) EDAM>14 FILTLVL<9]: %NAME%{
 ItemDisplay[(6mx OR 6hx) NMAG !RW (SOCK=0 OR SOCK=4) EDAM>9 ARPER>9 FILTLVL<9]: %NAME%{%NAME%}     // Faith base
 ItemDisplay[6rx NMAG EDAM>0 !RW (SOCK=0 OR SOCK=5) EDAM>14 FILTLVL<9]: %NAME%{%NAME%}
 ItemDisplay[6rx NMAG EDAM>0 !RW (SOCK=0 OR SOCK=5) EDAM>9 ARPER>9 FILTLVL<9]: %NAME%{%NAME%}
+ItemDisplay[6rx NMAG !RW SOCK=5 FILTLVL<9]: %NAME%{%NAME%}  // Mist base - S13 Barb season
 // Lower levels
 ItemDisplay[(6hx OR 6mx) EDAM>0 NMAG !INF !RW (SOCK=0) FILTLVL<5]: %NAME%{%NAME%%CL%4os for Merc Harmony}
 ItemDisplay[(6hx OR 6mx) EDAM>0 NMAG !INF !RW (SOCK=4) FILTLVL<5]: %NAME%{%NAME%%CL%Merc Harmony Base}
