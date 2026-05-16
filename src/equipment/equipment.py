@@ -75,6 +75,7 @@ class AssassinEquipment(Equipment):
                  plus_martial_arts_skills = 0,
                  plus_shadow_disciplines_skills = 0,
                  plus_traps_skills = 0,
+                 plus_fire_skills = 0,
                  faster_cast_rate = 0,
                  ):
         super().__init__(name, plus_all_skills, mastery, pierce, sockets)
@@ -82,6 +83,7 @@ class AssassinEquipment(Equipment):
         self.plus_martial_arts_skills = plus_martial_arts_skills
         self.plus_shadow_disciplines_skills = plus_shadow_disciplines_skills
         self.plus_traps_skills = plus_traps_skills
+        self.plus_fire_skills = plus_fire_skills
         self.faster_cast_rate = faster_cast_rate
 
     def get_total_plus_martial_arts_skills(self):
@@ -92,6 +94,9 @@ class AssassinEquipment(Equipment):
 
     def get_total_plus_traps_skills(self):
         return self.plus_all_skills + self.plus_assassin_skills + self.plus_traps_skills
+
+    def get_plus_fire_skills(self):
+        return self.plus_fire_skills
 
     def get_faster_cast_rate(self):
         return self.faster_cast_rate
