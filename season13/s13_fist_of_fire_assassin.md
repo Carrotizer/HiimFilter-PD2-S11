@@ -287,15 +287,3 @@ Mind Blast: 35%
   * Reaches 3 frame FBR breakpoint at lv 32
   * At lv 33, parry chance goes up 1% to 51% (worth it)
 
-
-## Equiment
-
-Spellsteel?
-* Can't swap or the Shadows will disappear.  
-* The opponent can simply run away for few seconds, and the matchup is such that I'm the ranged and has to kite - can't be too aggressive.
-
-
-
-
-# PvP
-* db-GTA: https://projectdiablo2.com/armory/builds/69910a056cc4dab50df34c25
