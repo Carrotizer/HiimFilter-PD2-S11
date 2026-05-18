@@ -128,7 +128,7 @@ def calculate_damage(enemy_resist: int,
     if is_lower_res_merc:
         final_enemy_res -= 45
     if final_enemy_res < 0:
-        final_enemy_res = floor(final_enemy_res / 2)   # 50% effectiveness when < 0
+        final_enemy_res = int(final_enemy_res / 2)   # 50% effectiveness when < 0, rounded against player (towards zero)
 
     config = {"desecrate_level": final_desecrate_level,
               "mastery": total_mastery,

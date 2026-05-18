@@ -65,14 +65,19 @@ def get_fists_of_fire_base_damage_mapping() -> dict[int, dict[str, float]]:
     return level_to_dmg
 
 
-def get_charms() -> AssassinEquipment:
-    # 9 Grand Charm Martial Arts skillers, Torch, and Annhilus
+def get_charms(gc: int, lc: int) -> AssassinEquipment:
+    # 10 columns total:
+    # - 1 column: Anni (1x1) + 1x GC skiller (1x3)
+    # - 1 column: Torch (1x2) + 1x LC 3% (1x2)
+    # - 8 columns: either 1x GC skiller OR 2x LC 3% (3% per LC, 6% per column)
+    # gc is the number of GCs in the 8 variable columns.
+    # lc is the number of LC columns in the 8 variable columns. gc + lc = 8.
     return AssassinEquipment(
-        name="Charms in Inventory",
-        mastery=3, # 3% Large Charm
+        name=f"Charms (GC={gc+1}, LC={lc*2+1})",
         plus_all_skills=1, # Anni
         plus_assassin_skills=2, # Torch
-        plus_martial_arts_skills=9,
+        plus_martial_arts_skills=gc + 1, # +1 from Anni column
+        mastery=3 + 6 * lc, # 3 from Torch column, 6 per LC column
     )
 
 
@@ -124,6 +129,10 @@ GLOVES = [
     AssassinEquipment(
         name="+3 Martial Arts Gloves",
         plus_martial_arts_skills=3,
+    ),
+    AssassinEquipment(
+        name="Hellmouth -10% Enemy Fire Res",
+        pierce=10,
     ),
     AssassinEquipment(
         name="20 IAS / +2 MA Crafted Gloves",
@@ -190,8 +199,10 @@ BOOTS = [
 ]
 
 
-def get_gear_combinations():
-    return itertools.product(
+def calculate_dps(enemy_res: int = 50):
+    lvl_to_dmg = get_fists_of_fire_base_damage_mapping()
+    
+    gear_combos = itertools.product(
         HELMS,
         AMULETS,
         CLAWS, CLAWS, # Dual wield
@@ -199,50 +210,50 @@ def get_gear_combinations():
         GLOVES,
         RINGS, RINGS, # Two rings
         BELTS,
-        BOOTS,
-        [get_charms()]
+        BOOTS
     )
-
-
-def calculate_dps(enemy_res: int = 50):
-    lvl_to_dmg = get_fists_of_fire_base_damage_mapping()
-    combos = get_gear_combinations()
+    
+    charm_configs = [(gc, 8 - gc) for gc in range(9)]
     
     best_dps = 0.0
     best_gear = None
     
-    for gear_tuple in combos:
-        gear_set = FistsOfFireEquipmentSet(gear_tuple)
-        lvl = gear_set.get_final_skill_level()
-        if lvl > 60: lvl = 60
-        
-        # Calculate Meteor damage as primary metric
-        base_dmg = lvl_to_dmg[lvl]["meteor"]
-        
-        mastery = gear_set.get_total_mastery()
-        pierce = gear_set.get_total_pierce()
-        
-        # Total damage = Base * (1 + Mastery/100)
-        total_dmg = base_dmg * (1 + mastery / 100.0)
-        
-        # Resistance factor
-        # If enemy resistance is < 0, then the pierce after 0% is halved.
-        res_after_pierce = enemy_res - pierce
-        if res_after_pierce < 0:
-            res_after_pierce = res_after_pierce / 2.0
+    for gear_tuple in gear_combos:
+        for gc, lc in charm_configs:
+            charms = get_charms(gc, lc)
+            full_gear = gear_tuple + (charms,)
+            
+            gear_set = FistsOfFireEquipmentSet(full_gear)
+            lvl = gear_set.get_final_skill_level()
+            if lvl > 60: lvl = 60
+            
+            # Calculate Meteor damage as primary metric
+            base_dmg = lvl_to_dmg[lvl]["meteor"]
+            
+            mastery = gear_set.get_total_mastery()
+            pierce = gear_set.get_total_pierce()
+            
+            # Total damage = Base * (1 + Mastery/100)
+            total_dmg = base_dmg * (1 + mastery / 100.0)
+            
+            # Resistance factor
+            # If enemy resistance is < 0, then the pierce after 0% is halved.
+            # Rounded 'against the player' (towards zero for negative resistance)
+            res_after_pierce = enemy_res - pierce
+            if res_after_pierce < 0:
+                res_after_pierce = int(res_after_pierce / 2.0)
 
-        if res_after_pierce < -100: 
-            res_after_pierce = -100
-
-        res_multiplier = (100 - res_after_pierce) / 100.0
-        
-        final_dmg = total_dmg * res_multiplier
-        
-        # We'll just use raw hit damage for comparison, 
-        # as APS is complex for Martial Arts (charge-up + finisher)
-        if final_dmg > best_dps:
-            best_dps = final_dmg
-            best_gear = gear_tuple
+            if res_after_pierce < -100: 
+                res_after_pierce = -100
+            res_multiplier = (100 - res_after_pierce) / 100.0
+            
+            final_dmg = total_dmg * res_multiplier
+            
+            # We'll just use raw hit damage for comparison, 
+            # as APS is complex for Martial Arts (charge-up + finisher)
+            if final_dmg > best_dps:
+                best_dps = final_dmg
+                best_gear = full_gear
 
     print(f"Best Charge 3 Meteor Damage (vs {enemy_res}% res): {best_dps:.2f}")
     
@@ -253,15 +264,30 @@ def calculate_dps(enemy_res: int = 50):
     print(f"Final Skill Level: {final_lvl}")
     print(f"Total Mastery: {best_gear_set.get_total_mastery()}%")
     print(f"Total Pierce: {best_gear_set.get_total_pierce()}%")
-    print(f"Enemy Resistance: {enemy_res}%")
+    
+    # Calculate effective resistance for display
+    res_after_pierce = enemy_res - best_gear_set.get_total_pierce()
+    if res_after_pierce < 0:
+        res_after_pierce = int(res_after_pierce / 2.0)
+    if res_after_pierce < -100:
+        res_after_pierce = -100
+        
+    print(f"Enemy Resistance: {enemy_res}% ({res_after_pierce}% after pierce)")
     
     print("Best Gear Set:")
-    for eq in best_gear:
-        print(f"  - {eq.name}")
+    print(f"  - Helm: {best_gear[0].name}")
+    print(f"  - Amulet: {best_gear[1].name}")
+    print(f"  - Weapons: {best_gear[2].name} / {best_gear[3].name}")
+    print(f"  - Armor: {best_gear[4].name}")
+    print(f"  - Gloves: {best_gear[5].name}")
+    print(f"  - Rings: {best_gear[6].name} / {best_gear[7].name}")
+    print(f"  - Belt: {best_gear[8].name}")
+    print(f"  - Boots: {best_gear[9].name}")
+    print(f"  - {best_gear[10].name}")
 
 
 if __name__ == "__main__":
     # Lucion: 30%
     # DClone: 30%
     # Mendeln: 65%, Rathma: 75% (wtf, they have 0% poison res and so much fire res)
-    calculate_dps(enemy_res=75)
+    calculate_dps(enemy_res=65)

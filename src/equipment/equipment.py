@@ -101,10 +101,6 @@ class AssassinEquipment(Equipment):
     def get_faster_cast_rate(self):
         return self.faster_cast_rate
 
-    def get_total_pierce(self) -> int:
-        # No extra pierce from sockets for Mind Blast
-        return self.pierce
-
 
 # TODO: refactor this to be more generic
 class MindBlastEquipmentSet:
