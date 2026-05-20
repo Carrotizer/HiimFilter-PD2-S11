@@ -88,13 +88,14 @@ CLAWS = [
         pierce=15,
         sockets=3
     ),
-    AssassinEquipment(
-        name="Firelizard's Talons +1sk 2os",
-        plus_all_skills=1,
-        plus_fire_skills=4,
-        pierce=15,
-        sockets=2
-    ),
+    # 3os seems better - +1sk here doesn't apply to CtA so less efficient.
+    # AssassinEquipment(
+    #     name="Firelizard's Talons +1sk 2os",
+    #     plus_all_skills=1,
+    #     plus_fire_skills=4,
+    #     pierce=15,
+    #     sockets=2
+    # ),
 ]
 
 HELMS = [
@@ -122,14 +123,11 @@ HELMS = [
 ]
 
 GLOVES = [
-    AssassinEquipment(
-        name="Magefist (+1 Fire)",
-        plus_fire_skills=1,
-    ),
-    AssassinEquipment(
-        name="+3 Martial Arts Gloves",
-        plus_martial_arts_skills=3,
-    ),
+    # Rare gloves seem BiS - res, HFD, a lot of good options.    
+    # AssassinEquipment(
+    #     name="+3 Martial Arts Gloves",
+    #     plus_martial_arts_skills=3,
+    # ),
     AssassinEquipment(
         name="Hellmouth -10% Enemy Fire Res",
         pierce=10,
@@ -165,14 +163,6 @@ RINGS = [
         name="Bul-Kathos' Wedding Band (+1sk)",
         plus_all_skills=1,
     ),
-    AssassinEquipment(
-        name="Stone of Jordan (+1sk)",
-        plus_all_skills=1,
-    ),
-    AssassinEquipment(
-        name="Raven Frost",
-        plus_all_skills=0,
-    )
 ]
 
 AMULETS = [
@@ -180,11 +170,6 @@ AMULETS = [
         name="Mara's Kaleidoscope (+2sk)",
         plus_all_skills=2,
     ),
-    AssassinEquipment(
-        name="Highlord's Wrath (+1sk)",
-        plus_all_skills=1,
-    ),
-
 ]
 
 BOOTS = [
@@ -192,11 +177,40 @@ BOOTS = [
         name="Shadow Dancer (+2 Shadow)",
         plus_shadow_disciplines_skills=2, # Doesn't help FoF damage directly
     ),
-    AssassinEquipment(
-        name="Gore Rider",
-        plus_all_skills=0,
-    )
 ]
+
+
+def print_gear_set(rank_name: str, final_dmg: float, gear: tuple, enemy_res: int, lvl_to_dmg: dict):
+    print(f"{rank_name} Charge 3 Meteor Damage (vs {enemy_res}% res): {final_dmg:.2f}")
+    
+    gear_set = FistsOfFireEquipmentSet(gear)
+    final_lvl = gear_set.get_final_skill_level()
+    if final_lvl > 60: final_lvl = 60
+    
+    print(f"Final Skill Level: {final_lvl}")
+    print(f"Total Mastery: {gear_set.get_total_mastery()}%")
+    print(f"Total Pierce: {gear_set.get_total_pierce()}%")
+    
+    # Calculate effective resistance for display
+    res_after_pierce = enemy_res - gear_set.get_total_pierce()
+    if res_after_pierce < 0:
+        res_after_pierce = int(res_after_pierce / 2.0)
+    if res_after_pierce < -100:
+        res_after_pierce = -100
+        
+    print(f"Enemy Resistance: {enemy_res}% ({res_after_pierce}% after pierce)")
+    
+    print(f"{rank_name} Gear Set:")
+    print(f"  - Helm: {gear[0].name}")
+    print(f"  - Amulet: {gear[1].name}")
+    print(f"  - Weapons: {gear[2].name} / {gear[3].name}")
+    print(f"  - Armor: {gear[4].name}")
+    print(f"  - Gloves: {gear[5].name}")
+    print(f"  - Rings: {gear[6].name} / {gear[7].name}")
+    print(f"  - Belt: {gear[8].name}")
+    print(f"  - Boots: {gear[9].name}")
+    print(f"  - {gear[10].name}")
+    print("-" * 30)
 
 
 def calculate_dps(enemy_res: int = 50):
@@ -215,8 +229,7 @@ def calculate_dps(enemy_res: int = 50):
     
     charm_configs = [(gc, 8 - gc) for gc in range(9)]
     
-    best_dps = 0.0
-    best_gear = None
+    all_results = []
     
     for gear_tuple in gear_combos:
         for gc, lc in charm_configs:
@@ -248,42 +261,17 @@ def calculate_dps(enemy_res: int = 50):
             res_multiplier = (100 - res_after_pierce) / 100.0
             
             final_dmg = total_dmg * res_multiplier
-            
-            # We'll just use raw hit damage for comparison, 
-            # as APS is complex for Martial Arts (charge-up + finisher)
-            if final_dmg > best_dps:
-                best_dps = final_dmg
-                best_gear = full_gear
+            all_results.append((final_dmg, full_gear))
 
-    print(f"Best Charge 3 Meteor Damage (vs {enemy_res}% res): {best_dps:.2f}")
-    
-    best_gear_set = FistsOfFireEquipmentSet(best_gear)
-    final_lvl = best_gear_set.get_final_skill_level()
-    if final_lvl > 60: final_lvl = 60
-    
-    print(f"Final Skill Level: {final_lvl}")
-    print(f"Total Mastery: {best_gear_set.get_total_mastery()}%")
-    print(f"Total Pierce: {best_gear_set.get_total_pierce()}%")
-    
-    # Calculate effective resistance for display
-    res_after_pierce = enemy_res - best_gear_set.get_total_pierce()
-    if res_after_pierce < 0:
-        res_after_pierce = int(res_after_pierce / 2.0)
-    if res_after_pierce < -100:
-        res_after_pierce = -100
-        
-    print(f"Enemy Resistance: {enemy_res}% ({res_after_pierce}% after pierce)")
-    
-    print("Best Gear Set:")
-    print(f"  - Helm: {best_gear[0].name}")
-    print(f"  - Amulet: {best_gear[1].name}")
-    print(f"  - Weapons: {best_gear[2].name} / {best_gear[3].name}")
-    print(f"  - Armor: {best_gear[4].name}")
-    print(f"  - Gloves: {best_gear[5].name}")
-    print(f"  - Rings: {best_gear[6].name} / {best_gear[7].name}")
-    print(f"  - Belt: {best_gear[8].name}")
-    print(f"  - Boots: {best_gear[9].name}")
-    print(f"  - {best_gear[10].name}")
+    # Sort by damage descending
+    all_results.sort(key=lambda x: x[0], reverse=True)
+
+    # Print top 2
+    ranks = ["Best", "2nd Best"]
+    for i in range(min(2, len(all_results))):
+        dmg, gear = all_results[i]
+        print_gear_set(ranks[i], dmg, gear, enemy_res, lvl_to_dmg)
+
 
 
 if __name__ == "__main__":
