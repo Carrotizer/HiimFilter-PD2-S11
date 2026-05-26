@@ -121,39 +121,6 @@ fofmeteor 4
 
 
 
-
-# Stats
-## Strength Requirements
-* War Fist: 118 (108 if eth)
-* Shadow Dancers: 156
-
-### Strength Bonuses 
-* Enigma: 74 @ lv 99 -> 82 needed for Shadow Dancers' 156
-* Constricting Loop: 12-18 str 36 -> 46?
-
-### Lucion:
-* Vampire Gaze Bone Visage: 106
-* Archon Plate Fortitude: 103
-* Eth Reaper's Toll: 104
-* Gore Rider: 94
-
-* Verdungo's Mithril Coil: 106
-
-### Dclone
-* Twilight's Reflection: 127 (100 after +27 from Tyrael's Might)
-
-## Dexterity Requirments
-* Eth Reaper's Toll: 79
-* Scissors Suwayyah: 118 (108 if eth)
-
-
-# Mercenary
-## Act 1 Vigor
-Wrath - 60% chance to apply lv 31 Amplify damage
-
-Note +1 skill from Tyrael's Might wouldn't increase movement speed for Vigor by itself (1% movespeed every other level).
-
-
 # Jewel Affixes & affix lvl
 ## Jewel Prefixes (all possible on rares unless noted otherwise)
 * Shimmering: 16	    All Resistances +[5-10]
@@ -173,16 +140,6 @@ Magic ONLY:
 Magic ONLY:
 * Hope	+[9-20] to Life
 
-### Ideal Jewels
-* -15% Requirement suffix is 45 life 
-
-4x 7% FHR & 15@ Jewel
-vs
-Assuming -15% Req for 5@ difference
-
-~90 life for 
-
-
 
 # Bossing
 https://exiledagain.github.io/bug-free-eureka/areaexplorer.html
@@ -192,16 +149,32 @@ Full Rejuvenation Potion
 * 3.5k HP -> 2275: max heal effect from 1225 but that's quite low
 
 ## Lucion
-## DClone
+Need +15% max Lightning res
+* +2% from amulet
+* If Guardian Angel, 4-6% -> 8% 
+* 
 
-My build:
-Twitch VOD: 
+PDR:
+10% from belt
+4% from boots -> need 36%
+Probably  better to just get a better chest
+
+Shako 6% native + 6% = 12% PDR
+
+
+
+## DClone
+PDR:
+* PDR Shako? 
+* Belt: 10%
+* Rings + Boots = 10%
+
+Do  I not need more PDR?
+https://www.projectdiablo2.com/armory/builds/6a14fdb325a866c1de6a8571
 
 ## Rathma
-Snapshot: https://projectdiablo2.com/armory/builds/68f6f8cd0215ba2ebd130c4e
-
-Whispering Mirage/Plague: 98str/dex req 
-
+Nature's Peace + 2% Amulet + Guardian Angel 6% = 11%
+* Need to get PLR from elsewhere 
 
 
 
@@ -256,6 +229,19 @@ Suffixes:
 * Lower Resist:   12% Chance to Cast Level 15 Lower Resist on Striking
 * Desolation    [25-30]% Deadly Strike	
 * Pulverizing	[25-30]% Chance of Crushing Blow	
+
+## Boots
+Cannot roll LaeK/MaeK  naturally
+### Prefixes
+
+
+### Suffixes
+* of Speed: +30% Faster Run/Walk
+* of Warmth: Half Freeze Duration
+* of Balance: +10% Faster Hit Recovery
+* of Remedy: Poison Length Reduced by 25%
+
+* of Accuracy: +[6-9] to Dexterity
 
 ### Offhand:
 Local mods: https://discord.com/channels/701658302085595158/776859543141089330/1234348584363757628
