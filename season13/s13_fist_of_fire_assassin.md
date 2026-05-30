@@ -109,15 +109,21 @@ fofmeteor 4
 
 
 ## Skills 
-* 20 Psychic Hammer (max this first for leveling)
-* 20 Shadow Warrior (master this second; Mind Blast won't be good until later)
-* 20 Mind Blast
-* 20 Cloak of Shadows
-* 1 Claw Mastery
-* 1 Burst of Speed
-* 1 point in Dragon Flight (4 points total)
-  * Can skip this with Teleport staff early on, so focus on DPS more. 
-* Rest in Fade and Weapon Block appropriately
+* 20 Fists of Fire
+* 20 Tiger Strike
+* 1 Dragon Talon
+* 1 Dragon Claw
+* 1 Dragon Tail
+* 20 Dragon Flight
+* 20 Claw & Dagger Mastery
+* 1 Psychic Hammer
+* 9 Burst of Speed
+  * Need 9 hard points into BoS to hit the breakpoint with only 15 IAS from Firelizard
+* 1 Cloak of Shadows
+* ?? Weapon Block
+  * 80 + 6 + 9 = 95, so 15 into Weapon Block? 
+* 1 Shadow Warrior 
+
 
 
 
@@ -169,6 +175,9 @@ PDR:
 * Belt: 10%
 * Rings + Boots = 10%
 
+2% max from belt is necessary because lightning res also helps
+
+
 Do  I not need more PDR?
 https://www.projectdiablo2.com/armory/builds/6a14fdb325a866c1de6a8571
 
@@ -176,6 +185,8 @@ https://www.projectdiablo2.com/armory/builds/6a14fdb325a866c1de6a8571
 Nature's Peace + 2% Amulet + Guardian Angel 6% = 11%
 * Need to get PLR from elsewhere 
 
+
+CareYaps Blade Sentinel: https://www.projectdiablo2.com/armory/builds/6a177fad4b1204abb92b9b0c
 
 
 85 Fire according to loot filter? -> +10+ max res
