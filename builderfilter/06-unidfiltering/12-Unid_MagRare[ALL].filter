@@ -159,6 +159,7 @@ ItemDisplay[!ID MAG SIN FILTLVL<5 ILVL>84]: %TIER-6%%NAME% //sin claws
 
 // High Ilvl Non-weap Rares
 ItemDisplay[RARE CHEST !ID FILTLVL<9 ALVL>84]: %TIER-7%%RARE_PLUS%
+ItemDisplay[RARE CHEST (gth OR uui OR fpl OR uea OR ula OR aar OR utp OR utu) !ID FILTLVL<9 ALVL>84]: %CRAFT_TWO%
 ItemDisplay[RARE !WEAPON (ILVL>84) !ID FILTLVL<3]: %RARE_PLUS%
 ItemDisplay[RARE ARMOR ETH !ID FILTLVL<7]: %TIER-6%%NAME%
 ItemDisplay[RARE (GLOVES OR BELT OR BOOTS) ETH !ID FILTLVL<8]: %TIER-6%%NAME%

@@ -187,7 +187,7 @@ Nature's Peace + 2% Amulet + Guardian Angel 6% = 11%
 
 
 CareYaps Blade Sentinel: https://www.projectdiablo2.com/armory/builds/6a177fad4b1204abb92b9b0c
-
+DeePEZ Chain Lightning Sorc: https://www.projectdiablo2.com/armory/builds/6a1d1baa40addded1dce996d
 
 85 Fire according to loot filter? -> +10+ max res
 90 Psn res -> +15 max res
