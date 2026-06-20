@@ -258,7 +258,7 @@ ItemDisplay[7cr !INF SUP !RW EDAM>14 !(SOCK=1) FILTLVL<9]: %NAME%{%NAME%}
 ItemDisplay[fla NMAG !RW !INF (SOCK=0 OR SOCK>2) FILTLVL<3]: %NAME%{%NAME%}
 ItemDisplay[fla NMAG !RW !INF !ETH SOCK>2 FILTLVL<7]: %NAME%{%NAME%}
 ItemDisplay[fla NMAG !RW !INF !ETH SOCK=4 FILTLVL<7]: %NAME%{%NAME%} // HotO base
-ItemDisplay[fla NMAG !RW !INF SOCK=5 FILTLVL<8]: %NAME%{%NAME%} // CtA base
+ItemDisplay[fla NMAG !RW !INF SOCK=5 FILTLVL<7]: %NAME%{%NAME%} // CtA base
 
 // Wands Dominion SK94	Fire Golem SK85	Blood Golem SK367 Blood Warp SK91 Lower Resist SK68 Bone Armor SK95 revive
 ItemDisplay[WAND !(wnd OR ywn OR 9wn) SK94>2 SK68>0 (SK91>0 OR SK95>0) !SOCK=1 NMAG !RW]: %RW_BASE_GG%[Dominion]{%NAME%%NL%%PURPLE%GG Dominion Base}
