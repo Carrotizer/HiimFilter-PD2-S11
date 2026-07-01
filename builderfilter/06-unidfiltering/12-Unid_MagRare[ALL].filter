@@ -139,7 +139,7 @@ ItemDisplay[!ID STAFF RARE FILTLVL<9 MAXSOCKETS>5 ILVL>84]: %TIER-2%%RARE_PLUS%
 ItemDisplay[!ID STAFF RARE FILTLVL<7 ILVL>84]: %TIER-2%%RARE_PLUS%
 
 // Barb Hats
-ItemDisplay[!ID BAR RARE FILTLVL<8 ILVL>84]: %TIER-2%%RARE_PLUS%
+ItemDisplay[!ID BAR RARE FILTLVL<7 ILVL>84]: %TIER-2%%RARE_PLUS%
 
 // Class specific rares show for all
 ItemDisplay[!ID (axf OR 9xf OR 7xf) RARE FILTLVL<8 ILVL>84]: %TIER-6%%NAME% //sin war fist
